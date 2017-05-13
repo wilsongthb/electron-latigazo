@@ -1,0 +1,71 @@
+<div class="container">
+    <legend>Latigazo</legend>
+    <div>
+        <!--links-->
+        <button class="btn" @click="vista = '1'">Ver CSV</button>
+        <button class="btn" @click="vista = '2'">Beneficiarios</button>
+    </div>
+    <hr>
+    <div>
+        <button @click="seleccionarArchivo" class="btn">Seleccionar Archivo</button>
+        <input type="text" v-model="path" class="btn">
+        <button @click="leer" class="btn">Leer</button>
+    </div>
+    <hr>
+
+    <!--ver-csv-->
+    <div v-if="vista === '1'">
+        <pre><table border="1">
+            <tr>
+                <th></th>
+                <th v-for="(row, index) in data[0]">{{index}} </th>
+                <!--<th class="text-center" v-for="(row, index) in data[0]">{{String.fromCharCode(index+65)}} </th>-->
+            </tr>
+            <tr>
+                <th></th>
+                <!--<th v-for="(row, index) in data[0]">{{index}} </th>-->
+                <th class="text-center" v-for="(row, index) in data[0]">{{String.fromCharCode(index+65)}} </th>
+            </tr>
+            <tr v-for="(row, index) in data">
+                <th class="text-center">{{index}} </th>
+                <td v-for="(col, index1) in row">{{col}} </td>
+            </tr>
+        </table></pre>
+    </div>
+    <!--vista-beneficiarios-->
+    <div v-show="vista === '2'">
+        <h3>Beneficiarios</h3>
+        <input type="text" class="form-control" v-model="filtrar">
+        <table class="table table-condensed table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>DNI</th>
+                    <th>Edad</th>
+                    <th>Meses</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="b in beneficiarios" class="success" :class="{'warning': (b.meses>30), 'danger': (b.meses>36)}">
+                    <td>{{b.nombre}}</td>
+                    <td>{{b.dni}}</td>
+                    <td>{{b.edad}}</td>
+                    <td>{{b.meses}}</td>
+                    <td>
+                        <!--<button class="btn btn-warning" @click="">Ver detalles</button>-->
+                        <a @click="loadDetalles(b)" href="#"><strong>Ver detalles</strong></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--vista-detalles-->
+    <div v-show="vista === '3'">
+        <pre>{{detalles}}</pre>
+    </div>
+
+    <pre>
+        {{vista}}
+    </pre>
+</div>

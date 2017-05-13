@@ -12,7 +12,7 @@ module.exports = {
         return {
             // String: String,
             data: [],
-            vista: '1',
+            vista: '0',
             filtrar: '',
             detalles: {},
             path: 'tests/entrada.csv'

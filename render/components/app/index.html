@@ -3,7 +3,7 @@
     <div>
         <!--links-->
         <div class="navbar">
-            <!--<a class="navbar-brand" href="#">Title</a>-->
+            <a class="navbar-brand" href="#" @click="vista = '0'">Inicio</a>
             <ul class="nav navbar-nav">
                 <li class="active">
                     <a href="#" @click="vista = '1'">Ver CSV</a>
@@ -11,43 +11,68 @@
                 <li>
                     <a href="#" @click="vista = '2'">Beneficiarios</a>
                 </li>
+                <li>
+                    <a href="#" @click="vista = '3'">Detalles</a>
+                </li>
+                <li>
+                    <a href="#" @click="vista = '4'">Fichas</a>
+                </li>
+
+                <li>
+                    <a href="#" @click="vista = 'github'">Actualizaciones</a>
+                </li>
             </ul>
         </div>
 <!--        
         <button class="btn" @click="vista = '1'">Ver CSV</button>
         <button class="btn" @click="vista = '2'">Beneficiarios</button>-->
     </div>
-    <hr>
-    <div>
-        <button @click="seleccionarArchivo" class="btn">Seleccionar Archivo</button>
-        <input type="text" v-model="path" class="btn">
-        <button @click="leer" class="btn">Leer</button>
-    </div>
-    <hr>
 
+    <!--Inicio-->
+    <div v-show="vista === '0'" class="row">
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div style="
+                font-family: 'Avenir', Helvetica, Arial, sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                text-align: center;
+                color: #2c3e50;
+                margin-top: 10px;
+            ">
+                <img src="render/assets/LATIGAZO.png" alt="Imagen de latigazo" width="200"><h1 class="media-heading">LATIGAZO</h1>
+            </div>
+        </div>
+    </div>
     <!--ver-csv-->
-    <div v-if="vista === '1'">
-        <pre><table border="1">
-            <tr>
-                <th></th>
-                <th v-for="(row, index) in data[0]">{{index}} </th>
-                <!--<th class="text-center" v-for="(row, index) in data[0]">{{String.fromCharCode(index+65)}} </th>-->
-            </tr>
-            <tr>
-                <th></th>
-                <!--<th v-for="(row, index) in data[0]">{{index}} </th>-->
-                <th class="text-center" v-for="(row, index) in data[0]">{{String.fromCharCode(index+65)}} </th>
-            </tr>
-            <tr v-for="(row, index) in data">
-                <th class="text-center">{{index}} </th>
-                <td v-for="(col, index1) in row">{{col}} </td>
-            </tr>
-        </table></pre>
+    <div v-if="vista === '1'" >
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <button @click="seleccionarArchivo" class="btn">Seleccionar Archivo</button>
+            <input type="text" v-model="path" class="btn">
+            <button @click="leer" class="btn">Leer</button>
+            <hr>
+            <pre><table border="1">
+                <tr>
+                    <th></th>
+                    <th v-for="(row, index) in data[0]">{{index}} </th>
+                    <!--<th class="text-center" v-for="(row, index) in data[0]">{{String.fromCharCode(index+65)}} </th>-->
+                </tr>
+                <tr>
+                    <th></th>
+                    <!--<th v-for="(row, index) in data[0]">{{index}} </th>-->
+                    <th class="text-center" v-for="(row, index) in data[0]">{{String.fromCharCode(index+65)}} </th>
+                </tr>
+                <tr v-for="(row, index) in data">
+                    <th class="text-center">{{index}} </th>
+                    <td v-for="(col, index1) in row">{{col}} </td>
+                </tr>
+            </table></pre>
+        </div>
     </div>
     <!--vista-beneficiarios-->
     <div v-show="vista === '2'">
         <h3>Beneficiarios</h3>
-        <input type="text" class="form-control" v-model="filtrar">
+        <input type="text" class="form-control" v-model="filtrar" placeholder="Buscar por nombre">
         <table class="table table-condensed table-hover">
             <thead>
                 <tr>
@@ -73,10 +98,32 @@
         </table>
     </div>
     <!--vista-detalles-->
-    <div v-show="vista === '3'">
-        <pre>{{detalles}}</pre>
+    <div v-show="vista === '3'" class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" v-for="(det, index) in detalles">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                        <h3 class="panel-title">{{index}} </h3>
+                </div>
+                <div class="panel-body">
+                        <template v-for="(d, index1) in det">
+                            <label for="">{{index1}}: </label> {{d}} <br>
+                        </template>
+                </div>
+            </div>
+        </div>
+        <!--<pre>{{detalles}}</pre>-->
     </div>
 
+    <!--github-->
+    <div v-show="vista === 'github'" class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h3>Actualizaciones</h3>
+            <!--Revisa las ultimas actualizaciones <a href="https://github.com/wilsongthb/electron-latigazo">aqui</a>-->
+            <webview src="https://github.com/wilsongthb/electron-latigazo" style="height:1200px"></webview>
+            <!--<webview id="foo" src="https://www.github.com/" style="display:inline-flex; width:640px; height:480px"></webview>-->
+            <!--<embed type="text/html" src="https://github.com/wilsongthb/electron-latigazo">-->    
+        </div>
+    </div>
     <!--<pre>
         {{vista}}
     </pre>-->

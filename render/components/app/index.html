@@ -2,8 +2,20 @@
     <legend>Latigazo</legend>
     <div>
         <!--links-->
+        <div class="navbar">
+            <!--<a class="navbar-brand" href="#">Title</a>-->
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#" @click="vista = '1'">Ver CSV</a>
+                </li>
+                <li>
+                    <a href="#" @click="vista = '2'">Beneficiarios</a>
+                </li>
+            </ul>
+        </div>
+<!--        
         <button class="btn" @click="vista = '1'">Ver CSV</button>
-        <button class="btn" @click="vista = '2'">Beneficiarios</button>
+        <button class="btn" @click="vista = '2'">Beneficiarios</button>-->
     </div>
     <hr>
     <div>
@@ -65,7 +77,7 @@
         <pre>{{detalles}}</pre>
     </div>
 
-    <pre>
+    <!--<pre>
         {{vista}}
-    </pre>
+    </pre>-->
 </div>

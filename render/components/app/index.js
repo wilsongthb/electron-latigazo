@@ -12,7 +12,7 @@ module.exports = {
         return {
             // String: String,
             data: [],
-            vista: '',
+            vista: '1',
             filtrar: '',
             detalles: {},
             path: 'tests/entrada.csv'
@@ -112,6 +112,7 @@ module.exports = {
             console.log(path)
             console.log(this.path)
             this.path = path[0]
+            this.leer()
         }.bind(this))
         this.leer()
     }

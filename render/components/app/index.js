@@ -46,9 +46,9 @@ module.exports = {
                 this.detalles.cuidador[u] = fila[config.csv.cuidador[u]]
             }
 
-            console.log(this.detalles)
+            // console.log(this.detalles)
 
-            this.vista = '3'
+            this.vista = '3' // cambiar a vista detalles
         },
         getBeneficiarios () {
             var beneficiarios = []

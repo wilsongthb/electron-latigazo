@@ -6,33 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>App</title>
 
-        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+        <link rel="stylesheet" href="render/dist/css/bootstrap-material-design.css">
+        <link rel="stylesheet" href="render/dist/css/ripples.css">
     </head>
     <body>
-        
-
         <div class="container" id="root">
             <app></app>
         </div>
-        
 
+        <!--Core scripts-->
         <script src="node_modules/vue/dist/vue.js"></script>
         <script src="vue.boot.js"></script>
 
         <!--Scripts Web-->
         <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
-        <!-- jQuery -->
         <script src="node_modules/jquery/dist/jquery.js"></script>
-        <!-- Bootstrap JavaScript -->
         <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="render/dist/js/material.js"></script>
+        <script src="render/dist/js/ripples.js"></script>
         <script>if (window.module) module = window.module;</script>
         <!--end Scripts Web-->
     </body>

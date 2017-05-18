@@ -109,8 +109,8 @@ module.exports = {
     created () {
         ipc.on('selected-file', function(event, path){
             // document.getElementById('selected-file').innerHTML = `You selected: ${path}`
-            console.log(path)
-            console.log(this.path)
+            // console.log(path)
+            // console.log(this.path)
             this.path = path[0]
             this.leer()
         }.bind(this))

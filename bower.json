@@ -1,0 +1,21 @@
+{
+  "name": "electron-latigazo",
+  "description": "App latigador",
+  "main": "main.js",
+  "authors": [
+    "Wilson Pilco Nuñez <wilsonaux1@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "latigar"
+  ],
+  "homepage": "https://github.com/wilsongthb/electron-latigazo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}

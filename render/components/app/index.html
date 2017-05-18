@@ -5,27 +5,27 @@
         <div class="navbar">
             <a class="navbar-brand" href="#" @click="vista = '0'">Inicio</a>
             <ul class="nav navbar-nav">
-                <li class="active">
+                <li :class="{ 'active': (vista === '1') }">
                     <a href="#" @click="vista = '1'">Ver CSV</a>
                 </li>
-                <li>
+                <li :class="{ 'active': (vista === '2') }">
                     <a href="#" @click="vista = '2'">Beneficiarios</a>
                 </li>
-                <li>
+                <li :class="{ 'active': (vista === '3') }">
                     <a href="#" @click="vista = '3'">Detalles</a>
                 </li>
-                <li>
+                <li :class="{ 'active': (vista === '4') }">
                     <a href="#" @click="vista = '4'">Fichas</a>
                 </li>
+                <li :class="{ 'active': (vista === '5') }">
+                    <a href="#" @click="vista = '5'">Lista de Beneficiarios</a>
+                </li>
 
-                <li>
+                <li :class="{ 'active': (vista === 'github') }">
                     <a href="#" @click="vista = 'github'">Actualizaciones</a>
                 </li>
             </ul>
         </div>
-<!--        
-        <button class="btn" @click="vista = '1'">Ver CSV</button>
-        <button class="btn" @click="vista = '2'">Beneficiarios</button>-->
     </div>
 
     <!--Inicio-->
@@ -112,6 +112,36 @@
             </div>
         </div>
         <!--<pre>{{detalles}}</pre>-->
+    </div>
+    <!--vista de listado-->
+    <div v-show="vista === '5'" class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h3>Lista Completa</h3>
+            <!--<input type="text" class="form-control" v-model="filtrar" placeholder="Buscar por nombre">-->
+            <table class="table table-condensed table-hover">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>DNI</th>
+                        <th>Edad</th>
+                        <th>Meses</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="b in listaCompleta" class="success" :class="{'warning': (b.meses>30), 'danger': (b.meses>36)}">
+                        <td>{{b.nombre}}</td>
+                        <td>{{b.dni}}</td>
+                        <td>{{b.edad}}</td>
+                        <td>{{b.meses}}</td>
+                        <td>
+                            <!--<button class="btn btn-warning" @click="">Ver detalles</button>-->
+                            <a @click="loadDetalles(b)" href="#"><strong>Ver detalles</strong></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!--github-->

@@ -1,0 +1,37 @@
+<div class="container">
+    <h1>Filtros</h1>
+    <select v-model="filtro.clave">
+        <option v-for="c in listaClaves()" :value="c.valor">{{c.valor}} - {{c.clave}} </option>
+    </select>
+    <!--<input type="text" v-model="filtro.clave">-->
+    <input type="text" v-model="filtro.valor">
+    <button @click="agregarFiltro">Agregar</button>
+    <ul>
+        <li v-for="(f, index) in filtros">
+            {{f.key}} - <input type="text" v-model="f.value"> <button @click="filtros.splice(index, 1)">X</button>
+        </li>
+    </ul>
+    <!--<pre>{{dataFiltrada}} </pre>-->
+    
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Nombre Facilitador</th>
+                <th>Nombre Cuidador</th>
+                <th>Nombre Beneficiario</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="i in dataFiltrada">
+                <td>{{i[keyData.facilitador.nombre]}} </td>
+                <td>{{i[keyData.cuidador.nombre]}} </td>
+                <td>{{i[keyData.beneficiario.nombre]}} </td>
+                <td>
+                    <a @click="cargarDetalles(b)" href="#"><strong>Ver detalles</strong></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>

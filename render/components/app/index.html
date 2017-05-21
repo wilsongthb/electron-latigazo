@@ -20,6 +20,9 @@
                 <li :class="{ 'active': (vista === '5') }">
                     <a href="#" @click="vista = '5'">Lista de Beneficiarios</a>
                 </li>
+                <li :class="{ 'active': (vista === '6') }">
+                    <a href="#" @click="vista = '6'">Ayuda</a>
+                </li>
 
                 <li :class="{ 'active': (vista === 'github') }">
                     <a href="#" @click="vista = 'github'">Actualizaciones</a>
@@ -30,7 +33,6 @@
 
     <!--Inicio-->
     <div v-show="vista === '0'" class="row">
-        
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div style="
                 font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -60,7 +62,8 @@
                 <tr>
                     <th></th>
                     <!--<th v-for="(row, index) in data[0]">{{index}} </th>-->
-                    <th class="text-center" v-for="(row, index) in data[0]">{{String.fromCharCode(index+65)}} </th>
+                    <!--<th class="text-center" v-for="(row, index) in data[0]">{{String.fromCharCode(index+65)}} </th>-->
+                    <th v-for="i in listaClaves()">{{i.clave}} </th>
                 </tr>
                 <tr v-for="(row, index) in data">
                     <th class="text-center">{{index}} </th>
@@ -114,35 +117,10 @@
         <!--<pre>{{detalles}}</pre>-->
     </div>
     <!--vista de listado-->
-    <div v-show="vista === '5'" class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h3>Lista Completa</h3>
-            <!--<input type="text" class="form-control" v-model="filtrar" placeholder="Buscar por nombre">-->
-            <table class="table table-condensed table-hover">
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>DNI</th>
-                        <th>Edad</th>
-                        <th>Meses</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="b in listaCompleta" class="success" :class="{'warning': (b.meses>30), 'danger': (b.meses>36)}">
-                        <td>{{b.nombre}}</td>
-                        <td>{{b.dni}}</td>
-                        <td>{{b.edad}}</td>
-                        <td>{{b.meses}}</td>
-                        <td>
-                            <!--<button class="btn btn-warning" @click="">Ver detalles</button>-->
-                            <a @click="loadDetalles(b)" href="#"><strong>Ver detalles</strong></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    <ver-lista v-show="vista === '5'" :data="data"></ver-lista>
+
+    <!--vista de ayuda-->
+    <ayuda v-show="vista === '6'"></ayuda>
 
     <!--github-->
     <div v-show="vista === 'github'" class="row">
@@ -152,7 +130,7 @@
             <!--Revisa las ultimas actualizaciones <a href="https://github.com/wilsongthb/electron-latigazo">aqui</a>-->
             <webview src="https://github.com/wilsongthb/electron-latigazo" style="height:1200px"></webview>
             <!--<webview id="foo" src="https://www.github.com/" style="display:inline-flex; width:640px; height:480px"></webview>-->
-            <!--<embed type="text/html" src="https://github.com/wilsongthb/electron-latigazo">-->    
+            <!--<embed type="text/html" src="https://github.com/wilsongthb/electron-latigazo">-->
         </div>
     </div>
     <!--<pre>

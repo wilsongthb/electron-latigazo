@@ -7,6 +7,10 @@ const ipc = require('electron').ipcRenderer
 const csv = require('fast-csv')
 
 module.exports = {
+    components: {
+        'ver-lista': require('./ver-lista'),
+        'ayuda': require('./ayuda')
+    },
     template: fs.readFileSync(path.join(__dirname, 'index.html'), { encoding: 'utf-8'}),
     data: function(){
         return {
@@ -26,6 +30,18 @@ module.exports = {
         }
     },
     methods: {
+        listaClaves () {
+            var listaClaves = []
+            for(var i in csv_claves){
+                for(var j in csv_claves[i]){
+                    listaClaves.push({
+                        clave: `${i}.${j}`,
+                        valor: csv_claves[i][j]
+                    })
+                }
+            }
+            return listaClaves
+        },
         loadDetalles (b) {
             var fila = this.data[b.row]
 
@@ -47,8 +63,10 @@ module.exports = {
             }
 
             // console.log(this.detalles)
-
             this.vista = '3' // cambiar a vista detalles
+        },
+        lista () {
+            
         },
         getBeneficiarios () {
             var beneficiarios = []

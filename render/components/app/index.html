@@ -1,36 +1,33 @@
-<div class="container">
-    <legend>Latigazo</legend>
-    <div>
-        <!--links-->
-        <div class="navbar">
-            <a class="navbar-brand" href="#" @click="vista = '0'">Inicio</a>
-            <ul class="nav navbar-nav">
-                <li :class="{ 'active': (vista === '1') }">
-                    <a href="#" @click="vista = '1'">Ver CSV</a>
-                </li>
-                <li :class="{ 'active': (vista === '2') }">
-                    <a href="#" @click="vista = '2'">Beneficiarios</a>
-                </li>
-                <li :class="{ 'active': (vista === '3') }">
-                    <a href="#" @click="vista = '3'">Detalles</a>
-                </li>
-                <li :class="{ 'active': (vista === '4') }">
-                    <a href="#" @click="vista = '4'">Fichas</a>
-                </li>
-                <li :class="{ 'active': (vista === '5') }">
-                    <a href="#" @click="vista = '5'">Lista de Beneficiarios</a>
-                </li>
-                <li :class="{ 'active': (vista === '6') }">
-                    <a href="#" @click="vista = '6'">Ayuda</a>
-                </li>
-
-                <li :class="{ 'active': (vista === 'github') }">
-                    <a href="#" @click="vista = 'github'">Actualizaciones</a>
-                </li>
-            </ul>
-        </div>
+<div>
+    <!--links Menu-->
+    <div class="navbar">
+        <ul class="nav navbar-nav">
+            <li :class="{ 'active': (vista === '0') }">
+                <a href="#" @click="vista = '0'"><strong>INICIO</strong></a>
+            </li>
+            <li :class="{ 'active': (vista === '1') }">
+                <a href="#" @click="vista = '1'">Ver CSV</a>
+            </li>
+            <!--<li :class="{ 'active': (vista === '4') }">
+                <a href="#" @click="vista = '4'">Fichas</a>
+            </li>-->
+            <li :class="{ 'active': (vista === '5') }">
+                <a href="#" @click="vista = '5'">Lista de Beneficiarios</a>
+            </li>
+            <li :class="{ 'active': (vista === '3') }">
+                <a href="#" @click="vista = '3'">Detalles</a>
+            </li>
+            <li :class="{ 'active': (vista === '7') }">
+                <a href="#" @click="vista = '7'">Sync DB</a>
+            </li>
+            <li :class="{ 'active': (vista === '6') }">
+                <a href="#" @click="vista = '6'">Ayuda</a>
+            </li>
+            <li :class="{ 'active': (vista === 'github') }">
+                <a href="#" @click="vista = 'github'">Actualizaciones</a>
+            </li>
+        </ul>
     </div>
-
     <!--Inicio-->
     <div v-show="vista === '0'" class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -43,94 +40,42 @@
                 margin-top: 10px;
             ">
                 <img src="render/assets/LATIGAZO.png" alt="Imagen de latigazo" width="200"><h1 class="media-heading">LATIGAZO</h1>
+                <img src="render/assets/gatito.gif" alt="Gatito">
             </div>
         </div>
     </div>
     <!--ver-csv-->
-    <div v-if="vista === '1'" >
+    <div class="row" v-show="vista === '1'">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <button @click="seleccionarArchivo" class="btn">Seleccionar Archivo</button>
-            <input type="text" v-model="path" class="btn">
-            <button @click="leer" class="btn">Leer</button>
-            <hr>
-            <pre><table border="1">
-                <tr>
-                    <th></th>
-                    <th v-for="(row, index) in data[0]">{{index}} </th>
-                    <!--<th class="text-center" v-for="(row, index) in data[0]">{{String.fromCharCode(index+65)}} </th>-->
-                </tr>
-                <tr>
-                    <th></th>
-                    <!--<th v-for="(row, index) in data[0]">{{index}} </th>-->
-                    <!--<th class="text-center" v-for="(row, index) in data[0]">{{String.fromCharCode(index+65)}} </th>-->
-                    <th v-for="i in listaClaves()">{{i.clave}} </th>
-                </tr>
-                <tr v-for="(row, index) in data">
-                    <th class="text-center">{{index}} </th>
-                    <td v-for="(col, index1) in row">{{col}} </td>
-                </tr>
-            </table></pre>
+            <button @click="seleccionarArchivo">Seleccionar Archivo</button>
+            <input type="text" v-model="path">
+            <button @click="leer">Leer</button>
+            <input type="checkbox" v-model="verClaves">Ver Claves
+            <ver-csv :data="data" :ver-claves="verClaves"></ver-csv>
         </div>
     </div>
-    <!--vista-beneficiarios-->
-    <div v-show="vista === '2'">
-        <h3>Beneficiarios</h3>
-        <input type="text" class="form-control" v-model="filtrar" placeholder="Buscar por nombre">
-        <table class="table table-condensed table-hover">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>DNI</th>
-                    <th>Edad</th>
-                    <th>Meses</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="b in beneficiarios" class="success" :class="{'warning': (b.meses>30), 'danger': (b.meses>36)}">
-                    <td>{{b.nombre}}</td>
-                    <td>{{b.dni}}</td>
-                    <td>{{b.edad}}</td>
-                    <td>{{b.meses}}</td>
-                    <td>
-                        <!--<button class="btn btn-warning" @click="">Ver detalles</button>-->
-                        <a @click="loadDetalles(b)" href="#"><strong>Ver detalles</strong></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+
     <!--vista-detalles-->
-    <div v-show="vista === '3'" class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3" v-for="(det, index) in detalles">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                        <h3 class="panel-title">{{index}} </h3>
-                </div>
-                <div class="panel-body">
-                        <template v-for="(d, index1) in det">
-                            <label for="">{{index1}}: </label> {{d}} <br>
-                        </template>
-                </div>
-            </div>
-        </div>
-        <!--<pre>{{detalles}}</pre>-->
-    </div>
+    <ver-detalles v-if="vista === '3'" :detalles="detalles"></ver-detalles>
+
     <!--vista de listado-->
-    <ver-lista v-show="vista === '5'" :data="data"></ver-lista>
+    <ver-lista v-show="vista === '5'" :data="data" @ver-detalles="verDetalles"></ver-lista>
 
     <!--vista de ayuda-->
-    <ayuda v-show="vista === '6'"></ayuda>
+    <ayuda v-if="vista === '6'"></ayuda>
+
+    <!--Sincronizar con la BD-->
+    <sync-db v-show="vista === '7'" :data="data"></sync-db>
 
     <!--github-->
-    <div v-show="vista === 'github'" class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h3>Actualizaciones <small>y ultimos cambios</small></h3>
-            <p>Revisa las actualizaciones y ultimos cambios en la pagina de github</p>
-            <!--Revisa las ultimas actualizaciones <a href="https://github.com/wilsongthb/electron-latigazo">aqui</a>-->
-            <webview src="https://github.com/wilsongthb/electron-latigazo" style="height:1200px"></webview>
-            <!--<webview id="foo" src="https://www.github.com/" style="display:inline-flex; width:640px; height:480px"></webview>-->
-            <!--<embed type="text/html" src="https://github.com/wilsongthb/electron-latigazo">-->
+    <div v-if="vista === 'github'" class="container">
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>Actualizaciones <small>y ultimos cambios</small></h3>
+                <p>Revisa las actualizaciones y ultimos cambios en la pagina de github <a href="https://github.com/wilsongthb/electron-latigazo">aqui</a></p>
+                <webview src="https://github.com/wilsongthb/electron-latigazo" style="height:1200px"></webview>
+            </div>
         </div>
     </div>
     <!--<pre>

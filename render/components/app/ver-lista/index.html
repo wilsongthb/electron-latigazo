@@ -1,34 +1,74 @@
 <div class="container">
-    <h1>Filtros</h1>
-    <select v-model="filtro.clave">
-        <option v-for="c in listaClaves()" :value="c.valor">{{c.valor}} - {{c.clave}} </option>
-    </select>
-    <!--<input type="text" v-model="filtro.clave">-->
-    <input type="text" v-model="filtro.valor">
-    <button @click="agregarFiltro">Agregar</button>
-    <ul>
-        <li v-for="(f, index) in filtros">
-            {{f.key}} - <input type="text" v-model="f.value"> <button @click="filtros.splice(index, 1)">X</button>
-        </li>
-    </ul>
-    <!--<pre>{{dataFiltrada}} </pre>-->
+    
+    <div class="row">
+        <input type="checkbox" v-model="verFiltros">Ver filtros
+    </div>
+    
+    <div class="row" v-show="verFiltros">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>Filtros</h4>
+            </div>
+            <div class="panel-body">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <select v-model="filtro.clave" class="form-control">
+                        <option v-for="c in clavesOptions()" :value="c.valor">{{c.valor}} - {{c.clave.toUpperCase()}} </option>
+                    </select>
+                    <input type="text" v-model="filtro.valor" placeholder="Buscar" class="form-control">
+                    <button @click="agregarFiltro" class="btn btn-success">Agregar</button>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" v-show="filtros.length > 0">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Clave</th>
+                                <th>Valor</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(f, index) in filtros">
+                                <td>{{listaClaves[f.key].toUpperCase()}}</td>
+                                <td><input type="text" v-model="f.value"></td>
+                                <td>
+                                    <button @click="filtros.splice(index, 1)" class="btn-danger" title="Eliminar">
+                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </div>
+            </div>
+        </div>
+    </div>
     
     <table class="table table-hover">
         <thead>
             <tr>
-                <th>Nombre Facilitador</th>
-                <th>Nombre Cuidador</th>
-                <th>Nombre Beneficiario</th>
+                <th>FACILITADOR</th>
+                <th>CUIDADOR</th>
+                <th colspan="4">BENEFICIARIO</th>
+            </tr>
+            <tr>
+                <th colspan="2"></th>
+                <th>NOMBRE</th>
+                <th>EDAD</th>
+                <th>MESES</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
-            <tr v-for="i in dataFiltrada">
+            <tr v-for="(i, index) in dataFiltrada" class="success" :class="{'warning': (i['edad'].meses>30), 'danger': (i['edad'].meses>36)}">
                 <td>{{i[keyData.facilitador.nombre]}} </td>
                 <td>{{i[keyData.cuidador.nombre]}} </td>
                 <td>{{i[keyData.beneficiario.nombre]}} </td>
+                <td>{{i['edad'].str}} </td>
+                <td>{{i['edad'].meses}} </td>
                 <td>
-                    <a @click="cargarDetalles(b)" href="#"><strong>Ver detalles</strong></a>
+                    <button class="btn-warning" title="Mas detalles" @click="verDetalles(i)">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </button>
                 </td>
             </tr>
         </tbody>

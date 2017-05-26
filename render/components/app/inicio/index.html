@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div style="
+                font-family: 'Avenir', Helvetica, Arial, sans-serif;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                text-align: center;
+                color: #2c3e50;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            ">
+                <img src="render/assets/LATIGAZO.png" alt="Imagen de latigazo" width="200">
+                <h1 class="media-heading">LATIGAZO</h1>
+                <img src="render/assets/gatito.gif" alt="Gatito">
+            </div>
+            <form class="well form-horizontal" v-if="!session.logued">
+                <legend>Iniciar Sesión</legend>
+                
+                <div v-show="error.log">                    
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" @click="error.log = false" aria-hidden="true">&times;</button>
+                        <strong>Error: </strong> Usuario o contraseña incorrecta
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4">Nombre de Usuario</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control " id="" placeholder="username" v-model="session.username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4">Contraseña</label>
+                    <div class="col-md-8">
+                        <input type="password" class="form-control" id="" placeholder="password" v-model="session.password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-8 col-md-offset-4">
+                        <button class="btn btn-raised btn-primary" @click="iniciarSesion">Ingresar</button>
+                    </div>
+                </div>
+            </form>
+            <div v-else class="well">
+                <label>Usuario:</label> {{session.name}} - {{session.email}}
+            </div>
+        </div>
+        
+    </div>
+    
+</div>

@@ -1,14 +1,20 @@
 var path = require('path')
 var fs = require('fs')
 
-var edad = require(path.join('.','..','..','edad.js'))
-
 const ipc = require('electron').ipcRenderer
-const csv = require('fast-csv')
+const sessionInit = {
+                username: '',
+                password: '',
+                logued: false,
+                
+                id: 1,
+                logued: true
+            }
 
 module.exports = {
     template: fs.readFileSync(path.join(__dirname, 'index.html'), { encoding: 'utf-8'}),
     components: {
+        'inicio': require('./inicio'),
         'ver-csv': require('./ver-csv'),
         'ver-lista': require('./ver-lista'),
         'ver-detalles': require('./ver-detalles'),
@@ -17,6 +23,8 @@ module.exports = {
     },
     data: function(){
         return {
+            detalles: false,
+            session: sessionInit,
             verClaves: false,
             data: [],
             vista: '0',
@@ -26,15 +34,16 @@ module.exports = {
     methods: {
         verDetalles (fila) {
             // esta funcion recibe un evento emitido por su hijo ver-lista
-            console.log('on')
+            // console.log('on')
             this.detalles = fila
-
             this.vista = '3' // cambiar a vista detalles
         },
         seleccionarArchivo () {
             ipc.send('open-file-dialog')
         },
         leer () {
+            const csv = require('fast-csv')
+
             this.data = []
             var stream = fs.createReadStream(this.path, { encoding: 'UTF-8'});            
             var csvStream = csv
@@ -51,10 +60,14 @@ module.exports = {
         }
     },
     created () {
+        // sintaxis en 2015
         // ipc.on('selected-file', function(event, path){
         //     this.path = path[0]
         //     this.leer()
         // }.bind(this))
+
+
+        //ES5 (ES2016)
         ipc.on('selected-file', (event, path) => {
             this.path = path[0]
             this.leer()

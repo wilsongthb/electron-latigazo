@@ -30,35 +30,23 @@ module.exports = {
             // conexion con mysql
             var mysql = require('mysql');
             this.cout(`Iniciando conexion con la Base de Datos, configuracion de conexión: ${JSON.stringify(config.db.connection)}`)
-            var connection = mysql.createConnection(config.db.connection);           
+            var connection = mysql.createConnection(config.db.connection);
+            connection.connect();
 
-1            // La primera consulta es para definir el timestamp de creacion, para que todos los registros tengan la misma fecha de creacion
-            var time_creacion = ""
-            let ProbarConexion = new Promise((resolve, reject) => {
-                var sql = 'SELECT VERSION() as version, CURRENT_TIMESTAMP as ct, CONCAT(CURRENT_DATE, " ", CURRENT_TIME) as str_ct'
-                connection.connect();
-                connection.query(sql, (error, results, fields) => {
-                    if (error){
-                        this.cout('Error: error en la conexión de la base de datos', 'red')
-                        throw error
-                    }
-                    
-                    // informacion del servidor mysql
-                    this.cout(`Version MySQL: ${results[0].version}`)
+            // La primera consulta es para definir el timestamp de creacion, para que todos los registros tengan la misma fecha de creacion
+            connection.query('SELECT VERSION() as version, CURRENT_TIMESTAMP as ct, CONCAT(CURRENT_DATE, " ", CURRENT_TIME) as str_ct', (error, results, fields) => {
+                if (error) throw error;
+                
+                // informacion del servidor mysql
+                this.cout(`Version MySQL: ${results[0].version}`)
 
-                    // timestamps
-                    time_creacion = results[0].str_ct
-                    this.cout(`Creacion en: ${results[0].ct}`)
-                    
-                    resolve('finalizado ProbarConexion')
-                })
-            })
+                // timestamps
+                var time_creacion = results[0].ct
+                var time_creacion = results[0].str_ct
+                this.cout(`Creacion en: ${results[0].ct}`)
 
-            ProbarConexion.then((mensaje) => {
-                // console.log('yes ', mensaje, time_creacion)
-
-                 // crear sentencias para los facilitadores
-                var sqlFacilitadores = []
+                // crear sentencias para los facilitadores
+                sqlFacilitadores = []
                 for(var i in this.data){
                     var fila = this.data[i]
                     var keys = csv_claves.facilitador
@@ -77,15 +65,7 @@ module.exports = {
                     sql += `${sqlFacilitadores[i]},`
                 }
                 sql = sql.substring(0, sql.length - 1) + ";"
-                // insertar facilitadores
-                connection.query(sql, (error, results, fields) => {
-                    if (error){
-                        this.cout('Error: error en la conexión de la base de datos', 'red')
-                        throw error
-                    }
-                    
-                })
-            })
+            });
 
             // connection.end()
         }

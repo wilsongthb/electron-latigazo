@@ -29,20 +29,8 @@
         </ul>
     </div>
     <!--Inicio-->
-    <div v-show="vista === '0'" class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div style="
-                font-family: 'Avenir', Helvetica, Arial, sans-serif;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                text-align: center;
-                color: #2c3e50;
-                margin-top: 10px;
-            ">
-                <img src="render/assets/LATIGAZO.png" alt="Imagen de latigazo" width="200"><h1 class="media-heading">LATIGAZO</h1>
-                <img src="render/assets/gatito.gif" alt="Gatito">
-            </div>
-        </div>
+    <div v-show="vista === '0'" class="container">
+        <inicio :session.sync="session"></inicio>
     </div>
     <!--ver-csv-->
     <div class="row" v-show="vista === '1'">
@@ -56,7 +44,8 @@
     </div>
 
     <!--vista-detalles-->
-    <ver-detalles v-if="vista === '3'" :detalles="detalles"></ver-detalles>
+    <ver-detalles v-if="vista === '3' && detalles" :detalles="detalles"></ver-detalles>
+    
 
     <!--vista de listado-->
     <ver-lista v-show="vista === '5'" :data="data" @ver-detalles="verDetalles"></ver-lista>
@@ -65,7 +54,7 @@
     <ayuda v-if="vista === '6'"></ayuda>
 
     <!--Sincronizar con la BD-->
-    <sync-db v-show="vista === '7'" :data="data"></sync-db>
+    <sync-db v-show="vista === '7'" :data="data" :session="session"></sync-db>
 
     <!--github-->
     <div v-if="vista === 'github'" class="container">
@@ -78,7 +67,4 @@
             </div>
         </div>
     </div>
-    <!--<pre>
-        {{vista}}
-    </pre>-->
 </div>

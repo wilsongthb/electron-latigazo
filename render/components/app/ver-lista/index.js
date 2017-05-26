@@ -44,7 +44,7 @@ module.exports = {
     },
     methods: {
         verDetalles (fila) {
-            console.log('emit')
+            // console.log('emit')
             this.$emit('ver-detalles', fila)
         },
         edadFormat (fechaNoFormat) {

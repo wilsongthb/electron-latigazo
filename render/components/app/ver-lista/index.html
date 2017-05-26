@@ -43,35 +43,42 @@
         </div>
     </div>
     
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>FACILITADOR</th>
-                <th>CUIDADOR</th>
-                <th colspan="4">BENEFICIARIO</th>
-            </tr>
-            <tr>
-                <th colspan="2"></th>
-                <th>NOMBRE</th>
-                <th>EDAD</th>
-                <th>MESES</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr v-for="(i, index) in dataFiltrada" class="success" :class="{'warning': (i['edad'].meses>30), 'danger': (i['edad'].meses>36)}">
-                <td>{{i[keyData.facilitador.nombre]}} </td>
-                <td>{{i[keyData.cuidador.nombre]}} </td>
-                <td>{{i[keyData.beneficiario.nombre]}} </td>
-                <td>{{i['edad'].str}} </td>
-                <td>{{i['edad'].meses}} </td>
-                <td>
-                    <button class="btn-warning" title="Mas detalles" @click="verDetalles(i)">
-                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                    </button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 well">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>FACILITADOR</th>
+                        <th>CUIDADOR</th>
+                        <th colspan="4">BENEFICIARIO</th>
+                    </tr>
+                    <tr>
+                        <th>NOMBRE</th>
+                        <th>NOMBRE</th>
+                        <th>NOMBRE</th>
+                        <th>EDAD</th>
+                        <th>MESES</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(i, index) in dataFiltrada" class="success" :class="{'warning': (i['edad'].meses>30), 'danger': (i['edad'].meses>36)}">
+                        <td>{{i[keyData.facilitador.nombre]}} </td>
+                        <td>{{i[keyData.cuidador.nombre]}} </td>
+                        <td>{{i[keyData.beneficiario.nombre]}} </td>
+                        <td>{{i['edad'].str}} </td>
+                        <td>{{i['edad'].meses}} </td>
+                        <td>
+                            <button class="btn-warning" title="Mas detalles" @click="verDetalles(i)">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
     
 </div>

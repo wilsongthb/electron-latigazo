@@ -7,8 +7,8 @@ const sessionInit = {
                 password: '',
                 logued: false,
                 
-                id: 1,
-                logued: true
+                // id: 1,
+                // logued: true
             }
 
 module.exports = {
@@ -24,7 +24,7 @@ module.exports = {
     data: function(){
         return {
             detalles: false,
-            session: sessionInit,
+            session: sessionInit, // valores iniciales de session
             verClaves: false,
             data: [],
             vista: '0',
@@ -60,12 +60,11 @@ module.exports = {
         }
     },
     created () {
-        // sintaxis en 2015
+        // ES2015
         // ipc.on('selected-file', function(event, path){
         //     this.path = path[0]
         //     this.leer()
         // }.bind(this))
-
 
         //ES5 (ES2016)
         ipc.on('selected-file', (event, path) => {

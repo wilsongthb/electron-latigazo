@@ -10,3 +10,5 @@ Aplicacion de hacer cosas XD
 * Busqueda por filtros,
 * Las vistas se han separado en componentes
 * Estilo mejorado
+* Agregada sincronizacion con base de datos simple
+* Agregado sesion de usuario

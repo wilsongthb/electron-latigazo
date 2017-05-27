@@ -15,26 +15,27 @@ module.exports = {
     },
     methods: {
         iniciarSesion () {
-            var mysql = require('mysql')
-            var connection = mysql.createConnection(config.db.connection)
-            connection.connect()
+            DB.connect()
             
-            connection.query(`SELECT * FROM usuarios AS u WHERE u.nombreUsuario = '${this.session.username}' AND u.clave = MD5('${this.session.password}')`, (error, results, fields) => {
-                if(error) throw error
+            DB.query(
+                `SELECT * FROM usuarios AS u WHERE u.nombreUsuario = '${this.session.username}' AND u.clave = MD5('${this.session.password}')`, 
+                (error, results, fields) => {
+                    if(error) throw error
 
-                // console.log(results)
+                    // console.log(results)
 
-                if(results.length >= 1){
-                    this.session.id = results[0].id
-                    this.session.name = results[0].nombre
-                    this.session.email = results[0].email
-                    this.session.logued = true
-                }else{
-                    this.error.log = true
+                    if(results.length >= 1){
+                        this.session.id = results[0].id
+                        this.session.name = results[0].nombre
+                        this.session.email = results[0].email
+                        this.session.logued = true
+                    }else{
+                        this.error.log = true
+                    }
+
+                    // console.log(this.session)
                 }
-
-                // console.log(this.session)
-            })
+            )
         },
     }
 }

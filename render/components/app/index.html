@@ -54,7 +54,14 @@
     <ayuda v-if="vista === '6'"></ayuda>
 
     <!--Sincronizar con la BD-->
-    <sync-db v-show="vista === '7'" :data="data" :session="session"></sync-db>
+    <div v-show="vista === '7'">
+        <div v-if="session.id">
+            <sync-db :data="data" :session="session"></sync-db>
+        </div>
+        <div v-else class="container">
+            <code>Requiere que te loguees en <a href="#" @click="vista = '0'">Inicio</a></code>
+        </div>
+    </div>
 
     <!--github-->
     <div v-if="vista === 'github'" class="container">

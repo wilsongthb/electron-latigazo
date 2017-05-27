@@ -15,7 +15,7 @@
                 <h1 class="media-heading">LATIGAZO</h1>
                 <img src="render/assets/gatito.gif" alt="Gatito">
             </div>
-            <form class="well form-horizontal" v-if="!session.logued">
+            <div class="well form-horizontal" v-if="!session.logued">
                 <legend>Iniciar Sesión</legend>
                 
                 <div v-show="error.log">                    
@@ -41,7 +41,7 @@
                         <button class="btn btn-raised btn-primary" @click="iniciarSesion">Ingresar</button>
                     </div>
                 </div>
-            </form>
+            </div>
             <div v-else class="well">
                 <label>Usuario:</label> {{session.name}} - {{session.email}}
             </div>

@@ -24,7 +24,7 @@
         "dni": "18",
         "tipoSeguro": "19",
         "fechaNacimiento": "20",
-        "fechaRegitro": "21"
+        "fechaRegistro": "21"
     },
     "beneficiario": {
         "codigo": "23",

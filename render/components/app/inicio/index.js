@@ -14,9 +14,7 @@ module.exports = {
         }
     },
     methods: {
-        iniciarSesion () {
-            DB.connect()
-            
+        iniciarSesion () {            
             DB.query(
                 `SELECT * FROM usuarios AS u WHERE u.nombreUsuario = '${this.session.username}' AND u.clave = MD5('${this.session.password}')`, 
                 (error, results, fields) => {

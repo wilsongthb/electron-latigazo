@@ -14,6 +14,7 @@ const sessionInit = {
 module.exports = {
     template: fs.readFileSync(path.join(__dirname, 'index.html'), { encoding: 'utf-8'}),
     components: {
+        'ver-fichas': require('./ver-fichas'),
         'inicio': require('./inicio'),
         'ver-csv': require('./ver-csv'),
         'ver-lista': require('./ver-lista'),
@@ -23,7 +24,9 @@ module.exports = {
     },
     data: function(){
         return {
-            detalles: false,
+            verReadme: fs.readFileSync(path.join(rootDir, 'readme.md'), { encoding: 'utf-8'}),
+            verNavbarAbajo: false,
+            detalles: false, // objeto detalles, inicialmente se usa como flag de vista detalle
             session: sessionInit, // valores iniciales de session
             verClaves: false,
             data: [],
@@ -37,6 +40,7 @@ module.exports = {
             // console.log('on')
             this.detalles = fila
             this.vista = '3' // cambiar a vista detalles
+            this.verNavbarAbajo = true
         },
         seleccionarArchivo () {
             ipc.send('open-file-dialog')

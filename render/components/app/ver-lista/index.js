@@ -18,6 +18,10 @@ module.exports = {
             listaClaves
         }
     },
+    created () {
+        this.filtros.push({key: '12', value: ''})
+        this.filtros.push({key: '24', value: ''})
+    },
     computed: {
         dataFiltrada () {
             var res = this.data

@@ -14,6 +14,7 @@ const sessionInit = {
 module.exports = {
     template: fs.readFileSync(path.join(__dirname, 'index.html'), { encoding: 'utf-8'}),
     components: {
+        'ver-cartilla': require('./ver-cartilla'),
         'ver-fichas': require('./ver-fichas'),
         'inicio': require('./inicio'),
         'ver-csv': require('./ver-csv'),
@@ -24,17 +25,37 @@ module.exports = {
     },
     data: function(){
         return {
-            verReadme: fs.readFileSync(path.join(rootDir, 'readme.md'), { encoding: 'utf-8'}),
-            verNavbarAbajo: false,
+            // app
+            verNavbarAbajo: false, // mostrar o ocultar navbar de abajo
+            vista: '0', // numero de la vista
+
+            // ver detalles
             detalles: false, // objeto detalles, inicialmente se usa como flag de vista detalle
+
+            // ver cartilla
+            detallesCartilla: false,
+            
+            // ver lista
+            data: [], // array que contiene los datos del archivo csv
+
+            // session
             session: sessionInit, // valores iniciales de session
-            verClaves: false,
-            data: [],
-            vista: '0',
-            path: 'tests/entrada.csv'
+
+            // ver csv
+            verClaves: false, // mostrar o ocultar claves
+            path: 'tests/entrada.csv', // path del archivo csv
+
+            // actualizaciones
+            verReadme: fs.readFileSync(path.join(rootDir, 'readme.md'), { encoding: 'utf-8'}), // string del contenido del archivo readme.md
         }
     },
     methods: {
+        generarCartilla (fila) {
+            // console.log('listen')
+            this.detallesCartilla = fila
+            this.vista = '2'
+            this.verNavbarAbajo = true
+        },
         verDetalles (fila) {
             // esta funcion recibe un evento emitido por su hijo ver-lista
             // console.log('on')
@@ -64,6 +85,9 @@ module.exports = {
         }
     },
     created () {
+        // abrir conexion con mysql
+        DB.connect()
+        
         // ES2015
         // ipc.on('selected-file', function(event, path){
         //     this.path = path[0]

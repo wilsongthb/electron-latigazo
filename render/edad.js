@@ -170,12 +170,13 @@ module.exports = function edad(fecha)
  
         return {
             str: edad+" años, "+meses+" meses y "+dias+" días",
-            edad: {
+            ind: {
                 anios: edad,
                 meses,
                 dias
             },
-            meses: edad*12 + meses
+            meses: edad*12 + meses,
+            semanas: ((edad*12 + meses)*4) + Math.floor(dias/7)
         };
     }else{
         // return "La fecha "+fecha+" es incorrecta";

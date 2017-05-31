@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
     
     <div class="row">
         <input type="checkbox" v-model="verFiltros">Ver filtros
@@ -70,6 +70,9 @@
                         <td>{{i['edad'].str}} </td>
                         <td>{{i['edad'].meses}} </td>
                         <td>
+                            <button class="btn-success" title="Generar Cartilla" @click="generarCartilla(i)">
+                                <span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span>
+                            </button>
                             <button class="btn-warning" title="Mas detalles" @click="verDetalles(i)">
                                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                             </button>

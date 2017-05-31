@@ -47,6 +47,15 @@ module.exports = {
         }
     },
     methods: {
+        generarCartilla (fila) {
+    //         console.log(`
+    // From: ver-detalles
+    // Event: generarCartilla
+    // Arg: ${JSON.stringify(fila)}
+    //         `)
+
+            this.$emit('generar-cartilla', fila)
+        },
         verDetalles (fila) {
             // console.log('emit')
             this.$emit('ver-detalles', fila)

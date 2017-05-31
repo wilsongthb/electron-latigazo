@@ -13,5 +13,13 @@ module.exports = {
             required: true
         }
     },
-
+    methods: {
+        generarCartilla () {
+    //         console.log(`
+    // From: ver-detalles
+    // Event: generarCartilla
+    //         `)
+            this.$emit('generar-cartilla', this.detalles)
+        }
+    }
 }

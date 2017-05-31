@@ -20,7 +20,7 @@ var edad = require('./render/edad.js')
 var fechaFormat = require('./render/edadFormat.js')
 
 // abrir conexion con mysql
-DB.connect()
+// DB.connect()
 
 new Vue({
     el: '#root',

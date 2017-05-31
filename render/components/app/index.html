@@ -9,9 +9,7 @@
             <li :class="{ 'active': (vista === '1') }">
                 <a href="#" @click="vista = '1'">Ver CSV</a>
             </li>
-            <!--<li :class="{ 'active': (vista === '4') }">
-                <a href="#" @click="vista = '4'">Fichas</a>
-            </li>-->
+            
             <li :class="{ 'active': (vista === '5') }">
                 <a href="#" @click="vista = '5'">Lista de Beneficiarios</a>
             </li>
@@ -21,8 +19,8 @@
             <li :class="{ 'active': (vista === '6') }">
                 <a href="#" @click="vista = '6'">Ayuda</a>
             </li>
-            <li :class="{ 'active': (vista === 'github') }">
-                <a href="#" @click="vista = 'github'">Actualizaciones</a>
+            <li :class="{ 'active': (vista === '8') }">
+                <a href="#" @click="vista = '8'">Actualizaciones</a>
             </li>
         </ul>
     </nav>
@@ -37,6 +35,9 @@
             </li>
             <li :class="{ 'active': (vista === '3') }">
                 <a href="#" @click="vista = '3'">Detalles</a>
+            </li>
+            <li :class="{ 'active': (vista === '2') }">
+                <a href="#" @click="vista = '2'">Cartilla</a>
             </li>
             
         </ul>
@@ -65,12 +66,15 @@
         </div>
     </div>
 
+    <!--Cartillas-->
+    <ver-cartilla v-if="vista === '2' && detallesCartilla" :detalles="detallesCartilla"></ver-cartilla>
+
     <!--vista-detalles-->
-    <ver-detalles v-if="vista === '3' && detalles" :detalles="detalles"></ver-detalles>
+    <ver-detalles v-if="vista === '3' && detalles" :detalles="detalles" @generar-cartilla="generarCartilla"></ver-detalles>
     
 
     <!--vista de listado-->
-    <ver-lista v-show="vista === '5'" :data="data" @ver-detalles="verDetalles"></ver-lista>
+    <ver-lista v-show="vista === '5'" :data="data" @ver-detalles="verDetalles" @generar-cartilla="generarCartilla"></ver-lista>
 
     <!--vista de ayuda-->
     <ayuda v-if="vista === '6'"></ayuda>
@@ -86,7 +90,7 @@
     </div>
 
     <!--github-->
-    <div v-if="vista === 'github'" class="container">
+    <div v-if="vista === '8'" class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <pre>{{verReadme}}</pre>
@@ -99,5 +103,13 @@
                 <webview src="https://github.com/wilsongthb/electron-latigazo" style="height:1200px"></webview>
             </div>
         </div>
+    </div>
+
+    <!--pie de pagina-->
+    <div class="container" style="
+        padding-top: 20px;
+        padding-bottom: 20px;
+    ">
+        <p>Latigazo Software - 2017</p>
     </div>
 </div>

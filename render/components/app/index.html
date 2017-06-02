@@ -39,7 +39,9 @@
             <li :class="{ 'active': (vista === '2') }">
                 <a href="#" @click="vista = '2'">Cartilla</a>
             </li>
-            
+            <li :class="{ 'active': (vista === '4') }">
+                <a href="#" @click="vista = '4'">Cronograma</a>
+            </li>
         </ul>
     </nav>
     <div class="navbar-fixed-bottom">
@@ -48,8 +50,6 @@
         </button>
     </div>
     
-    
-
     <!--Inicio-->
     <div v-show="vista === '0'">
         <inicio :session.sync="session"></inicio>
@@ -67,7 +67,8 @@
     </div>
 
     <!--Cartillas-->
-    <ver-cartilla v-if="vista === '2' && detallesCartilla" :detalles="detallesCartilla"></ver-cartilla>
+    <ver-cartilla v-if="vista === '2' && detallesCartilla" :detalles="detallesCartilla" @enviar="agregarCartilla"></ver-cartilla>
+    <cronograma v-if="vista === '4'" :cartillas="cartillas"></cronograma>
 
     <!--vista-detalles-->
     <ver-detalles v-if="vista === '3' && detalles" :detalles="detalles" @generar-cartilla="generarCartilla"></ver-detalles>
@@ -111,5 +112,8 @@
         padding-bottom: 20px;
     ">
         <p>Latigazo Software - 2017</p>
+        <br>
+        <br>
+        <br>
     </div>
 </div>

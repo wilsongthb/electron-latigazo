@@ -49,10 +49,10 @@ module.exports = {
                 sqlFacilitadores = []
                 for(var i in this.data){
                     var fila = this.data[i]
-                    var keys = csv_claves.facilitador
+                    var keys = csvClaves.facilitador
                     var ubicacion = {}
-                    for(var j in csv_claves.ubicacion){
-                        ubicacion[j] = fila[csv_claves.ubicacion[j]]
+                    for(var j in csvClaves.ubicacion){
+                        ubicacion[j] = fila[csvClaves.ubicacion[j]]
                     }
                     if(typeof sqlFacilitadores[fila[keys.codigo]] === 'undefined'){
                         // sqlFacilitadores[fila[keys.codigo]] = "INSERT INTO `latigazo`.`facilitadores` "

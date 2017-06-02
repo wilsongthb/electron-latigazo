@@ -14,8 +14,8 @@ module.exports = {
                 clave: '0',
                 valor: '',
             },
-            keyData: csv_claves,
-            listaClaves
+            keyData: csvClaves,
+            listaClaves: valorClaves()
         }
     },
     created () {
@@ -28,7 +28,7 @@ module.exports = {
 
             // agrega edad para ayudar en la ordenacion
             for(var r in res){
-                res[r]['edad'] = this.edadFormat(res[r][csv_claves.beneficiario.fechaNacimiento])
+                res[r]['edad'] = this.edadFormat(res[r][csvClaves.beneficiario.fechaNacimiento])
                 res[r]['indice'] = r
             }
             for(var i in this.filtros){
@@ -63,7 +63,7 @@ module.exports = {
         edadFormat (fechaNoFormat) {
             var fecha = fechaNoFormat.split(config.csv.fechaSplit)
             var newFecha = `${fecha[2]}-${fecha[1]}-${fecha[0]}`
-            return edad(newFecha)
+            return calcularEdad(newFecha)
         },
         cargarDetalles () {
             
@@ -76,11 +76,11 @@ module.exports = {
         },
         clavesOptions () {
             var listaClaves = []
-            for(var i in csv_claves){
-                for(var j in csv_claves[i]){
+            for(var i in csvClaves){
+                for(var j in csvClaves[i]){
                     listaClaves.push({
                         clave: `${i}.${j}`,
-                        valor: csv_claves[i][j]
+                        valor: csvClaves[i][j]
                     })
                 }
             }

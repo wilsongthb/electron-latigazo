@@ -15,7 +15,7 @@
                         <option v-for="c in clavesOptions()" :value="c.valor">{{c.valor}} - {{c.clave.toUpperCase()}} </option>
                     </select>
                     <input type="text" v-model="filtro.valor" placeholder="Buscar" class="form-control">
-                    <button @click="agregarFiltro" class="btn btn-success">Agregar</button>
+                    <button @click="agregarFiltro" class="btn btn-success btn-raised">Agregar</button>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" v-show="filtros.length > 0">
                     <table class="table">

@@ -14,6 +14,7 @@ const sessionInit = {
 module.exports = {
     template: fs.readFileSync(path.join(__dirname, 'index.html'), { encoding: 'utf-8'}),
     components: {
+        'cronograma': require('./cronograma'),
         'ver-cartilla': require('./ver-cartilla'),
         'ver-fichas': require('./ver-fichas'),
         'inicio': require('./inicio'),
@@ -35,6 +36,9 @@ module.exports = {
             // ver cartilla
             detallesCartilla: false,
             
+            //cartillas
+            cartillas: [],
+            
             // ver lista
             data: [], // array que contiene los datos del archivo csv
 
@@ -46,10 +50,19 @@ module.exports = {
             path: 'tests/entrada.csv', // path del archivo csv
 
             // actualizaciones
-            verReadme: fs.readFileSync(path.join(rootDir, 'readme.md'), { encoding: 'utf-8'}), // string del contenido del archivo readme.md
+            verReadme: fs.readFileSync(path.join(dirRoot, 'readme.md'), { encoding: 'utf-8'}), // string del contenido del archivo readme.md
         }
     },
     methods: {
+        agregarCartilla (cartilla) {
+            // ver('recibido', cartilla)
+            // ver('argumentos:', arguments)
+            ver(arguments)
+            this.cartillas.push(JSON.parse(cartilla))
+            ver(this.cartillas)
+            // this.cartillas.push(cartilla)
+            // this.cartillas[this.cartillas.length] = cartilla
+        },
         generarCartilla (fila) {
             // console.log('listen')
             this.detallesCartilla = fila

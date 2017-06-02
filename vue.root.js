@@ -1,22 +1,31 @@
 // ================================
 // DEPENDENCIAS
 // ================================
+var path = require('path')
+var fs = require('fs')
 var mysql = require('mysql')
+// ================================
+// DEPENDENCIAS
+// ================================
 
-// ===================================
-// VALORES GLOBALES PARA LA APLICACION
-// ===================================
-var config = require('./render/config.json')
-var csv_claves = require('./render/csv_claves.json')
-var listaClaves = require('./render/listaClaves.js') // contiene la clave que se usa en el archivo render/csv_claves.json para leer el archivo csv
+// ==========================================
+// RECURSOS GLOBALES PARA LA APLICACION
+// ==========================================
+
+// VARIABLES
+var config = require('./render/config/app.json')
+var csvClaves = require('./render/config/csv_claves.json')
+var dirRoot = __dirname
 var DB = mysql.createConnection(config.db.connection)
-var rootDir = __dirname
+// FUNCIONES
+var valorClaves = require('./render/data/valor_claves.js') // util para mostrar la clave de un dato del csv
+var calcularEdad = require('./render/edad.js')
+var fechaFormat = require('./render/edad_format.js')
+var {ver, plantilla, fileToString} = require('./render/esencial.js')
 
-// ===================================
-// FUNCIONES GLOBALES
-// ===================================
-var edad = require('./render/edad.js')
-var fechaFormat = require('./render/edadFormat.js')
+// ==========================================
+// RECURSOS GLOBALES PARA LA APLICACION
+// ==========================================
 
 // abrir conexion con mysql
 // DB.connect()

@@ -57,23 +57,23 @@ module.exports = {
             for(var i in this.data){
                 var fila = this.data[i]
                 var b = {
-                    nombre: fila[csv_claves.beneficiario.nombre],
-                    codigo: fila[csv_claves.beneficiario.codigo],
-                    sexo: fila[csv_claves.beneficiario.sexo],
-                    fechaRegistro: fechaFormat(fila[csv_claves.beneficiario.fechaRegistro]),
-                    tipoBeneficiario: fila[csv_claves.beneficiario.tipoBeneficiario],
-                    dni: fila[csv_claves.beneficiario.dni],
-                    seguro: fila[csv_claves.beneficiario.seguro],
-                    numeroSeguro: fila[csv_claves.beneficiario.numeroSeguro],
-                    fechaNacimiento: fechaFormat(fila[csv_claves.beneficiario.fechaNacimiento]),
+                    nombre: fila[csvClaves.beneficiario.nombre],
+                    codigo: fila[csvClaves.beneficiario.codigo],
+                    sexo: fila[csvClaves.beneficiario.sexo],
+                    fechaRegistro: fechaFormat(fila[csvClaves.beneficiario.fechaRegistro]),
+                    tipoBeneficiario: fila[csvClaves.beneficiario.tipoBeneficiario],
+                    dni: fila[csvClaves.beneficiario.dni],
+                    seguro: fila[csvClaves.beneficiario.seguro],
+                    numeroSeguro: fila[csvClaves.beneficiario.numeroSeguro],
+                    fechaNacimiento: fechaFormat(fila[csvClaves.beneficiario.fechaNacimiento]),
                     activo: 0,
                     creacion: this.tiempo_creacion,
                     edicion: this.tiempo_creacion,
                     usuarios_id: this.session.id,
-                    codigoCuidador: fila[csv_claves.cuidador.codigo],
+                    codigoCuidador: fila[csvClaves.cuidador.codigo],
                 }
-                if(typeof sqlBeneficiarios[fila[csv_claves.beneficiario.codigo]] === 'undefined'){
-                    sqlBeneficiarios[fila[csv_claves.cuidador.codigo]] = 
+                if(typeof sqlBeneficiarios[fila[csvClaves.beneficiario.codigo]] === 'undefined'){
+                    sqlBeneficiarios[fila[csvClaves.cuidador.codigo]] = 
                         `
                         ('${b.nombre}', '${b.codigo}', '${b.sexo}', '${b.fechaRegistro}', '${b.tipoBeneficiario}', '${b.dni}', '${b.seguro}', '${b.numeroSeguro}', '${b.fechaNacimiento}', '${b.creacion}', '${b.edicion}', '${b.usuarios_id}', '${b.codigoCuidador}'),`
                 }
@@ -103,21 +103,21 @@ module.exports = {
             for(var i in this.data){
                 var fila = this.data[i]
                 var c = {
-                    nombre: fila[csv_claves.cuidador.nombre],
-                    codigo: fila[csv_claves.cuidador.codigo],
-                    sexo: fila[csv_claves.cuidador.sexo],
-                    parentesco: fila[csv_claves.cuidador.parentesco],
-                    dni: fila[csv_claves.cuidador.dni],
-                    seguro: fila[csv_claves.cuidador.tipoSeguro],
-                    fechaNacimiento: fechaFormat(fila[csv_claves.cuidador.fechaNacimiento]),
-                    fechaRegistro: fechaFormat(fila[csv_claves.cuidador.fechaRegistro]),
+                    nombre: fila[csvClaves.cuidador.nombre],
+                    codigo: fila[csvClaves.cuidador.codigo],
+                    sexo: fila[csvClaves.cuidador.sexo],
+                    parentesco: fila[csvClaves.cuidador.parentesco],
+                    dni: fila[csvClaves.cuidador.dni],
+                    seguro: fila[csvClaves.cuidador.tipoSeguro],
+                    fechaNacimiento: fechaFormat(fila[csvClaves.cuidador.fechaNacimiento]),
+                    fechaRegistro: fechaFormat(fila[csvClaves.cuidador.fechaRegistro]),
                     creacion: this.tiempo_creacion,
                     edicion: this.tiempo_creacion,
                     usuarios_id: this.session.id,
-                    codigoFacilitador: fila[csv_claves.facilitador.codigo]
+                    codigoFacilitador: fila[csvClaves.facilitador.codigo]
                 }
-                if(typeof sqlCuidadores[fila[csv_claves.cuidador.codigo]] === 'undefined'){
-                    sqlCuidadores[fila[csv_claves.cuidador.codigo]] = 
+                if(typeof sqlCuidadores[fila[csvClaves.cuidador.codigo]] === 'undefined'){
+                    sqlCuidadores[fila[csvClaves.cuidador.codigo]] = 
                         `
                         ('${c.nombre}', '${c.codigo}', '${c.sexo}', '${c.parentesco}', '${c.dni}', '${c.seguro}', '${c.fechaNacimiento}', '${c.fechaRegistro}', '${c.creacion}', '${c.edicion}', '${c.usuarios_id}', '${c.codigoFacilitador}'),`
                 }
@@ -148,15 +148,15 @@ module.exports = {
 
                 //generar ubicacion
                 var ubicacion = {}
-                for(var j in csv_claves.ubicacion){
-                    ubicacion[j] = fila[csv_claves.ubicacion[j]]
+                for(var j in csvClaves.ubicacion){
+                    ubicacion[j] = fila[csvClaves.ubicacion[j]]
                 }
 
                 // generar objeto para insertarlo
                 var f = {
-                    codigoFamilia: fila[csv_claves.facilitador.codigoFamilia],
-                    codigo: fila[csv_claves.facilitador.codigo],
-                    nombre: fila[csv_claves.facilitador.nombre],
+                    codigoFamilia: fila[csvClaves.facilitador.codigoFamilia],
+                    codigo: fila[csvClaves.facilitador.codigo],
+                    nombre: fila[csvClaves.facilitador.nombre],
                     ubicacion: JSON.stringify(ubicacion),
                     creacion: this.tiempo_creacion,
                     edicion: this.tiempo_creacion,

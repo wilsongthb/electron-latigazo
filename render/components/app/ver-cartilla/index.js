@@ -22,6 +22,9 @@ var initCartilla = {
     ],
     semana: 0
 }
+var initTemp = {
+    logros: []
+}
 
 module.exports = {
     template: fileToString('/render/components/app/ver-cartilla/index.html'),
@@ -34,7 +37,8 @@ module.exports = {
             fichas: [],
             buscar: new String(""),
             enviado: false,
-            csvClaves
+            csvClaves,
+            tempListDescripcion: initTemp
         }
     },
     props: {
@@ -62,6 +66,16 @@ module.exports = {
         }
     },
     methods: {
+        buscarFicha (numero) {
+            return this.fichas.filter( item => {
+                return item.numero == numero
+            })[0]
+        },
+        definirFicha(objetivo){
+            objetivo.descripcion = ""
+            this.tempListDescripcion = initTemp
+            this.tempListDescripcion = this.buscarFicha(objetivo.numero)
+        },
         enviarACronograma () {
             // ver('enviando', this.cartilla)
             this.enviado = true

@@ -1,41 +1,9 @@
+
 <div class="container">
     
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h3>CARTILLA</h3>
-            
-            <div class="panel panel-info">
-                  <div class="panel-heading">
-                        <h3 class="panel-title">Información</h3>
-                  </div>
-                  <div class="panel-body">
-                        <strong>
-                            Beneficiario: {{detalles[csvClaves.beneficiario.nombre]}} <br>
-                            Semanas: {{detalles.edad.semanas}} <br>
-                        </strong>
-                        
-                        <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Ver detalles</a>
-                        <div class="modal fade" id="modal-id">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">Detalles</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <detalles :detalles="detalles"></detalles>
-                                    </div>
-                                    <!--<div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>-->
-                                </div>
-                            </div>
-                        </div>
-                        
-                  </div>
-            </div>
-            
+            <h3>Cartilla</h3>
         </div>
     </div>
     
@@ -47,96 +15,71 @@
                         <strong>FECHA</strong>
                         <input type="date" v-model="cartilla.fecha">  
                     </div>
-                    
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
                         <strong>HORA</strong>
                         <input type="number" v-model="cartilla.hora">
                     </div>
                 </div>
                 <div class="form-group row">
-                    
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <strong>FAMILIA</strong>
                         {{cartilla.familia}}
                     </div>
-                    
                 </div>
                 <div class="form-group row">
-                    
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <strong>EDAD</strong>
                         {{cartilla.edad}}
                     </div>
-                    
                 </div>
-                <template v-for="o in cartilla.objetivos">
-                    <div class="form-group row">
-                        
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <select v-model="o.id">
-                                <option v-for="(fs, index) in fichasSugeridas" :value="index">{{fs.tipo}} - {{fs.titulo}} </option>
-                            </select>
-                        </div>
-                        
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <strong>{{o.titulo}} </strong>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-                            CARTILLA N° {{o.numero}}
-                        </div>
-                        
+                <div class="form-group" v-for="(c, index) in cartilla.objetivos">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <strong>{{c.titulo}} </strong>
                     </div>
-                    <div class="form-group row">
-                        
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <h5>Logro Priorizado</h5>
-                            {{o.descripcion}}
-                        </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                        <p style="white-space: pre;">CARTILLA N° <input type="text" v-model="c.numero"  @keyup.enter="definirFicha(c)"></p>
                     </div>
-
-                </template>
+                    <template v-if="!c.descripcion && tempListDescripcion.logros.length">
+                        <select v-model="c.descripcion" class="form-control">
+                            <option v-for="logro in tempListDescripcion.logros" :value="logro">{{logro}} </option>
+                        </select>    
+                    </template>
+                    <template v-else>
+                        <textarea class="form-control" v-model="c.descripcion"></textarea>
+                    </template>
+                </div>
             </div>
         </div>
         
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
             
-            <div class="panel panel-info">
-                  <div class="panel-heading">
-                        <h3 class="panel-title">Objetivos Sugeridos por Semana</h3>
-                  </div>
-                  <div class="panel-body">
-                        
-                        <div class="panel panel-default" v-for="(fs, index) in fichasSugeridas">
-                            <div class="panel-body">
-                                <label>Tipo:</label> {{fs.tipo}} <br>
-                               <label>Semana:</label> {{fs.semana}} <br>
-                               <label>Titulo:</label> {{fs.titulo}} <br>
-                               <label>Numero:</label> {{fs.numero}} 
-                            </div>
-                        </div>
-                        
-                  </div>
+            <div class="panel panel-default" v-if="typeof tempListDescripcion.tipo !== 'undefined'">
+                <div class="panel-body">
+                    <div v-for="(f, index) in tempListDescripcion">
+                        <h3>Ficha</h3>
+                        <strong>{{index}}: </strong> <pre>{{f}} </pre>
+                    </div>
+                </div>
             </div>
             
+            <!--<pre>{{fichasBuscar}} </pre>-->
+            <!--<pre>{{tempListDescripcion.logros}} </pre>-->
+            <!--<pre>{{tempListDescripcion}} </pre>-->
         </div>
-        
+               
     </div>
-    
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <button class="btn btn-primary btn-raised" @click="enviarACronograma">Agregar a cronograma</button>
-            
             <div class="alert alert-info" v-show="enviado">
                 <!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>-->
                 <strong>Info</strong> Enviado a Cronograma
             </div>
-            
-
-            <!--<code>{{cartilla.semana}} </code>-->
-            <!--<input type="text" v-model="buscar">-->
-            <!--<pre>{{fichasBuscar}} </pre>-->
-            <!--<pre>{{fichasSugeridas}} </pre>-->
         </div>
     </div>
-    <hr>
+    
+    <!--<pre>{{fichasBuscar}} </pre>-->
+    <!--<pre>{{cartilla}} </pre>-->
+
+
 </div>

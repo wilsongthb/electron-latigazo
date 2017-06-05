@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <div style="
                 font-family: 'Avenir', Helvetica, Arial, sans-serif;
                 -webkit-font-smoothing: antialiased;
@@ -14,6 +14,11 @@
                 <h1 class="media-heading">LATIGAZO</h1>
                 <img src="render/assets/gatito.gif" alt="Gatito">
             </div>
+            <legend>Archivos Abiertos recientemente</legend>
+            
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            
             <div class="well form-horizontal" v-if="!session.logued">
                 <legend>Iniciar Sesión</legend>
                 
@@ -26,13 +31,13 @@
                 <div class="form-group">
                     <label class="col-md-4">Nombre de Usuario</label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control " id="" placeholder="username" v-model="session.username">
+                        <input type="text" class="form-control " id="" placeholder="" v-model="session.username">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-4">Contraseña</label>
                     <div class="col-md-8">
-                        <input type="password" class="form-control" id="" placeholder="password" v-model="session.password">
+                        <input type="password" class="form-control" id="" placeholder="" v-model="session.password">
                     </div>
                 </div>
                 <div class="form-group">
@@ -45,7 +50,6 @@
                 <label>Usuario:</label> {{session.name}} - {{session.email}}
             </div>
         </div>
-        
     </div>
     
 </div>

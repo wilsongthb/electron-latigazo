@@ -49,7 +49,8 @@
             <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
         </button>
     </div>
-    
+    <!--endlinks menu-->
+
     <!--Inicio-->
     <div v-show="vista === '0'">
         <inicio :session.sync="session"></inicio>
@@ -67,18 +68,21 @@
     </div>
 
     <!--Cartillas-->
-    <ver-cartilla v-if="vista === '2' && detallesCartilla" :detalles="detallesCartilla" @enviar="agregarCartilla"></ver-cartilla>
-    <cronograma v-if="vista === '4'" :cartillas="cartillas"></cronograma>
+    <template v-if="detallesCartilla">
+        <ver-cartilla v-if="vista === '2'" :detalles="detallesCartilla" @enviar="agregarCartilla"></ver-cartilla>
+    </template>
+    <cronograma v-show="vista === '4'" :cartillas="cartillas"></cronograma>
 
     <!--vista-detalles-->
-    <ver-detalles v-if="vista === '3' && detalles" :detalles="detalles" @generar-cartilla="generarCartilla"></ver-detalles>
-    
+    <template v-if="detalles">
+        <ver-detalles v-show="vista === '3'" :detalles="detalles" @generar-cartilla="generarCartilla"></ver-detalles>
+    </template>
 
     <!--vista de listado-->
     <ver-lista v-show="vista === '5'" :data="data" @ver-detalles="verDetalles" @generar-cartilla="generarCartilla"></ver-lista>
 
     <!--vista de ayuda-->
-    <ayuda v-if="vista === '6'"></ayuda>
+    <ayuda v-show="vista === '6'"></ayuda>
 
     <!--Sincronizar con la BD-->
     <div v-show="vista === '7'">
@@ -91,7 +95,7 @@
     </div>
 
     <!--github-->
-    <div v-if="vista === '8'" class="container">
+    <div v-show="vista === '8'" class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <pre>{{verReadme}}</pre>

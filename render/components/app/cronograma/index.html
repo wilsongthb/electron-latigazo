@@ -1,58 +1,99 @@
-<div class="container">
+<div class="container-fluid">
+    
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" v-for="(cartilla, index) in cartillas">
-            <div class="well">
-                <button type="button" class="close" aria-hidden="true" title="Eliminar" @click="cartillas.splice(index, 1)">&times;</button>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" v-for="(cartilla, index) in cartillas">
+            <button type="button" class="close" aria-hidden="true" title="Eliminar" @click="cartillas.splice(index, 1)">&times;</button>
+<!--<pre style="font-weight: bold;">FECHA: {{cartilla.fecha}} HORA: {{cartilla.hora}}
+FAMILIA: {{cartilla.familia}}
+EDAD: {{cartilla.edad}}<template v-for="(c, index) in cartilla.objetivos">
+{{c.titulo}} CARTILLA Nº {{c.numero}}
+{{c.descripcion}}
+</template>
+</pre>-->
+            <table class="table table-hover small well">
+                <tr>
+                    <td class="td-cronograma">
+                        <strong>FECHA:</strong>
+                        <!--<input type="date" v-model="cartilla.fecha" class="form-control" disabled>-->
+                        {{cartilla.fecha}}
+                    </td>
+                    <td class="td-cronograma text-right">
+                        <strong>HORA:</strong>
+                        <!--<input type="number" v-model="cartilla.hora" class="form-control" disabled>-->
+                        {{cartilla.hora}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-cronograma" colspan="2">
+                        <strong>FAMILIA:</strong> 
+                        <!--<input type="text" v-model="cartilla.familia" class="form-control" disabled>-->
+                        {{cartilla.familia}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-cronograma" colspan="2">
+                        <strong>EDAD:</strong>
+                        <!--<input type="text" v-model="cartilla.edad" class="form-control" disabled>-->
+                        {{cartilla.edad}}
+                    </td>
+                </tr>
+                <template v-for="(c, index) in cartilla.objetivos">
+                    <tr>
+                        <td class="td-cronograma">
+                            <strong>{{c.titulo}} </strong>
+                        </td>
+                        <td class="td-cronograma text-right">
+                            <strong>CARTILLA Nº</strong>
+                            <!--<input type="number" v-model="c.numero"  @keyup.enter="definirFicha(c)" class="form-control" disabled>-->
+                            {{c.numero}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-cronograma" colspan="2">
+                            <p>{{c.descripcion}}</p>
+                        </td>
+                    </tr>
+                </template>
+            </table>
+            <!--<div class="well">
                 <div class="form-group row">
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                         <strong>FECHA</strong>
-                        <!--<input type="date" v-model="cartilla.fecha">  -->
-                        {{cartilla.fecha}}
+                        <input type="date" v-model="cartilla.fecha" class="form-control">
                     </div>
-                    
                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
                         <strong>HORA</strong>
-                        <!--<input type="number" v-model="cartilla.hora">-->
-                        {{cartilla.hora}}
+                        <input type="number" v-model="cartilla.hora" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
-                    
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <strong>FAMILIA</strong>
                         {{cartilla.familia}}
                     </div>
-                    
                 </div>
                 <div class="form-group row">
-                    
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <strong>EDAD</strong>
                         {{cartilla.edad}}
                     </div>
-                    
                 </div>
-                <template v-for="o in cartilla.objetivos">
-                    <div class="form-group row">
-                        
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <strong>{{o.titulo}} </strong>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-                            CARTILLA N° {{o.numero}}
-                        </div>
-                        
+                <div class="form-group" v-for="(c, index) in cartilla.objetivos">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <strong>{{c.titulo}} </strong>
                     </div>
-                    <div class="form-group row">
-                        
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <h5>Logro Priorizado</h5>
-                            {{o.descripcion}}
-                        </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                        <p style="white-space: pre;">CARTILLA N° <input type="text" v-model="c.numero"  @keyup.enter="definirFicha(c)"></p>
                     </div>
-
-                </template>
-            </div>
+                    <textarea class="form-control" v-model="c.descripcion"></textarea>
+                </div>
+            </div>-->
         </div>
     </div>
     

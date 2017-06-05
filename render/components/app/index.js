@@ -57,9 +57,9 @@ module.exports = {
         agregarCartilla (cartilla) {
             // ver('recibido', cartilla)
             // ver('argumentos:', arguments)
-            ver(arguments)
+            // ver(arguments)
             this.cartillas.push(JSON.parse(cartilla))
-            ver(this.cartillas)
+            // ver(this.cartillas)
             // this.cartillas.push(cartilla)
             // this.cartillas[this.cartillas.length] = cartilla
         },

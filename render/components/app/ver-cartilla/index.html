@@ -3,83 +3,66 @@
     
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h3>Cartilla</h3>
+            <h3>CARTILLA</h3>
+            
+
         </div>
     </div>
     
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-            <div class="well">
-                <div class="form-group row">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <strong>FECHA</strong>
-                        <input type="date" v-model="cartilla.fecha">  
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-                        <strong>HORA</strong>
-                        <input type="number" v-model="cartilla.hora">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <strong>FAMILIA</strong>
-                        {{cartilla.familia}}
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <strong>EDAD</strong>
-                        {{cartilla.edad}}
-                    </div>
-                </div>
-                <div class="form-group" v-for="(c, index) in cartilla.objetivos">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <strong>{{c.titulo}} </strong>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-                        <p style="white-space: pre;">CARTILLA N° <input type="text" v-model="c.numero"  @keyup.enter="definirFicha(c)"></p>
-                    </div>
-                    <template v-if="!c.descripcion && tempListDescripcion.logros.length">
-                        <select v-model="c.descripcion" class="form-control">
-                            <option v-for="logro in tempListDescripcion.logros" :value="logro">{{logro}} </option>
-                        </select>    
-                    </template>
-                    <template v-else>
-                        <textarea class="form-control" v-model="c.descripcion"></textarea>
-                    </template>
-                </div>
-            </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <!--Editar / crear -->
+            <table class="table">
+                <tr>
+                    <td>
+                        <strong>FECHA:</strong> <input type="date" v-model="cartilla.fecha" class="form-control">
+                    </td>
+                    <td>
+                        <strong>HORA:</strong> <input type="number" v-model="cartilla.hora" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <strong>FAMILIA:</strong> <input type="text" v-model="cartilla.familia" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <strong>EDAD:</strong> <input type="text" v-model="cartilla.edad" class="form-control">
+                    </td>
+                </tr>
+                <template v-for="(c, index) in cartilla.objetivos">
+                    <tr>
+                        <td>
+                            <strong>{{c.titulo}} </strong>
+                        </td>
+                        <td>
+                            <strong>CARTILLA Nº</strong> <input type="number" v-model="c.numero"  @keyup.enter="definirFicha(c)" class="form-control">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <template v-if="!c.descripcion && tempListDescripcion.logros.length">
+                                <select v-model="c.descripcion" class="form-control">
+                                    <option v-for="logro in tempListDescripcion.logros" :value="logro">{{logro}} </option>
+                                </select>    
+                            </template>
+                            <template v-else>
+                                <textarea class="form-control" v-model="c.descripcion"></textarea>
+                            </template>
+                        </td>
+                    </tr>
+                </template>
+            </table>
         </div>
-        
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            
-            <div class="panel panel-default" v-if="typeof tempListDescripcion.tipo !== 'undefined'">
-                <div class="panel-body">
-                    <div v-for="(f, index) in tempListDescripcion">
-                        <h3>Ficha</h3>
-                        <strong>{{index}}: </strong> <pre>{{f}} </pre>
-                    </div>
-                </div>
-            </div>
-            
-            <!--<pre>{{fichasBuscar}} </pre>-->
-            <!--<pre>{{tempListDescripcion.logros}} </pre>-->
-            <!--<pre>{{tempListDescripcion}} </pre>-->
-        </div>
-               
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <button class="btn btn-primary btn-raised" @click="enviarACronograma">Agregar a cronograma</button>
             <div class="alert alert-info" v-show="enviado">
                 <!--<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>-->
                 <strong>Info</strong> Enviado a Cronograma
             </div>
+            <button class="btn btn-primary btn-raised" @click="enviarACronograma">Agregar a cronograma</button>
         </div>
     </div>
-    
-    <!--<pre>{{fichasBuscar}} </pre>-->
-    <!--<pre>{{cartilla}} </pre>-->
-
-
 </div>

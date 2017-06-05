@@ -33,6 +33,11 @@
                     <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                 </a>
             </li>
+            <li>
+                <a href="#" title="Imprimir Pagina" @click="imprimir">
+                    <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Imprimir
+                </a>
+            </li>
             <li :class="{ 'active': (vista === '3') }">
                 <a href="#" @click="vista = '3'">Detalles</a>
             </li>
@@ -49,6 +54,13 @@
             <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
         </button>
     </div>
+    <!--<div class="menu-flotante-izq">
+        <div class="btn-group-vertical">
+            <a href="#" class="btn btn-raised" title="Imprimir Pagina" @click="imprimir">
+                <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>-->
     <!--endlinks menu-->
 
     <!--Inicio-->
@@ -57,14 +69,16 @@
     </div>
 
     <!--ver-csv-->
-    <div class="row" v-show="vista === '1'">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <button @click="seleccionarArchivo">Seleccionar Archivo</button>
-            <input type="text" v-model="path">
-            <button @click="leer">Leer</button>
-            <input type="checkbox" v-model="verClaves">Ver Claves
-            <ver-csv :data="data" :ver-claves="verClaves"></ver-csv>
-        </div>
+    <div v-show="vista === '1'" class="container-fluid">
+        <button @click="seleccionarArchivo">
+        <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+            Seleccionar Archivo</button>
+        <input type="text" v-model="path">
+        <button @click="leer">
+        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+            Leer</button>
+        <input type="checkbox" v-model="verClaves">Ver Claves
+        <ver-csv :data="data" :ver-claves="verClaves"></ver-csv>
     </div>
 
     <!--Cartillas-->

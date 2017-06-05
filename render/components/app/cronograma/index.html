@@ -2,21 +2,29 @@
     
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            
+            <div class="text-center">
+                <h5>PROGRAMA NACIONAL CUNA MÁS – SERVICIO DE ACOMPAÑAMIENTO A FAMILIAS</h5>
+                <h4>CRONOGRAMA DE VISITA AL HOGAR – Formato 3.1</h4>
+            </div>
         </div>
+    </div>
+    
+    <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <strong>COMITE DE GESTION</strong> <input type="text" class="form-control" v-model="comiteDeGestion">
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <strong>FACILITADORA</strong> <input type="text" class="form-control" v-model="facilitador">
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <strong>SEMANA</strong> <input type="text" class="form-control" v-model="semana">
+            </div>
     </div>
     
     <div class="row">
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" v-for="(cartilla, index) in cartillas">
             <button type="button" class="close" aria-hidden="true" title="Eliminar" @click="cartillas.splice(index, 1)">&times;</button>
-<!--<pre style="font-weight: bold;">FECHA: {{cartilla.fecha}} HORA: {{cartilla.hora}}
-FAMILIA: {{cartilla.familia}}
-EDAD: {{cartilla.edad}}<template v-for="(c, index) in cartilla.objetivos">
-{{c.titulo}} CARTILLA Nº {{c.numero}}
-{{c.descripcion}}
-</template>
-</pre>-->
-            <table class="table table-hover small well">
+            <table class="table table-hover small well" border="1">
                 <tr>
                     <td class="td-cronograma">
                         <strong>FECHA:</strong>
@@ -61,39 +69,6 @@ EDAD: {{cartilla.edad}}<template v-for="(c, index) in cartilla.objetivos">
                     </tr>
                 </template>
             </table>
-            <!--<div class="well">
-                <div class="form-group row">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <strong>FECHA</strong>
-                        <input type="date" v-model="cartilla.fecha" class="form-control">
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-                        <strong>HORA</strong>
-                        <input type="number" v-model="cartilla.hora" class="form-control">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <strong>FAMILIA</strong>
-                        {{cartilla.familia}}
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <strong>EDAD</strong>
-                        {{cartilla.edad}}
-                    </div>
-                </div>
-                <div class="form-group" v-for="(c, index) in cartilla.objetivos">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <strong>{{c.titulo}} </strong>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
-                        <p style="white-space: pre;">CARTILLA N° <input type="text" v-model="c.numero"  @keyup.enter="definirFicha(c)"></p>
-                    </div>
-                    <textarea class="form-control" v-model="c.descripcion"></textarea>
-                </div>
-            </div>-->
         </div>
     </div>
     

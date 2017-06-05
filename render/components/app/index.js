@@ -2,13 +2,16 @@ var path = require('path')
 var fs = require('fs')
 
 const ipc = require('electron').ipcRenderer
+
+
+// informacion inicial del usuario
 const sessionInit = {
                 username: '',
                 password: '',
                 logued: false,
-                
-                // id: 1,
-                // logued: true
+
+                // comiteDeGestion: '',
+                // nombre: '',
             }
 
 module.exports = {
@@ -27,7 +30,7 @@ module.exports = {
     data: function(){
         return {
             // app
-            verNavbarAbajo: false, // mostrar o ocultar navbar de abajo
+            verNavbarAbajo: config.verNavAbajo, // mostrar o ocultar navbar de abajo
             vista: '0', // numero de la vista
 
             // ver detalles
@@ -54,6 +57,9 @@ module.exports = {
         }
     },
     methods: {
+        imprimir () {
+            ipc.send('print-to-pdf')
+        },
         agregarCartilla (cartilla) {
             // ver('recibido', cartilla)
             // ver('argumentos:', arguments)
@@ -98,8 +104,13 @@ module.exports = {
         }
     },
     created () {
+        const ipc = require('electron').ipcRenderer
+        ipc.on('wrote-pdf', function (event, path) {
+            const message = `Wrote PDF to: ${path}`
+            ver(message)
+        })
         // abrir conexion con mysql
-        DB.connect()
+        // DB.connect()
         
         // ES2015
         // ipc.on('selected-file', function(event, path){

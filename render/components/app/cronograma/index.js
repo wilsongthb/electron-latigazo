@@ -3,6 +3,13 @@ var fs = require('fs')
 
 module.exports = {
     template: fs.readFileSync(path.join(__dirname, 'index.html'), { encoding: 'utf-8'}),
+    data () {
+        return {
+            facilitador: '',
+            comiteDeGestion: '',
+            semana: ''
+        }
+    },
     props: {
         cartillas: Array
     }

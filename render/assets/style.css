@@ -1,4 +1,11 @@
 .td-cronograma {
     vertical-align: baseline;
-    padding: 15px;
+    padding: 12px;
+}
+
+.menu-flotante-izq {
+    position: fixed;
+    top: 60px;
+    display: block;
+    z-index: 10000;
 }

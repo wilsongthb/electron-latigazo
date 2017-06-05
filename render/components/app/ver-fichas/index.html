@@ -1,3 +1,9 @@
 <div class="container">
-    Pagina de ayuda, aqui encontraras ayuda acerca de como usar la aplicación
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" v-for="(fich, index) in fichas">
+            <ficha :key="index" :ficha="fich"></ficha>
+        </div>
+    </div>
+    
 </div>

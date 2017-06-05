@@ -12,3 +12,6 @@ Aplicacion de hacer cosas XD
 * Estilo mejorado
 * Agregada sincronizacion con base de datos simple
 * Agregado sesion de usuario
+* Agregado crear cartilla
+* Agregado cronograma
+* Agregado Imprimir en PDF

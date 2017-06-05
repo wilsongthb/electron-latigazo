@@ -3,6 +3,7 @@ var initCartilla = {
     hora: "",
     familia: "",
     edad: "",
+    semana: "",
     objetivos: [
         {
             titulo: "VIDA EN FAMILIA",
@@ -29,7 +30,7 @@ var initTemp = {
 module.exports = {
     template: fileToString('/render/components/app/ver-cartilla/index.html'),
     components: {
-        'detalles': require('./../ver-detalles')
+        'ficha': require('./ficha')
     },
     data () {
         return {
@@ -61,7 +62,8 @@ module.exports = {
         fichasSugeridas () {
             return this.fichas.filter( item => {
                 // return item.titulo.toLowerCase().indexOf(this.buscar.toLowerCase()) > -1
-                return item.semana == this.cartilla.semana
+                var mes = Math.floor(this.cartilla.semana/4)
+                return (item.semana > mes*4 && item.semana < (mes+1)*4)
             })
         }
     },

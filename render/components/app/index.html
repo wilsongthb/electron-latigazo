@@ -9,9 +9,11 @@
             <li :class="{ 'active': (vista === '1') }">
                 <a href="#" @click="vista = '1'">Ver CSV</a>
             </li>
-            
             <li :class="{ 'active': (vista === '5') }">
                 <a href="#" @click="vista = '5'">Lista de Beneficiarios</a>
+            </li>
+            <li :class="{ 'active': (vista === '9') }">
+                <a href="#" @click="vista = '9'">Fichas</a>
             </li>
             <li :class="{ 'active': (vista === '7') }">
                 <a href="#" @click="vista = '7'">Sync DB</a>
@@ -86,6 +88,9 @@
         <ver-cartilla v-if="vista === '2'" :detalles="detallesCartilla" @enviar="agregarCartilla"></ver-cartilla>
     </template>
     <cronograma v-show="vista === '4'" :cartillas="cartillas"></cronograma>
+
+    <!--fichas-->
+    <ver-fichas v-show="vista === '9'"></ver-fichas>
 
     <!--vista-detalles-->
     <template v-if="detalles">

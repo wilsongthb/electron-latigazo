@@ -1,0 +1,686 @@
+NOTA DESARROLLADOR: IGNORAR FILA CON ELEMENTOS DIFERENTES DE 3, CONTADOR DE SAMANA EMPIEZA EN 0, SI EL DATO 0 ES SEMANA CONTAR NUEVA SEMANA E IGNORAR EL RESTO DE CONTENIDO, DATO 0 ES TITULO, DATO 1 ES IDENTIFICADOR, DATO 2 SON LOGROS, SEMANA Y IDENTIFICADOR SERVIRAN PARA IDENTIFICAR, SEMANA ES REFERENCIA, IDENTIFICADOR ES UTIL EN BUSQUEDA, SI DATO 0 ESTA VACIO, SE TOMA EL DATO 0 DE LA FILA ANTERIOR;;
+1 MES          ;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA;N° CJA: 01            N° Pág. 14 OBSERVO A MI BEBE.;Mamá acaricia al bebe con amor
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA;N° CJA: 02           N° Pág. 15 ¿CÓMO CALMO A MI BEBE?; Mamá conoce lo que necesita su bebe
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 03             N° Pág. 16 ¿COMO ES MI BEBE?;Mamá mira cómo reacciona su bebe y lo va conociendo
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+ VIDA EN FAMILIA CCA N° ……………..;N° CJA: 004           N° Pág. 17 CONVERSO CON MI BEBE; Mamá habla con su bebe,  con frases  tiernas  y amorosas
+2 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 5              N° Pág.28 ME GUSTA  QUE MAMA ME ABRACE;Mamá abraza a su bebe con amor
+JUGANDO APRENDO;N° CJA: 94    N° Pág. 88 JUEGA CON TU BEBE DEMOSTRÁNDOLE TU AMOR Y CARIÑO;Mamá juega con su bebe demostrándole amor : cargándolo, arrullándolo, meciéndolo despacio demostrando alegría y entusiasmo
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 006         N° Pág.33 ME GUSTA  CUANDO CANTAS;Mamá le canta a su bebe con voz suave y con mucho amor
+JUGANDO APRENDO;N° CJA: 95       N° Pág.87 ¿COMO TE PERCIBE TU BEBÉ?;Mamá atiende tranquila a su bebe y lo hace sentir bien.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 008         N° Pág.   39   EL SUEÑO DE TU BEBE;Mamá prepara el espacio para que el bebé descanse.
+JUGANDO APRENDO;N° CJA:  96        N° Pág. 89 MI  BEBE ME ESCUCHA SIEMPRE;El bebé se siente feliz cuando escucha a mamá. 
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 07            N° Pág.40 ME GUSTA TU DELICADEZA; Mamá cuida con delicadeza a su bebé.
+;N° CJA: 94    N° Pág. 88 JUEGA CON TU BEBE DEMOSTRÁNDOLE TU AMOR Y CARIÑO; Mamá conversa  a su bebé lo que ve fuera de casa.
+JUGANDO APRENDO;N° CJA: 94    N° Pág. 88 JUEGA CON TU BEBE DEMOSTRÁNDOLE TU AMOR Y CARIÑO ;El bebé se siente feliz cuando escucha a mamá.  
+3 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:  10           N° Pág. 19 IMITAR LOS SONIDOS QUE HACE MI BEBE ; Mamá repite los sonidos que hace su bebé.
+JUGANDO APRENDO;N° CJA: 97            N° Pág.93 JUGANDO CON MÍ BEBE.;El niño/a fija su mirada con muchos interés en los objetos que están cerca de él. OTRO LOGRO. Observa con interés las actividades que realizan las personas a su alrededor Explora el ambiente en confianza según sus poisbilidades.
+CUENTAME UN CUENTO;CANCIÓN; El bebé disfruta la canción.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 10            N° Pág. 19 IMITAR LOS SONIDOS QUE HACE ÉL BEBE;El niño/a realiza algunos sonidos y mama lo imita con mucha alegría.
+JUGANDO APRENDO;N° CJA:  98           N° Pág.94 MIS OJITOS;Sigue con la mirada a su cuidador o lo objetos que se le muestra. OTRO LOGRO. Expresa sus emociones, deseos y/o necesidades utilizando variados movimientos corporales y gestuales (agita brazos, estira piernas, mueve cabeza, frunce el ceño) 
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 11            N° Pág.19 ¡BUUU!; Juega y Conversa con tu bebé.
+JUGANDO APRENDO;N° CJA:    99         N° Pág.98 MANITO  MANITO;Reconoce los gestos, la voz de su cuidador y sonidos familiares, respondiendo con la mirada, mímica o movimientos. OTRO LOGRO Mueve libremente y con energía brazos y piernas (p.e. juega activamente con manos y pies)
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:11             N° Pág.19 ¡BUU!;Juega y Conversa con tu bebé
+JUGANDO APRENDO;N° CJA100:            N° Pág.102 SUENA LA SONAJA;El niño/a busca la sonaja con la mira o movimientos, sonidos o gestos frente al sonido de la misma. OTRO LOGRO. Mueve libremente y con energía brazos y piernas (p.e. juega activamente con manos y pies) Coge objetos pequeños (que entran en su mano) utilizando la presión palmar
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción.
+4  MESES  ;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:12       N° Pág.19 CARAS GRACIOSAS;El niño/a se divierte con los  gestos  de la mama que hace con rostro y con los  sonidos con la boca.
+JUGANDO APRENDO;N° CJA: 101            N° Pág. 95 QUIERO TOCAR LO QUE VEO;El niño/a Intenta alcanzar objetos con su mano, aunque aún no pueda sujetarlos.  OTRO LOGRO Estira sus brazos para alcanzar objetos que llamen su atención
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:12             N° Pág. 19 CARAS GRACIOSAS;El niño/a se divierte con los  gestos  de la mama que hace con rostro y con los  sonidos con la boca.
+JUGANDO APRENDO;N° CJA:102            N° Pág.96 OBSERVO  MI ENTORNO;El niño/a gira la cabeza o cuerpo  para seguir le movimiento del juguete que la mama le presenta OTROS LOGRO. Observa con interés las actividades que realizan las personas a su alrededor. Expresa sus emociones, deseos y/o necesidades utilizando variados movimientos corporales y gestuales (agita brazos, estira piernas, mueve cabeza, frunce el ceño)   
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:13             N° Pág.22 DESCUBRO MI CUERPO;El bebé va conociendo las partes de su cuerpo.
+JUGANDO APRENDO;N° CJA: 103            N° Pág.98 AGARRAR Y SOLTAR;El niño/a  sostiene la sonaja por un momento breve. OTRO LOGRO El bebe sostiene y mueve la sonaja por unos segundos. Manipula objetos que tiene en sus manos vivenciando espontáneamente las características de los objetos: forma, peso, textura, temperatura.
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:13             N° Pág.22 DESCUBRO MI CUERPO;El bebé va conociendo y  explorando  las partes de su cuerpo.
+JUGANDO APRENDO;N° CJA: 104             N° Pág.99 EXPLORAR LA SONAJA; El niño/a coge la sonaja y se lo lleva a la boca para chuparla o morderla OTROS LOGROS. El niño/a sostiene y mueve la sonaja por unos segundos. - Coge objetos pequeños (que entran en su mano) utilizando la prensión palmar. - Manipula objetos que tiene en sus manos vivenciando espontáneamente las características de los objetos: forma, peso, textura, temperatura
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+5  MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:14             N° Pág. 28 MIS PRIMEROS DESCUBRIMIENTOS;El niño/a descubre su cara, manos y pies 
+JUGANDO APRENDO;N° CJA:105            N° Pág.100 ALCANZAR LA SONAJA QUE ESTÁ LEJOS;Intenta alcanzar objetos con su mano, cuando su mama se lo muestra. OTROS LOGROS. Estira sus brazos para alcanzar objetos que llamen su atención Coge objetos pequeños (que entran en su mano) utilizlando la prensión palmar Coge objetos que están a su alcance con ambas manos y se lo lleva a la boca.
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 14            N° Pág.28 MIS PRIMEROS DESCUBRIMIENTOS;Él bebe descubre su cara, manos y pies 
+JUGANDO APRENDO ;N° CJA:106            N° Pág.107 DESCUBRO EL ARO DE JEBE;El niño/a coge el aro y se lo lleva a la boca para chuparlo o morderlo. OTROS LOGROS Estira sus brazos para alcanzar objetos que llamen su atención Coge objetos pequeños (que entran en su mano) utilizando la prensión palmar. Intenta alcanzar objetos con su mano, aunque aún se le escapen
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:15             N° Pág.29 METO  MIS MANOS Y MIS PIES;El niño/a se divierte cuando su mama menciona y coge sus brazos, pies, etc, mientras lo cambia de ropa 
+JUGANDO APRENDO;N° CJA:107           N° Pág.103 HAGO SONAR LA SONAJA;El niño/a  coge la sonaja y la mueve para que suene. OTROS LOGROS Estira sus brazos para alcanzar objetos que llamen su atención Coge objetos que están a su alcance con ambas manos y se lo lleva a la boca Manipula objetos que tiene en sus manos vivenciando espontáneamente las características de los objetos: forma, peso, textura, temperatura. 
+CUENTAME UN CUENTO;CANCIÓN; El bebé disfruta la canción
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:15             N° Pág.29 METO MIS MANOS Y MIS PIES;El niño/a se divierte cuando su mama menciona y coge sus brazos, pies, etc, mientras lo cambia de ropa
+JUGANDO APRENDO;N° CJA:107            N° Pág.103 HAGO SONAR LA SONAJA;Produce con los objetos diversos sonidos que le son agradables OTROS LOGROS Estira sus brazos para alcanzar objetos que llamen su atención. Coge objetos que están a su alcance con ambas manos y se lo lleva a la boca 
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+6   MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:16             N° Pág.20 COSQUILLITAS Y PATADITAS;El bebé realiza  movimientos libres de manos y piernas.
+JUGANDO APRENDO;N° CJA:108             N° Pág.104 DISFRUTAMOS DE LA MÚSICA  JUNTOS;El niño/a se  divierte en los brazos de mama al ritmo de la música que ella le canta.   OTROS LOGROS. Reconoce a la persona que lo cuida. Ubica fácilmente la procedencia de un sonido (voltea la cabeza, se desplaza hacia él) 
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 16            N° Pág.20 COSQUILLITAS Y PATADITAS;El bebé realiza movimientos libres de manos y piernas.
+JUGANDO APRENDO;N° CJA:109             N° Pág.141 MIRA COMO RUEDA;El niño/a observa la botella que su cuidador hacer rodar delante de él. OTROS LOGROS. Observa con interés las acciones que realizan las personas a su alrededor (niños jugando, personas conversando, etc.). 
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:17             N° Pág.23 SIENTO  EL AGUA Y EL JABÓN;El niño/a se divierte cuando siente el agua y cuando le pasan el jabón por su cuerpecito. 
+JUGANDO APRENDO;N° CJA:110             N° Pág.124 ¡ENCUÉNTRAME¡;El niño/a se divierte y expresa emociones cuando la mama se tapa o destapa la cara. OTROS LOGROS. Reconoce a la persona que lo cuida. Pasa un objeto de una mano a otra. Explora los objetos con manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:17             N° Pág.23 SIENTO  EL AGUA Y EL JABÓN;El niño/a se divierte cuando siente el agua y cuando le pasan el jabón por su cuerpecito.
+JUGANDO APRENDO;N° CJA:111             N° Pág.120 AGITO LAS MARACAS;El niño/a coge y explora las marcas, las hace sonar o se las lleva a la boca. OTROS LOGROS. Observa con interés las acciones que realizan las personas a su alrededor (niños jugando, personas conversando, etc.) 
+;N° CJA:112             N° Pág.232 SALUDO AL BEBE;El niño/a observa con atención el juego que el cuidador hace con los títeres.  OTROS LOGROS. -Observa con interés las acciones que realizan las personas a su alrededor (niños jugando, personas conversando, etc.). -Pasa un objeto de una mano a otra. -Ubica fácilmente la procedencia de un sonido (voltea la cabeza, se desplaza hacia él)
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+7 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:18         N° Pág.33 MMMM, ¿QUÉ ES?;El niño/a disfruta y muestra interés  cuando mama le presenta los alimentos que ha preparado para él.  
+JUGANDO APRENDO;N° CJA: 113    Pág. N° 108 GOLPEO EL ARO;El niño/a observa cómo se mueve el aro e intenta o lo alcanza a golpear  con la mano. OTROS LOGROS. -Observa con interés las acciones que realizan las personas a su alrededor (niños jugando, personas conversando, etc.) -Explora los objetos con manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura. - Pasa un objeto de una mano a otra
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 18         N° Pág.33 MMMM, ¿QUÉ ES?;El niño/a disfruta y muestra interés  cuando mama le presenta los alimentos que ha preparado para él.  
+JUGANDO APRENDO;N° CJA:114     N° Pág. 113 TE VEO  Y NO TE VEO;El niño/a se divierte y juega con su mama a taparse la cara con el pañuelo LOGRO PRIORIZADO Reconoce a la persona que lo cuida. Se pasa un objeto de una mano a otra. Explora los objetos con manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura.
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:19             N° Pág.40 ME GUSTAN TUS CARICIAS TU VOZ;El niño/a demuestra tranquilidad y confianza, cuando su mama lo carga en sus brazos, lo mece y le habla o canta  cariñosamente.  
+JUGANDO APRENDO;N° CJA: 115            N° Pág.105 AGITAR LA SONAJA CON FUERZA;El niño/a hace sonar la sonaja moviéndola en diferentes direcciones OTRO LOGRO. Explora los objetos con manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura.
+;N° CJA: 116            N° Pág.172 SACO LOS CUBOS DEL RECIPIENTE;El niño/a Introduce y saca objetos pequeños de un recipiente (con todos los dedos) OTRO LOGRO Pasa un objeto de una mano a otra. Recoge objetos pequeños arrastrando los dedos (movimientos rastrillo). Realiza diversas acciones con y entre los objetos:  los golpea entre sí, los frota, los saca y los mete de un recipiente, etc.
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción  
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:19            N° Pág.40 ME GUSTAN TUS CARICIAS TU VOZ;El niño/a, demuestra tranquilidad y confianza, cuando su mama lo carga en sus brazos, lo mece y le habla o canta  cariñosamente.   
+JUGANDO APRENDO;N° CJA:116             N° Pág. 172 SACO LOS CUBOS DE RECIPIENTE;Introduce y saca objetos pequeños de un recipiente (con todos los dedos) OTROS LOGROS. Pasa un objeto de una mano a otra. Recoge objetos pequeños arrastrando los dedos (movimientos rastrillo). Realiza diversas acciones con y entre los objetos:  los golpea entre sí, los frota, los saca y los mete de un recipiente, etc.
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+8 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:20             N° Pág.54 SE QUIÉNES SON;El niño/a observa a los miembros de la familia cuando mama los presenta mencionando sus  nombres.
+JUGANDO APRENDO;N° CJA:117             N° Pág.109 ATRAPO EL ARO;El niño/a Se desplaza intentado coger el aro OTROS LOGROS. Observa la trayectoria de los objetos que lanza o deja caer experimentando (de manera intuitiva) la noción de profundidad. Explora los objetos con manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura. Observa con interés las actividades que realizan las personas a su alrededor (niños jugando, personas conversando, etc.) 
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:20             N° Pág.54 SE QUIÉNES SON;El niño/a observa a los miembros de la familia cuando mama los presenta mencionando sus  nombres.
+ JUGANDO APRENDO;N° CJA:118             N° Pág.127 JUGANDO CON LA PELOTA DE TRAPO;El niño/a de desplaza  intentado coger la pelota OTROS LOGROS. Observa la trayectoria de los objetos que lanza o deja caer experimentando (de manera intuitiva) la noción de profundidad. Explora los objetos con manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura.
+;N° CJA:119             N° Pág.114 ¿A DÓNDE SE FUE MI JUGUETE?;El niño/a se encuentra el juguete que está escondido debajo del pañuelo OTROS LOGROS. Explora los objetos con manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura. 
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:21             N° Pág.54 CUÉNTAME HISTORIAS;El niño/a pone atención a las historias que le cuenta papá, mamá, abuelos, etc.
+JUGANDO APRENDO;N° CJA:120             N° Pág. 173 VOLTEO EL RECIPIENTE CON LOS CUBOS;El niño/a voltea el recipiente para que caigan los cubos.  OTROS LOGROS. Pasa un objeto de una mano a otra. Observa la trayectoria de los objetos que lanza o deja caer experimentando (de manera intuitiva) la noción de profundidad. Explora los objetos con manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura.
+CUENTAME UN CUENTO;CANCIÓN;El bebé disfruta la canción
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 22            N° Pág.60 NUESTRAS CANCIONES;El bebé escucha canciones y disfruta de ellas.
+JUGANDO APRENDO;N° CJA: 121            N° Pág.121 GOLPEO LAS MARACAS COMO TAMBOR;El niño/a golpea las maracas contra un recipiente como si fuera tambor y se divierte con los sonidos que hace. OTROS LOGROS Explora los objetos con manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura. Pasa un objeto de una mano a otra. Ubica fácilmente la procedencia de un sonido (voltea la cabeza, se desplaza hacia él). Reacciona a través del movimiento y/o emitiendo sonidos al reconocer melodías conocidas (balancea su cuerpo, moviendo la cabeza)
+CUENTAME UN CUENTO;-CANCIÓN;El bebé disfruta la canción
+9  MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 23            N° Pág.23 SUCIO O LIMPIO;El niño/a  disfruta cuando mama la habla mientras le habla del aseo de sus manos, carita, etc
+JUGANDO APRENDO;N° CJA: 122            N° Pág.128 ATRAPO LA PELOTA;El niño/a  atrapa o intenta atrapar la pelota. OTRO LOGROS Observa la trayectoria de objetos que lanza o deja caer experimentando (de manera intuitiva) la noción de profundidad.
+CUENTAME CUENTO;LIBRO DE TELA;El bebé disfruta la canción
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:23             N° Pág.23 SUCIO O LIMPIO;El niño/a  disfruta cuando mama la habla mientras le habla del aseo de sus manos, carita, etc
+JUGANDO APRENDO;N° CJA:123             N° Pág.142 RUEDO LA BOTELLA HACIA TI;El niño/a observa con atención e intenta coger la botella mientras rueda. OTROS LOGROS. Pasa un objeto de una mano a otra. Observa la trayectoria de objetos que lanza o deja caer experimentando (de manera intuitiva) la noción de profundidad. Realiza diversas acciones con y entre los objetos: los golpea entre sí, los frota, los saca y los mete de un recipiente, etc. Explora el ambiente con confianza, según sus posibilidades
+CUENTAME CUENTO;CANCION;El niño/a  disfruta de la canción y trata de imitar algunos sonidos.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 24            N° Pág.34 QUIERO TOCAR  LO QUE COMO;El niño/a toca y explora los alimentos que come.
+JUGANDO APRENDO;N° CJA:124             N° Pág.174 SACO AFUERA LOS BLOQUES;El niño/a saca los cubos del recipiente. OTROS LOGROS. Recoge objetos pequeños arrastrando los dedos (movimientos de rastrillo). Pasa un objeto de una mano a otra. Explora los objetos con manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura. Realiza diversas acciones con y entre los objetos: los golpea entre sí, los frota, los saca y los mete de un recipiente, etc
+;N° CJA:125             N° Pág.148 EL COLLAR DE AROS;El niño/a Explora los objetos con manos y/o boca. OTROS LOGROS. Observa con interés las actividades que realizan las personas a su alrededor (niños jugando, personas conversando, etc.) Pasa un objeto de una mano a otra.
+CUENTAME CUENTO;LIBRO DE TELA;El niño señala imágenes que ve.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:24            N° Pág.34 QUIERO TOCAR  LO QUE COMO ;El bebé toca y explora los alimentos que come.
+JUGANDO APRENDO;N° CJA:126             N° Pág.233 APAREZCO Y DESAPAREZCO;Observa con atención a mamá, mientras esta hace aparecer y desaparecer al juguete. OTRO LOGRO. Pasa un objeto de una mano a otra. Explora los objetos con manos y/o boca descubriendo las características de los objetos por intuición:  textura, peso, forma, temperatura.
+CUENTAME CUENTO;CANCION;El niño señala imágenes que ve.
+10  MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:25             N° Pág.44 EXPLORO LOS OBJETOS DEL HOGAR;El  bebe conoce los objetos que hay en el hogar.
+JUGANDO APRENDO;N° CJA:127             N° Pág.110 JALO EL ARO;El niño/a jala el aro para acercarlo a él. OTROS LOGROS Explora los objetos con las manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura. Se ubica en el espacio y establece relaciones entre su cuerpo y los objetos: se dirige a alcanzar lo que desea, se meta en cajas, acomodando su cuerpo de acuerdo a sus posibilidades.
+CUENTAME CUENTO;LIBRO DE TELA;El niño  conoce y señala imágenes que ve.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 25            N° Pág.44 EXPLORO LOS OBJETOS DEL HOGAR;El bebe conoce los objetos que hay en el hogar.
+JUGANDO APRENDO;N° CJA:129             N° Pág.128 EXPLORO DOS TEXTURAS DIFERENTES;El niño/a se mantiene sentado sin ayuda mientras juega con las pelotas. OTROS LOGROS Pasa un objeto de una mano a otra (6-9m). Realiza diversas acciones con y entre los objetos: los golpea entre sí, los frota, los saca y los mete de un recipiente, etc. (6-9m). Ubica fácilmente la procedencia de un sonido (voltea la cabeza, se desplaza hacia él) (6-9m). Imita la entonación del adulto al escuchar conversaciones (6-9m)
+;N° CJA:128             N° Pág.125 GATEO POR EL TÚNEL;Se desplaza gateando por el túnel. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Explora el ambiente con confianza, según sus posibilidades. Se ubica en el espacio y establece relaciones entre su cuerpo y los objetos: se dirige a alcanzar lo que desea, se meta en cajas, acomodando su cuerpo de acuerdo a sus posibilidades.
+CUENTAME  CUENTO;CANCIÓN;El niño  conoce y señala imágenes que ve.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 26            N° Pág. 49 ACCIONES DE CORTESÍA;El bebé imita a mamá cuando saluda. 
+JUGANDO APRENDO;N° CJA:131             N° Pág. 143     GOLPEO LOS CUBOS;"El niño/a  golpe el cubo  disfrutando de los sonidos que hace. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Escucha diversos sonidos e intenta imitarlos vocalizando con claridad dos sílabas (""dada"", ""papa"", etc.). Se mantiene sentado y sin ayuda mientras juega. Utiliza ""sus"" palabras otorgándoles significado. "
+CUENTAME CUENTO;LIBRO DE TELA;El niño conoce y señala imágenes que ve.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 26            N° Pág.49 ACCIONES DE CORTESÍA;El bebé imita a mamá cuando saluda.
+JUGANDO APRENDO;N° CJA: 131            N° Pág.143 ATRAPO LA BOTELLA;El niño/a se dirige a alcanzar la botella mientras mama la va empujando. OTROS LOGROS. Explora el ambiente con confianza, según sus posibilidades. Explora los objetos con las manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura. Manipula un objeto para producir un resultado esperado para él, presiona una tecla, empuja una pelota para que ruede, suelta un objeto para escuchar el sonido, jala un mantel para alcanzar un objeto, golpea la torre con su mano para que caiga, etc. Se desplaza gateando.
+CUENTAME CUENTO;LIBRO DE TELA;El niño conoce y señala imágenes que ve.
+11 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 22          N° Pág. 60 NUESTRAS CANCIONES;El bebé escucha canciones y disfruta moviendo su cuerpo.
+JUGANDO APRENDO;N° CJA: 132            N° Pág.111 EL ARO SUBE Y BAJA;El niño/a Juega con el aro, subiéndolo y bajándolo. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Reconoce personas u objetos familiares buscándolas con la mirada cuando se las nombran. Explora los objetos con las manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura
+CUENTAME CUENTO;LIBRO DE TELA;El niño  conoce y señala imágenes que ve.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 22            N° Pág.60 NUESTRAS CANCIONES;El niño/a disfruta de las canciones que se cantan en familia y en la comunidad.
+JUGANDO APRENDO;N° CJA: 133            N° Pág.115 ENCUENTRO EL JUGUETE QUE NO VEO;El niño/a Encuentra el juguete escondido debajo del pañuelo OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Reconoce personas u objetos familiares buscándolas con la mirada cuando se las nombran. Manipula un objeto para producir un resultado esperado para él, presiona una tecla, empuja una pelota para que ruede, suelta un objeto para escuchar el sonido, jala un mantel para alcanzar un objeto, golpea la torre con su mano para que caiga, etc. Se mantiene sentado y sin ayuda mientras juega.
+;N° CJA:134             N° Pág.149 EL COLLAR Y EL RECIPIENTE;Introduce y saca el collar de un recipiente utilizando los dedos índice y pulgar. OTROS LOGROS. Reconoce personas u objetos familiares buscándolas con la mirada cuando se las nombran. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Se mantiene sentado y sin ayuda mientras juega. Manipula diversos recipientes interesándose en el interior de estos (noción de contenido) a partir de su propio cuerpo y diversos objetos: introduce su cabeza en una caja para observar su contenido, se mete dentro de una canasta, etc.
+CUENTAME CUENTO;LIBRO DE TELA;El niño  conoce y señala imágenes que ve.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:27             N° Pág. 60 ME DIVIERTO CON LA MÚSICA;El niño/a disfruta de las canciones que se cantan en familia y en la comunidad.
+JUGANDO APRENDO;N° CJA: 135            N° Pág.144 RUEDO EL TARRO;"El niño/a rueda el tarro para que haga sonido y disfruta del mismo. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Se para con apoyo. Da algunos pasos hacia adelante con apoyo. Escucha diversos sonidos e intenta imitarlos vocalizando con claridad dos sílabas (""dada"", ""papa"", etc.)."
+CUENTAME CUENTO;LIBRO DE TELA;Disfruta de canciones que mama le canta
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:27             N° Pág.60 ME DIVIERTO CON LA MÚSICA;El niño/a disfruta de las canciones que se cantan en familia y en la comunidad.
+JUGANDO APRENDO;N° CJA:128             N° Pág.125 GATEO POR EL TÚNEL;Se desplaza gateando por el túnel. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Explora el ambiente con confianza según sus posibilidades. Explora los objetos con las manos y/o boca descubriendo las características de los objetos por intuición: textura, peso, forma, temperatura. Se ubica en el espacio y establece relaciones entre su cuerpo y los objetos: se dirige a alcanzar lo que desea, se mete en cajas acomodando su cuerpo de acuerdo a sus posibilidades.
+CUENTAME CUENTO;CANCIÓN;El niño/a baila al compás de la música que mama le canta.
+12 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:28             N° Pág.24 ¿DÓNDE ESTÁ MÍ…?;El niño/a reconoce las partes de su cara (ojos, nariz, boca, etc.)
+JUGANDO APRENDO;N° CJA: 128            N° Pág.125 GATEO POR EL TÚNEL;El niño/a  Se desplaza gateando por el túnel. OTROS LOGROS Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Explora el ambiente con confianza, según sus posibilidades. 
+CUENTAME UN CUENTO;N° CJA: 256           N° Pág.289 LOS OBJETOS- Libro 1;El niño/a observa con atención y señala objetos.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 29            N° Pág.29 DÉJAME INTENTARLO;El niño/a conoce prendas de vestir  e intenta sacárselas y ponérselas.
+JUGANDO APRENDO;N° CJA:136             N° Pág.129 ENCESTO LAS PELOTAS;Lanza objetos a distancia corta. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Manipula un objeto para producir un resultado esperado para él, presiona una tecla, empuja una pelota para que ruede, suelta un objeto para escuchar el sonido, jala un mantel para alcanzar un objeto, golpea la torre con su mano para que caiga, etc.. Hace rodar una pelota con ambas mano. Se ubica en el espacio y establece relaciones entre su cuerpo y los objetos: se dirige a alcanzar lo que desea, se mete en cajas acomodando su cuerpo de acuerdo a sus posibilidades
+CUENTAME CUENTO;N° CJA: 241            N° Pág.37 – Lamina 1 6 OBJETOS; El niño observa y nombra algunos objetos.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:30             N° Pág.35 MI PLATO LLENO  Y DESPUÉS VACÍO;El niño reconoce cuando el plato está lleno o vacío.
+JUGANDO APRENDO;N° CJA:133             N° Pág.115 ENCUENTRO EL JUGUETE QUE NO VEO;Observa un objeto que se oculta debajo del pañuelo. OTROS LOGROS. Reconoce personas u objetos familiares buscándolas con la mirada cuando se las nombran. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Se mantiene sentado y sin ayuda mientras juega. Manipula un objeto para producir un resultado esperado para él, presiona una tecla, empuja una pelota para que ruede, suelta un objeto para escuchar el sonido, jala un mantel para alcanzar un objeto, golpea la torre con su mano para que caiga, etc.
+CUENTAME UN CUENTO;N° CJA: 257            N° Pág.292 MIS EMOCIONES – Libro 2;El niño describe imágenes del cuento.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:31             N° Pág.41 CUENTOS;El niño/a escucha con atención el cuento que relata mamá.  
+JUGANDO APRENDO;N° CJA:138             N° Pág.176 JUEGO CON 6  CUBOS;El niño/a levanta el recipiente para encontrar el cubo que esta debajo del mismo. OTROS LOGROS. Reconoce personas u objetos familiares buscándolas con la mirada cuando se las nombran. Se mantiene sentado y sin ayuda mientras juega. Manipula un objeto para producir un resultado esperado para él, presiona una tecla, empuja una pelota para que ruede, suelta un objeto para escuchar el sonido, jala un mantel para alcanzar un objeto, golpea la torre con su mano para que caiga, etc. Señala un objeto conocido cuando se lo nombra.
+CUENTAME CUENTO;N° CJA: 242            N° Pág.328 LAMINA 2: 9 OBJETOS - ; El  niño mira y conoce objetos.
+13 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 32         N° Pág.41 CONTAR HISTORIAS INVENTADAS; El niño escucha con atención las historias que le cuenta mamá. 
+JUGANDO APRENDO;N° CJA: 139         N° Pág.132  COLOCO OBJETOS DENTRO DE LA BOTELLA;El niño coloca con precisión objetos dentro de la botella. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Imita acciones rutinarias que realiza el adulto (barrer, lavar, planchar, etc.) Colabora colocando los objetos en su lugar cuanto se lo piden.
+CUENTAME UN CUENTO;N° CJA:256           N° Pág.289 LIBRO 1: LOS OBJETOS;El  niño mira y conoce objetos.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:33          N° Pág.44 CADA COSA EN SU LUGAR; El Niño  guarda sus juguetes en el lugar que mama le indica.
+JUGANDO APRENDO;N° CJA: 140          N° Pág.153 EMPUJO  EL JUGUETE;Se desplaza caminando y manteniendo el equilibrio, sobre diferentes superficies: bordos, caminitos, etc. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan.
+CUENTAME CUENTO;N° CJA:257          N° Pág.292 LIBRO 2 : MIS EMOCIONES;El niño reconoce sus  emociones. 
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:34          N° Pág.45 LA BASURA TAMBIÉN TIENE SU LUGAR;El niño aprende hábitos de limpieza.
+JUGANDO APRENDO;N° CJA:136          N° Pág. 129 ENCESTO LAS PELOTAS;Lanza la pelota hacia el recipiente desde una distancia corta. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan.
+;N° CJA:141          N° Pág. 233 EL TITERE APARECE Y DESAPARECE;El Niño/a busca el juguete escondido. OTROS LOGROS. Resuelve problemas utilizando sus experiencias previas: gira la manija para abrir una puerta, jala para destapar algo, encaja una pieza simple.
+CUENTAME UN CUENTO;N° CJA: 241         N° Pág. 327 LAMINA 1:6 OBJETOS;El  niño mira y conoce objetos.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:35          N° Pág.49 CUENTOS;El niño/a escucha con atención el cuento que relata mamá
+JUGANDO APRENDO;N° CJA:138          N° Pág. 176 JUEGO CON 4 CUBOS;Encuentra los cubos ocultos OTROS LOGROS. Resuelve problemas utilizando sus experiencias previas: gira la manija para abrir una puerta, jala para destapar algo, encaja una pieza simple
+CUENTAME CUENTO;N° CJA: 242         N° Pág.328 LAMINA 2: 9 OBJETOS;El niño conoce objetos  y para qué sirven
+14 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 36             N° Pág. 50 DE LAS ACCIONES A LAS PALABRAS;El niño acompaña algunas de sus palabras con gestos.
+JUGANDO APRENDO;N° CJA:143            N° Pág.116 ENCUENTRO  MI JUGUETE DEBAJO DEL PAÑUELO CORRECTO;"Busca objetos totalmente ocultos  OTROS LOGROS. Resuelve problemas utilizando sus experiencias previas: gira la manija para abrir una puerta, jala para destapar algo, encaja una pieza simple. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota""."
+CUENTAME UN CUENTO;N° CJA: 256             N° Pág. 289 LIBRO 1: LOS OBJETOS;El niño conoce objetos  y para qué sirven.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:37          N° Pág. 55  “HACER COMO SI …”;El niño imita acciones de la vida cotidiana. 
+JUGANDO APRENDO;N° CJA: 258         N° Pág.295 ME ESCONDO;"Se desplaza por el espacio y reconoce cuando está dentro o afuera. OTROS LOGROS. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota""."
+CUENTAME CUENTO;N° CJA:          N° Pág. LIBRO 3:  LOS ANIMALES;El niño reconoce y nombra los animales que observa. 
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 38                    N° Pág.55 BAILAMOS;El niño baila y mueve las partes de su cuerpo. 
+JUGANDO APRENDO;N° CJA: 145         N° Pág.146 RUEDO EL TARRO DISTINTOS SUPERFICIES;"Rueda el tarro en diferentes superficies siguiendo indicaciones de mamá. OTROS LOGROS. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota""."
+CUENTAME UN CUENTO;N° CJA:241          N° Pág.327 -LAMINA 1:SEIS OBJETOS;El niño reconoce y nombra objetos.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:39          N° Pág.58 LOS ALIMENTOS;El niño nombra y describe los alimentos que consume.
+JUGANDO APRENDO;N° CJA: 144         N° Pág.126 ME ESCONDO;"Se desplaza por el espacio y reconoce cuando está dentro o afuera  OTROS LOGROS. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota"""
+;N° CJA: 146         N° Pág.177 HAGO TORRES DE 6 CUBOS;"Coloca  los cubos uno encima de otro  OTROS LOGROS. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota""."
+CUENTAME CUENTO;N° CJA: 242           N° Pág.328 LAMINA 2 : NUEVE  OBJETOS;El niño reconoce y nombra objetos, identificando para qué sirven.
+15 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 40          N° Pág.58 ¿QUÉ HACEN LAS PERSONAS?;El niño/a escucha con atención y muestra interés por conocer las actividades que realizan las personas. 
+JUGANDO APRENDO;N° CJA: 147         N° Pág.122 SONIDO… SILENCIO;El niño controla el movimiento de las maracas identificando el sonido y silencio. OTROS LOGROS. Comprende el sentido del NO (p.e. detiene una acción cuando se le dice NO).
+;N° CJA: 146         N° Pág.177 HAGO TORRES CON SEIS CUBOS;"Coloca  los cubos uno encima de otro  OTROS LOGROS. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota"". Utiliza palabras o fragmentos de palabra para designar personas u objetos conocidos: ""Tata"" para indicar abuelo, ""pan"" cuando quiere pan, etc. Señala un objeto conocido cuando se lo nombra (10-12 m) Utiliza ""sus"" palabras otorgándoles significado  (10-12 m)."
+CUENTAME UN CUENTO;N° CJA: 256         N° Pág.2896 LIBRO 1: LOS OBJETOS;El niño reconoce y nombra  objetos.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 41         N° Pág. 60 NUESTRAS DANZAS;El niño/a observa e  imita el baile de mama al ritmo de música de la comunidad 
+JUGANDO APRENDO;N° CJA:148          N° Pág.137 ENCAJO EL VASO PEQUEÑO DENTRO DEL MAS GRANDE;Encaja el vaso pequeño dentro del vaso grande. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Intenta hacer cosas por sí mismo (ej. Intenta guardar los juguetes, abrocharse el abrigo aunque no lo logre, quitarse la ropa, abrir el lavamanos, manejar la cuchara, beber de una taza, etc.). Realiza movimientos de mayor precisión con sus manos.  P.E. abotona, desabotona, sube y baja cierres, arruga papeles, troza con ambas manos.
+;N° CJA: 140              N° Pág.153 EMPUJO EL JUGUETE;"Se desplaza caminando y manteniendo el equilibrio, sobre diferentes superficies: bordos, caminitos, etc. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Utiliza palabras o fragmentos de palabra para designar personas u objetos conocidos: ""Tata"" para indicar abuelo, ""pan"" cuando quiere pan, etc. Señala un objeto conocido cuando se lo nombra (10-12 m). Utiliza ""sus"" palabras otorgándoles significado  (10-12 m)."
+CUENTAME CUENTO;N° CJA:242            N° Pág.328 - LAMINA 2 : NUEVE  OBJETOS;El niño aprende el nombre de los objetos y para qué sirven.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 42        N° Pág.24 CARITA REDONDA;El niño reconoce las partes de su cara.
+JUGANDO APRENDO ;N° CJA: 149         N° Pág.133 LLENAMOS TODAS LAS BOTELLAS;Llena la botella con mucha precisión haciendo uso de objetos de diferente tamaño. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Resuelve problemas utilizando sus experiencias previas: gira la manija para abrir una puerta, jala para destapar algo, encaja una pieza simple
+CUENTAME UN CUENTO;N° CJA: 243         N° Pág.329 LAMINA  3:DOCE  OBJETOS;El niño  reconoce animales y objetos  de su entorno. 
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 43         N° Pág.25 ESPEJITO ESPEJITO;El niño reconoce las partes de su rostro y cuerpo. 
+JUGANDO APRENDO;N° CJA:150              N° Pág.250 ROMPECABEZAS 1;Encaja las piezas del rompe cabezas. OTROS LOGROS. -Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. -Realiza movimientos de mayor precisión con sus manos.  P.E. abotona, desabotona, sube y baja cierres, arruga papeles, troza con ambas manos.
+CUENTAME CUENTO;N° CJA:258              N° Pág.295 LIBRO 3 : LOS ANIMALES;El niño escucha y reconoce sonidos de los animales de su entorno.
+16 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:40          N° Pág. 58 ¿QUÉ HACEN LAS PERSONAS?;El niño/a escucha con atención y muestra interés por conocer las actividades que realizan las personas.
+JUGANDO APRENDO   ;N° CJA:151          N° Pág.151 ENSARTO LOS AROS;Ensarta los aros en el tubo siguiendo indicaciones de mama. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Realiza movimientos de mayor precisión con sus manos.  P.E. abotona, desabotona, sube y baja cierres, arruga papeles, troza con ambas manos.
+;N° CJA: 152         N° Pág.178 HAGO TORRES CON OCHO CUBOS;"Coloca 08 cubos uno encima de otro  OTROS LOGROS. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota"". "
+CUENTAME UN CUENTO;N° CJA:243             N° Pág.329 LAMINA 3:DOCE OBJETOS;El niño reconoce y menciona  animales y objetos de su entorno.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 41               N° Pág. 60 NUESTRAS DANZAS;El niño/a observa e  imita el baile de mama al ritmo de música de la comunidad
+JUGANDO APRENDO;N° CJA: 153             N° Pág.159 ARRASTRO EL GUSANO;"Se desplaza caminando y manteniendo el equilibrio, sobre diferentes superficies: bordos, caminitos, etc. Jalando el gusanito. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Resuelve problemas utilizando sus experiencias previas: gira la manija para abrir una puerta, jala para destapar algo, encaja una pieza simple. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota""."
+;N° CJA: 151           N° Pág.151 ENSARTO  LOS AROS;Ensarta los aros en el tubo con precisión siguiendo indicaciones de mama. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Realiza movimientos de mayor precisión con sus manos.  P.e. abotona, desabotona, sube y baja cierres, arruga papeles, troza con ambas manos.
+CUENTAME CUENTO;N° CJA: 242             N° Pág.328 LAMINA 2. NUEVE OBJETOS;El niño conoce y mencionan  objetos y para qué sirven.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 42         N° Pág.24 CARITA REDONDA;El niño reconoce las partes de su rostro.  
+JUGANDO APRENDO;N° CJA:154              N° Pág.194 JALO EL COLECTIVO;"Imita sonidos de animales y objetos que conoce):  guau, titi, etc  OTROS LOGROS. Se desplaza caminando y manteniendo el equilibrio, sobre diferentes superficies: Césped, arena, etc. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota""."
+;N° CJA: 153               N° Pág.159 ARRASTRO EL GUSANO;"Se desplaza caminando y manteniendo el equilibrio, sobre diferentes superficies: bordos, caminitos, etc. Jalando el gusanito  OTROS LOGROS Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota""."
+CUENTAME UN CUENTO;N° CJA:258                    N° Pág.295 -LIBRO  3 : LOS ANIMALES;El niño escucha y conoce sonidos de los animales de su entorno.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 43         N° Pág.25 ESPEJITO  ESPEJITO;El niño reconoce las partes de su rostro.  
+JUGANDO APRENDO;N° CJA:155          N° Pág.223 CUIDO AL BEBE Y RECONOZCO LAS PARTES DEL CUERPO;"Reconoce y señala  partes de su cuerpo y de otra persona.  OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota""."
+;N° CJA: 144         N° Pág.126 ME ESCONDO;"Se desplaza por el espacio y reconoce cuando está dentro o afuera  OTROS LOGROS. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota"". Resuelve problemas utilizando sus experiencias previas: gira la manija para abrir una puerta, jala para destapar algo, encaja una pieza simple."
+CUENTAME CUENTO;N° CJA:257               N° Pág.292 LIBRO 2 : MIS EMOCIONES;El niño reconoce sus  emociones. 
+17 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:40                N° Pág.58 ¿QUÉ HACEN LAS PERSONAS?;El niño/a escucha con atención y muestra interés por conocer las actividades que realizan las personas.
+JUGANDO APRENDO;N° CJA:  156              N° Pág.117 MI JUGUETE DEBAJO DE LOS PAÑUELOS;"El niño busca los juguetes debajo de los pañuelos OTROS LOGROS. Resuelve problemas utilizando sus experiencias previas: gira la manija para abrir una puerta, jala para destapar algo, encaja una pieza simple. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota""."
+;N° CJA: 152              N° Pág.178 HAGO TORRES CON OCHO CUBOS;"Coloca 08 cubos uno encima de otro  OTROS LOGROS. Señala un objeto conocido cuando se lo nombra (10-12 m) Utiliza ""sus"" palabras otorgándoles significado  (10-12 m) Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota""."
+CUENTAME UN CUENTO;N° CJA: 256                  N° Pág.289 LIBRO 1: LOS OBJETOS;El niño conoce y nombra  objetos.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 41               N° Pág.60 NUESTRAS DANZAS;El niño/a observa e  imita el baile de mama al ritmo de música de la comunidad
+JUGANDO APRENDO;N° CJA:157              N° Pág.130 RUEDO LAS PELOTAS POR EL TUBO;Realiza movimientos de mayor precisión con sus manos.  P.e. abotona, desabotona, sube y baja cierres, arruga papeles, troza con ambas manos. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan Se desplaza caminando y manteniendo el equilibrio, sobre diferentes superficies: Césped, arena, etc.
+;N° CJA:158                 N° Pág.250 ROMPECABEZAS 2;El niño encaja las piezas del rompe cabezas OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Realiza movimientos de mayor precisión con sus manos.  P.e. abotona, desabotona, sube y baja cierres, arruga papeles, troza con ambas manos. Mantiene la atención cuando le narran cuentos muy cortos.
+CUENTAME CUENTO;N° CJA: 257          N° Pág.292 - LIBRO 2 : MIS EMOCIONES;El niño reconoce emociones a través de diversos gestos. 
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:42          N° Pág.24 CARITA REDONDA;El niño reconoce las partes de su cara
+JUGANDO APRENDO;N° CJA:159          N° Pág.138 ENCAJO EL CUBO PEQUEÑO DENTRO DEL GRANDE;Encaja el vaso pequeño dentro del vaso grande. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Intenta hacer cosas por sí mismo (ej. Intenta guardar los juguetes, abrocharse el abrigo aunque no lo logre, quitarse la ropa, abrir el lavamanos, manejar la cuchara, beber de una taza, etc.) 
+;N° CJA:136         N° Pág.129 ENCESTO LAS PELOTAS;El niño lanza la pelota hacia el cesto desde una distancia corta OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Se desplaza caminando y manteniendo el equilibrio, sobre diferentes superficies: Césped, arena, etc. Lanza objetos a distancia corta (10-12 m).
+              ;N° CJA: 242            N° Pág.328 LAMINA :2 NUEVE OBJETOS; El niño aprende el nombre de los objetos y para qué sirven.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 43         N° Pág.25 ESPEJITO  ESPEJITO;El niño reconoce las formas y partes de su rostro.  
+JUGANDO APRENDO ;N° CJA:160          N° Pág.154 EMPUJO EL JUGUETE HACIENDO ”VRUM”;"Imita sonidos de animales y objetos que conoce:  guau, titi, etc OTROS LOGROS. Se desplaza caminando y manteniendo el equilibrio, sobre diferentes superficies: césped, arena, etc. Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota"". "
+;N° CJA:158          N° Pág.250 ROMPECABEZAS 2;Encaja las piezas del rompecabezas. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Pasa páginas gruesas de un libro 2 ó 3 a la vez. Mantiene la atención cuando le narran cuentos
+CUENTAME CUENTO;N° CJA:258          N° Pág.295 LIBRO 3 :LOS ANIMALES;El niño escucha y conoce sonidos de los animales de su entorno.
+18 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:44          N° Pág.21 FUERA DEL PAÑAL;El niño aprende  a sentarse en el bacín sin temor
+JUGANDO APRENDO;N° CJA:161          N° Pág.123 ARRIBA LAS MARACAS;El niño imita los movimientos que hace mama usando las marcas y se divierte con ellas moviéndola en diferentes direcciones. OTROS  LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan.
+CUENTAME UN CUENTO;N° CJA: 257          N° Pág.292 LIBRO 2 : MIS EMOCIONES;El niño reconoce emociones a través de diversos gestos  
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA;N° CJA: 45         N° Pág. 25 CONOZCO LAS PARTES  DE MI CUERPO;El niño identifica partes principales de su cuerpo.
+JUGANDO APRENDO;N° CJA:162          N° Pág.134 COLOCA  Y SACA TODOS LOS OBJETOS DE LA BOTELLA;El niño coloca objetos diferentes en la botella cuando su mama le indica. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan.
+CUENTAME CUENTO;N° CJA: 243         N° Pág.329 LAMINA 3 : DOCE OBJETOS; El niño reconoce los animales y objetos de su entorno. 
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 46            N° Pág.25 CADA  PARTE HACE ALGO;El niño conoce  lo que hace con cada parte de su cuerpo 
+JUGANDO APRENDO;N° CJA:163          N° Pág.138 ENCAJO DOS CUBOS Y DOS VASOS LÓGICOS;El niño encaja el cubo chico en el cubo grande y el vaso chico en el vaso grande. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Intenta hacer cosas por sí mismo (ej. Intenta guardar los juguetes, abrocharse el abrigo aunque no lo logre, quitarse la ropa, abrir el lavamanos, manejar la cuchara, beber de una taza, etc.)
+;N° CJA:158          N° Pág.250 ROMPECABEZAS 2 FLORES EN UNA MACETA;Encaja las piezas del rompe cabezas OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Realiza movimientos de mayor precisión con sus manos.  P.E. abotona, desabotona, sube y baja cierres, arruga papeles, troza con ambas manos.
+CUENTAME UN CUENTO;N° CJA:  259        N° Pág.299 LIBRO 4: EL BEBE TIENE HAMBRE;El niño escucha historias sencillas de la vida cotidiana.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 47         N° Pág.30 IGUALES Y DIFERENTES;El niño aprende cuando los objetos son iguales y diferentes.
+JUGANDO APRENDO ;N° CJA: 164         N° Pág.160 JALO EL GUSANO HACIA MI;Resuelve problemas utilizando sus experiencias previas OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan
+CUENTAME CUENTO;N° CJA: 258         N° Pág.295 LIBRO 3 : LOS ANIMALES;El niño escucha y reconoce sonidos de los animales de su entorno.
+19 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:47             N° Pág.30 IGUALES  Y DIFERENTES;El niño aprende cuando los objetos son iguales y cuando diferentes.
+JUGANDO APRENDO;N° CJA:165            N° Pág.217 LANZO LAS ALMOHADAS ;Lanza las almohadas hacia el cesto. OTROS LOGROS. Diferencia características notorias entre los objetos: grande-pequeño, duro-blando, frío-caliente
+CUENTAME UN CUENTO;N° CJA:  244           N° Pág.330 LAMINA 4 : QUINCE OBJETOS;  El niño nombra los alimentos que ve.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:   48          N° Pág.30 LO QUE ES IGUAL LO PONEMOS JUNTO;El niño ordena los objetos que son iguales. 
+JUGANDO APRENDO;N° CJA: 166           N° Pág.251 ROMPECABEZAS 3:;Encaja las piezas del rompecabezas OTROS LOGROS. Resuelve problemas utilizando sus experiencias previas: gira la manija para abrir una puerta, jala para destapar algo, encaja una pieza simple. Reconoce objetos cotidianos y significativos en ilustraciones
+CUENTAME CUENTO;N° CJA:260                N° Pág.302 LIBRO 5 : EL POLO SUCIO;El niño escucha una historia sobre  limpio, sucio y mojado.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:49            N° Pág.30 ESTO ES GRANDE  Y ESTO ES PEQUEÑO;El niño reconoce  lo grande y pequeño. 
+JUGANDO APRENDO;N° CJA:167              N° Pág.203 MIS CARRITOS “VRUM, VRUM”;Imita el sonido de los carritos mientras juega con ellos. OTROS LOGROS. Juega cerca a otros niños realizando acciones similares o utilizando materiales Imita sonidos onomatopéyicos (de animales y objetos que conoce): guau, guau, titi, etc. (13-18 m)
+;N° CJA: 168            N° Pág.164 ¿CÓMO HACEN LOS ANIMALES?;Imita el sonido que hace los animales que él conoce. OTROS LOGROS.  Imita sonidos onomatopéyicos (de animales y objetos que conoce): guau, guau, titi, etc. (13-18 m) Se mantiene sentado y sin apoyo mientras juega (10-12 m
+CUENTAME CUENTO;N° CJA: 243            N° Pág.329 -LAMINA 3 : DOCE OBJETOS;El niño reconoce  características  de los animales y objetos de su entorno.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA;N° CJA:  50          N° Pág.35   DIGO EL NOMBRE DE LOS ALIMENTOS;El niño manipula y nombra los alimentos  que observa.
+APRENDO JUGANDO;N° CJA: 169           N° Pág.195 PASEO EN EL COLECTIVO;El niño representa actividades de su vida diaria jugando en el colectivo OTROS LOGROS. Realiza movimientos de mayor precisión con sus manos. P.e. abotona, desabotona, sube y baja cierres, arruga papeles, , troza con ambas manos Encaja varias piezas en un tablero, adecuando sus manos y dedos
+;N° CJA: 166       N° Pág.251 ROMPECABEZAS 3;El niño encaja las piezas del rompecabezas. OTROS LOGROS Resuelve problemas utilizando sus experiencias previas: gira la manija para abrir una puerta, jala para destapar algo, encaja una pieza simple. Reconoce objetos cotidianos y significativos en ilustraciones
+;N° CJA:170          N° Pág.179 HAGO UNA FILA DE CUBOS;El niño hace una fila con los cubos y lo empuja hacia adelante. OTROS LOGROS Juega representando actividades de la vida cotidiana (da de comer a la muñeca, maneja el carro, carga la wawa en la lliclla, etc) utilizando objetos diversos para completar sus juegos de imitación. 
+CUENTAME CUENTO;N° CJA: 257         N° Pág.292 LIBRO 2 MIS EMOCIONES;El niño reconoce emociones a través de diversos gestos.  
+20 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 51         N° Pág. 35 DIGO LAS CARACTERÍSTICAS DE LOS ALIMENTOS; El niño manipula y nombra características de los alimentos  de su zona.
+JUGANDO APRENDO;N° CJA: 171         N° Pág.118 MI JUGUETE EN EL PUÑO DE LA MAMA;"El niño busca la mano de su mama, que está escondido debajo del pañuelo. OTROS LOGROS. Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. En sus conversaciones se puede distinguir 10 palabras como mínimo Comprende indicaciones sencillas realizando la acción: entrega la pelota ante la indicación ""dame la pelota"", busca la mano ante la indicación ""búscala"", etc. (13-18 m)."
+CUENTAME UN CUENTO;N° CJA:260          N° Pág.302 -LIBRO 1 : POLO SUCIO;El niño escucha una historia sobre limpio, sucio y mojado.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 52         N° Pág.36 LOS ALIMENTOS TIENEN COLOR;El niño reconoce los colores de los alimentos 
+JUGANDO APRENDO;N° CJA: 162         N° Pág.161 ME DIVIERTO JALANDO EL GUSANITO;Corre en distintas direcciones jalando el gusanito. OTROS LOGROS. Jala los objetos de un lugar a otro.
+CUENTAME CUENTO;N° CJA:261          N° Pág.305 LIBRO  6 :VAMOS A LA FERIA;El niño escucha una historia de la vida cotidiana     
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 53         N° Pág.45 ME AYUDAS A BARRER;El niño imita a mamá 
+JUGANDO APRENDO;N° CJA: 173         N° Pág.166 LOS ANIMALES HACEN UNA FILA;El niño coloca a los animales uno al lado de otro mencionando su nombre. OTROS LOGROS. Pregunta el nombre de los objetos que acaba de conocer y los repite En sus conversaciones se puede distinguir 10 palabras como mínimo.
+;N° CJA: 173          N° Pág.165 ¿A DÓNDE SE FUERON LOS ANIMALES?;Busca los animales, cuando su mama lo esconde.
+CUENTAME UN CUENTO;N° CJA:   243       N° Pág.329 -LAMINA 3: DOCE OBJETOS;El niño reconoce los animales y objetos  de su entorno. 
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 54         N° Pág.46 ME AYUDAS A LIMPIAR;El niño imita a mamá en la limpieza  de la casa.
+JUGANDO APRENDO;N° CJA: 155 - A         N° Pág.224 CUIDO AL BEBE Y APRENDO LAS PARTES DEL CUERPO;Reconoce las partes gruesas y finas de su cuerpo OTROS LOGROS Demuestra sentido rítmico moviéndose espontáneamente ante la música.
+;N° CJA:          N° Pág. ROMPECABEZAS 3;El niño encaja las piezas del rompecabezas OTROS LOGROS. Resuelve problemas utilizando sus experiencias previas: gira la manija para abrir una puerta, jala para destapar algo, encaja una pieza simple. Reconoce objetos cotidianos y significativos en ilustraciones
+CUENTAME CUENTO;N° CJA:          N° Pág. LIBRO 5 : ÉL BEBE TIENE HAMBRE;El niño escucha una historia 
+21 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:55           N° Pág.26 MI CUERPO SE ESTÁ MOVIENDO;El niño se  mueve reconociendo partes de su cuerpo.
+JUGANDO APRENDO;N° CJA:174          N° Pág.119 ENCUENTRO MI JUGUETE DEBAJO DE  PAÑUELOS ARRUGADOS;Busca objetos conocidos aunque no los tenga a la vista. OTROS LOGROS. Resuelve problemas utilizando sus experiencias previas.
+CUENTAME UN CUENTO;N° CJA:244          N° Pág.330 LAMINA  4: 15 OBJETOS;El niño menciona características y utilidad de los alimentos.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:56          N° Pág.27 CUANDO ME ASEO  APRENDO MÁS PARTES DE MI CUERPO;El niño aprende las partes de su cuerpo cuando lo asean.
+JUGANDO APRENDO;N° CJA:175          N° Pág.139 ENCAJO  TODOS LOS CUBOS Y LOS VASOS LÓGICOS;El niño encaja todos los cubos y vasos lógicos. OTROS LOGROS. Realiza movimientos de mayor precisión con sus manos. P.e.: abotona, desabotona, sube y baja cierres, arruga papeles, troza con ambas manos.
+;N° CJA:177          N° Pág.252 ROMPECABEZAS  4;Encaja las piezas del rompecabezas. OTROS LOGROS. Encaja una pieza en una base fija (una figura con contorno regular) adecuando sus manos y dedos (13-18 m)
+CUENTAME CUENTO;N° CJA:260          N° Pág.302 -LIBRO  5: EL POLO SUCIO;El niño escucha una historia sobre     limpio, sucio y mojado..
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:57          N° Pág.31 MI ROPA TIENE COLOR;El niño conoce el color de su ropa. 
+JUGANDO APRENDO;N° CJA: 176         N° Pág.196 EL COLECTIVO AVANZA Y SE DETIENE;El niño jala el colectivo en diferentes direcciones. OTROS LOGROS. Diferencia características notorias entre los objetos: grande-pequeño, duro-blando, frío-caliente. Juega representando actividades de la vida cotidiana (da de comer a la muñeca, maneja el carro, carga la wawa en la lliclla, etc.) utilizando objetos diversos para completar sus juegos de imitación.
+CUENTAME UN CUENTO;N° CJA:259          N° Pág.299 LIBRO 4: EL BEBE TIENE HAMBRE; El niño escucha historias de la vida cotidiana.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 58         N° Pág.36 ¿ESTÁ LLENO O VACÍO;El niño reconoce cuando el vaso está “lleno y vacío.
+JUGANDO APRENDO;N° CJA: 157         N° Pág.130 RUEDO LAS PELOTAS POR EL TUBO;El niño hace rodar la pelota por el tubo inclinado. 
+;N° CJA:177         N° Pág.252 ROMPECABEZAS 4;Encaja piezas del rompecabezas. OTROS LOGROS Encaja una pieza en una base fija (una figura con contorno regular) adecuando sus manos y dedos (13-18 m)
+CUENTAME CUENTO;N° CJA: 261         N° Pág.305 LIBRO 6: VAMOS A LA FERIA;El niño  escucha  una historia sobre la vida cotidiana.
+22 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:59          N° Pág.50 ENCUENTRO TESOROS POR DONDE CAMINO;El niño  experimenta un paseo recolectando  objetos  en el camino. 
+JUGANDO APRENDO;N° CJA: 178         N° Pág.155 EXPERIMENTANDO CON NOCIONES “ENCIMA  Y DEBAJO”;"El niño coloca encima o debajo  de la mesa. OTROS LOGROS Muestra interés e iniciativa en la relación con los adultos, repitiendo acciones que le agradan. Comprende indicaciones sencillas realizando la acción:  Entrega la pelota ante la indicación ""dame la pelota"", empuja el juguete, etc. (13-18 m)"
+CUENTAME UN CUENTO;N° CJA:259          N° Pág.299 LIBRO 4: ÉL BEBE TIENE HAMBRE;El niño  escucha  una historia sobre la vida cotidiana.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 60         N° Pág.56 SIMÓN DICE…;El niño realiza acciones tocando diferentes partes del cuerpo. 
+JUGANDO APRENDO;N° CJA:173          N° Pág.166 LOS ANIMALES  HACEN UNA FILA;El niño coloca a los animales uno al lado de otro mencionando su nombre. OTROS LOGROS. Pregunta el nombre de los objetos que acaba de conocer y los repite.
+;N° CJA: 177         N° Pág.252 ROMPECABEZAS  4;Encaja  las piezas del rompecabezas  OTROS LOGROS. Encaja una pieza en una base fija (una figura con contorno regular) adecuando sus manos y dedos (13-18 m)
+CUENTAME CUENTO;N° CJA:243          N° Pág.329 LAMINA 3:12 OBJETOS;El niño reconozca  los animales y objetos  de su entorno.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:61          N° Pág.56 OTRO SIMÓN DICE …;El niño realiza acciones imitando los movimientos de mama.
+JUGANDO APRENDO;N° CJA:179          N° Pág.218 CAMINO SIN  CHOCARME;El niño camina entre las almohadas sin chocarse OTROS LOGROS. Juega representando actividades de la vida cotidiana (da de comer a la muñeca, maneja el carro, carga la wawa en la lliclla, etc.) utilizando objetos diversos para completar sus juegos de imitación. 
+;N° CJA:180          N° Pág.182 JUEGO CON LOS BLOQUES  DE DIFERENTES  FORMAS;El niño diferencia el bloque según su tamaño. OTROS LOGROS. Juega representando actividades de la vida cotidiana (da de comer a la muñeca, maneja el carro, carga la wawa en la lliclla, etc.) utilizando objetos diversos para completar sus juegos de imitación.
+CUENTAME UN CUENTO;N° CJA:244          N° Pág.330 LAMINA 4: 15 ALIMENTOS;El niño menciona    las características   de los alimentos.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 62         N° Pág.56 LLAMEMOS A …;La mamá enseña al niño a pronunciar frases. 
+JUGANDO APRENDO;N° CJA: 136         N° Pág.129 ENCESTO LAS PELOTAS;Lanza la pelota hacia una dirección determinada OTROS LOGROS. Lanza objetos a distancia corta (10-12 m
+;N° CJA: 177         N° Pág.252 ROMPECABEZAS  4;Encaja las piezas del rompecabezas. OTROS LOGROS. Encaja una pieza en una base fija (una figura con contorno regular) adecuando sus manos y dedos (13-18 m)
+;N° CJA:  181        N° Pág.180 JUEGO CON DIEZ CUBOS;Coloca cubos uno encima de otro  OTROS LOGROS. 9.1.3. Comprende indicaciones sencillas realizando la acción (13-18 m)
+CUENTAME CUENTO;N° CJA:  260        N° Pág.302 LIBRO 5: EL POLO SUCIO;El niño escucha  una historia sobre limpio, sucio y mojado.
+23 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:63               N° Pág.59  VEO, VEO.;El niño  nombra los objetos de su entorno.  
+JUGANDO APRENDO;N° CJA: 182         N° Pág.197 EL  COLECTIVO VA LEJOS Y DEJA A TODOS LOS PASAJEROS;El niño representa actividades de su vida diaria jugando con el carrito. OTROS LOGROS. Jala los objetos de un lugar a otro.
+CUENTAME UN CUENTO;N° CJA:244             N° Pág.330 LAMINA 4: 15 OBJETOS;El niño menciona  las características de  animales.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:63               N° Pág.59 VEO, VEO;El niño  nombra los objetos de su entorno.  
+JUGANDO APRENDO;N° CJA:183          N° Pág.253 ROMPECABEZAS 5;Encaja las piezas del rompecabezas  OTROS LOGROS. Diferencia características notorias entre los objetos: grande-pequeño, duro-blando, frío-caliente
+CUENTAME CUENTO;N° CJA: 260         N° Pág.302 EL POLO SUCIO;El niño sigue la secuencia  de la historia reconociendo  limpio, sucio y mojado.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:64          N° Pág.61 MI BANDA;El niño produce sonidos con diferentes objetos. 
+JUGANDO APRENDO;N° CJA: 184        N° Pág.219 SOY FUERTE;El niño identifica la diferencia  entre pesado y liviano OTROS LOGROS Camina manteniendo el equilibrio sobre diferentes planos sin caerse:  Inclinado, ondulado, etc.
+;N° CJA: 181         N° Pág.170 JUEGO CON DIEZ CUBOS;Coloca cubos uno encima de otro  OTROS LOGROS. Comprende indicaciones sencillas realizando la acción (13-18 m)
+CUENTAME UN CUENTO;N° CJA:261          N° Pág.305 LIBRO 6:VAMOS A LA FERIA;El niño  nombra los alimentos más comunes  y las acciones de ir a comprarlos.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:  64        N° Pág.61 MI BANDA;El niño produce sonidos con diferentes objetos.
+JUGANDO APRENDO;N° CJA:185          N° Pág.162 ME  DIVIERTO JALANDO EL GUSANITO RÁPIDO Y LENTO;Corre en distintas direcciones jalando el gusanito. OTRO LOGRO. Comprende indicaciones sencillas realizando la acción (13-18 m)
+;N° CJA:186            N° Pág.255 ROMPECABEZAS 6;Coloca cubos uno encima de otro  OTRO LOGRO. En sus conversaciones se puede distinguir 10 palabras como mínimo. Comprende indicaciones sencillas realizando la accion (13-18 m)
+CUENTAME CUENTO;N° CJA:259          N° Pág.299 LIBRO 4: EL BEBE TIENE HAMBRE;El niño escucha historias y describe las situaciones  del  cuento.
+24 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 65         N° Pág.27 JUGAMOS A BAÑAR LOS MUÑECOS;El niño representa situaciones de la vida diaria. 
+JUGANDO APRENDO;N° CJA: 187         N° Pág.157 DERRUMBO LA PARED;Lanza un objeto hacia la pared de cubos para derrumbarla. OTRO LOGRO Realiza movimientos de mayor precisión con sus manos. P.e. abotona, desabotona, sube y baja cierres, arruga papeles, troza con ambas manos
+;N° CJA: 188         N° Pág.235 TÍTERE CONVERSADOR;Se expresa por medio de frases de dos o tres palabras. OTRO LOGRO. Conoce algunas reglas básicas aunque no siempre las sigue (p.e.: no empujar al amigo, esperar su turno, guardar al terminar de jugar) En sus conversaciones se puede distinguir 10 palabras como mínimo
+CUENTAME UN CUENTO;N° CJA:245          N° Pág.334 ESCENA 1: LA POSTA MEDICA;El niño reconoce las acciones realizadas en una posta médica y quienes trabajan ahí.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:66          N° Pág.31 GRANDE  PEQUEÑO;El niño identifica tamaños  “grande, pequeño” 
+JUGANDO APRENDO;N° CJA:189          N° Pág.189 HACEMOS UN SOBRE;Garabetea libremente. OTRO LOGRO. Realiza movimientos de mayor precisión con sus manos. P.e. abotona, desabotona, sube y baja cierres, arruga papeles, troza con ambas manos
+;N° CJA:190          N° Pág.204 ¿DÓNDE ESTÁ MI  CARRO?;El niño representa actividades de su vida diaria jugando con el carrito. OTRO LOGRO. Se desplaza por el espacio reconociendo la ubicación de los objetos (sabe dónde se guardan los juguetes, arriba-abajo la ubicación de los muebles).
+CUENTAME CUENTO;N° CJA:261          N° Pág.305 -LIBRO 6: VAMOS A LA FERIA;El niño  nombra los alimentos más comunes y las acciones de ir a comprarlos.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:67          N° Pág.31  ESTO USA PAPA  Y ESTO USA MAMA;El niño Identifica la ropa de  papa y mama.
+JUGANDO APRENDO;N° CJA: 191         N° Pág.225  JUEGO  A COSTAR AL  BEBE;El niño representa actividades de su vida diaria jugando con el muñeco. OTROS LOGROS. Reconoce las partes gruesas y finas de su cuerpo
+;N° CJA:192          N° Pág.264 LOTERÍA  1: LA FLOR DE TAPAS;Agrupa objetos iguales. OTROS LOGROS. Reconoce objetos cotidianos y significativos en ilustraciones.
+CUENTAME UN CUENTO;N° CJA:262          N° Pág.309 LIBRO 7: MI DÍA;El niño identifica y reconoce las actividades que se realizan durante el día.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:68          N° Pág.32 ¿QUÉ RARO?;El niño ubica las prendas de vestir donde corresponden.
+JUGANDO APRENDO;N° CJA:193          N° Pág.244 LA FLOR DE TAPAS;Resuelve problemas utilizando sus experiencias previas OTRO LOGRO. Realiza movimientos de mayor precisión con sus manos. P.e. abotona, desabotona, sube y baja cierres, arruga papeles, troza con ambas manos.
+;N° CJA: 194         N° Pág.256 ROMPECABEZAS 7;Encaja varias piezas en un tablero adecuando sus manos y dedos. OTRO LOGRO. Reconoce las partes gruesas y finas de su cuerpo En sus conversaciones se puede distinguir 10 palabras como mínimo.
+CUENTAME CUENTO;N° CJA:246          N° Pág.335 ESCENA 2:LA CHACRA;El niño describe actividades que realiza su familia en la chacra.
+25 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 69         N° Pág.32 CONOZCO LOS NOMBRES DE LAS PRENDAS DE VESTIR;El niño identifica y nombra sus prendas de vestir.
+JUGANDO APRENDO   ;N° CJA: 195        N° Pág.184 HAGO UN COLLAR;Ensarta cuentas con orificios grandes. OTROS LOGROS. Realiza movimientos de mayor precisión con sus dedos. P.e. abotona, desabotona, abrocha, desabrocha, sube y baja cierres, rasga con los dedos, abolilla, inserta objetos en ranura.
+;N° CJA: 180        N° Pág.182 JUEGO CON LOS BLOQUES  DE DIFERENTES FORMAS;Transforma los objetos con creatividad durante el juego OTROS LOGROS. En sus conversaciones se puede distinguir 10 palabras como mínimo (19-24 m). Se expresa por medio de frases de dos o tres palabras(19-24 m)
+;N° CJA: 196         N° Pág.191 MIS PRIMEROS  DIBUJOS;Garabatea libremente con mayor control de su movimiento. OTROS LOGROS. Dice el nombre a sus dibujos, pinturas y modelados y los explica.
+CUENTAME UN CUENTO;N° CJA: 274         N° Pág. 336 -  ESCENA 3: LA PLAZA PRINCIPAL /LA PESCA;La mamá le cuente una historia de la plaza de su pueblo al niño.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 70         N° Pág.36 ¿QUÉ COSAS  FALTAN?;Que el niño reconozca ¿Qué utensilios faltan para comer?.
+JUGANDO APRENDO;N° CJA: 197         N° Pág.192 DIBUJO CON MAMA;Garabatea libremente con mayor control de su movimiento. OTROS LOGROS. Dice el nombre a sus dibujos, pinturas y modelados y los explica.
+;N° CJA:188         N° Pág.235 TÍTERE CONVERSADOR;Se expresa utilizando frases de 2 o 3  palabras OTROS LOGROS. Sigue reglas básicas: Guardar juguetes, pasar de un espacio a otro cuando se le indique, no pegar al otro, etc.
+CUENTAME CUENTO;N° CJA:245          N° Pág.334 ESCENA 1: LA POSTA MEDICA;El niño escucha y relaciona el relato de la posta medica
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:71          N° Pág.36 ¿QUÉ SERÁ?;El niño adivina lo que huele.
+JUGANDO APRENDO;N° CJA:182          N° Pág.196 EL COLECTIVO VA LEJOS  Y DEJA A TODOS LOS PASAJEROS;El niño representa actividades de su vida diaria jugando con el carrito. OTROS LOGROS. Dramatiza situaciones conocidas, que contienen pequeños argumentos. 
+;N° CJA: 193         N° Pág.244 LOTERÍA 1: LA FLOR DE TAPAS;Resuelve problemas utilizando sus experiencias previas OTROS LOGROS. Nombra objetos familiares que observa en ilustraciones
+;N° CJA:194          N° Pág.256 ROMPECABEZAS  7;Encaja varias piezas en un tablero adecuando sus manos y dedos. OTROS LOGROS. En sus conversaciones se puede distinguir 10 palabras como mínimo (19-24 m)
+CUENTAME UN CUENTO;N° CJA:262          N° Pág.309 LIBRO 7:  MI DÍA;El niño reconoce y asocia las rutinas del día.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:76          N° Pág.36 ¿QUÉ  SERÁ? ;El niño adivina lo que huele  
+JUGANDO APRENDO;N° CJA: 198         N° Pág.238 JUEGO LA COMIDITA;Dramatiza situaciones conocidas de vida diaria jugando a la comidita OTROS LOGROS. Colabora con iniciativa en tareas sencillas: guardar juguetes, botar basura, poner platos en la mesa, etc. Relaciona objetos según su función: peine para peinarse, taza para tomar, etc.
+;N° CJA:194          N° Pág.256 ROMPECABEZAS 7;Encaja varias piezas en un tablero adecuando sus manos y dedos OTROS LOGROS. En sus conversaciones se puede distinguir 10 palabras como mínimo.
+CUENTAME CUENTO;N° CJA: 263         N° Pág.312 LIBRO 8: A MARÍA LE GUSTA JUGAR;El niño asocia las escena con su vida cotidiana
+26 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:72          N° Pág.42 RECORDANDO LO QUE HICE HOY;El niño reconoce el inicio y el final de las actividades que realiza.
+JUGANDO APRENDO;N° CJA:199          N° Pág.168 CONSTRUYO CORRALES  PARA LOS ANIMALES;Utiliza diferentes objetos para hacer un corral para los animales OTROS LOGROS. Mantiene la atención cuando le narra cuentos muy cortos (13-18 m)
+CUENTAME UN CUENTO;N° CJA:263          N° Pág.312 LIBRO 8: A MARÍA LE GUSTA JUGAR;El niño asocia las escenas con su vida cotidiana.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:72          N° Pág.42 RECORDANDO LO QUE HICE HOY;El niño reconoce  el inicio y el final de las actividades que realiza.
+JUGANDO APRENDO;N° CJA:200          N° Pág.206 MIS CARROS VAN Y VAN;Dramatiza situaciones conocidas de vida diaria jugando  con el carrito OTROS LOGROS. Diferencia características notorias entre objetos: grande-pequeño (19-24 m).
+;N° CJA:196          N° Pág.191 MIS  PRIMEROS DIBUJOS;Garabatea libremente con mayor control de su movimiento. OTROS LOGROS. Dice el nombre a sus dibujos, pinturas y modelados y los explica
+;N° CJA:196 -A          N° Pág.190 EXPERIMENTO CON LA CRAYOLA;Garabatea libremente con mayor control de su movimiento OTROS LOGROS. Dice el nombre a sus dibujos, pinturas y modelados y los explica
+CUENTAME CUENTO;N° CJA:245          N° Pág.334 ESCENA 1: LA POSTA MEDICA;El niño escucha y relaciona el relato de la posta medica
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 73           N° Pág.42 ¿DÍA, TARDE  O NOCHE?;El niño asocia las actividades cotidianas realizadas en el día, tarde y noche.
+JUGANDO APRENDO;N° CJA: 201         N° Pág.245 LA CASITA DE TAPAS;Realiza movimientos de mayor precisión con sus manos para armar una casita  con tapas. OTROS LOGROS. Reconoce objetos cotidianos y significativos en ilustraciones (19-24 m)
+;N° CJA:202          N° Pág.265 LOTERÍA 2: MUEBLES;Coloca figuras que corresponden en la lámina  OTROS LOGROS Agrupa objetos iguales (19-24 m)
+CUENTAME UN CUENTO;N° CJA:264          N° Pág. 315 LIBRO 9 JUAN PREGUNTA ¿CÓMO ES;El niño escucha las explicaciones y el ¿Por qué? de las cosas.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 73          N° Pág.42 ¿DÍA, TARDE O NOCHE?;El niño asocia las actividades cotidianas realizadas en el día, tarde y noche.
+JUGANDO APRENDO;N° CJA:203          N° Pág.257 ROMPECABEZAS 8;Encaja varias piezas en un tablero, adecuando sus manos y dedos OTROS LOGROS. Reconoce objetos cotidianos y significativos en ilustraciones (19-24 m)
+;N° CJA:197          N° Pág.192 DIBUJO CON MAMA;Garabatea libremente con mayor control de su movimiento. OTROS LOGROS Dice el nombre a sus dibujos, pinturas y modelados y los explica
+CUENTAME CUENTO;N° CJA: 246         N° Pág.335 ESCENA 2: LA CHACRA;El niño escucha y relaciona el relato de la chacra de lo que realiza papá y mamá.
+27 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:74          N° Pág.46 AYUDO  A TENER LIMPIA MI ROPITA;El niño identifica las  diferentes  prendas de vestir.
+   JUGANDO APRENDO  ;N° CJA: 204         N° Pág.227 JUEGO CON ÉL BEBE  Y HABLO SOBRE LAS PRENDAS DE  VESTIR;Dramatiza situaciones de su vida diaria, mientras juega con el muñeco OTROS LOGROS. Realiza movimientos de mayor precisión con sus dedos. P.e. abotona, desabotona, abrocha, desabrocha, sube y baja cierres, rasga con los dedos, abolilla, insera objetos en ranuras
+;N° CJA:180          N° Pág.182 JUEGO CON LOS BLOQUES DE DIFERENTES FORMAS;Transforma los objetos con creatividad durante el juego. OTROS LOGROS En sus conversaciones se puede distinguir 10 palabras como mínimo (19-24 m). Se expresa por medio de frases de dos o tres palabras (19-24 m)
+CUENTAME UN CUENTO;N° CJA:262          N° Pág.309 LIBRO 7: MI DÍA;El niño reconoce y asocia las rutinas del día.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:74          N° Pág.46 AYUDO A TENER LIMPIA MI ROPITA;El niño separa las  prendas de vestir.
+JUGANDO APRENDO;N° CJA:196          N° Pág.191 MIS PRIMEROS DIBUJOS;Garabatea libremente con mayor control de su movimiento. OTROS LOGROS Dice el nombre a sus dibujos, pinturas y modelados y los explica
+CUENTAME CUENTO;N° CJA:263          N° Pág.312 LIBRO 8: A MARÍA LE GUSTA JUGAR;El niño asocia las escena con su vida cotidiana
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:75          N° Pág.47 AYUDO A ORDENAR LA ROPA;El niño ayuda a ordenar la ropa de los demás.  
+JUGANDO APRENDO;N° CJA:202          N° Pág.265 LOTERÍA  2;Encaja varias piezas en un tablero, adecuando sus manos y dedos. OTROS LOGROS. Agrupa objetos iguales (19-24 m)
+CUENTAME UN CUENTO;N° CJA: 247         N° Pág.336 - 337 -ESCENA 3: LA PLAZA PRINCIPAL/LA PESCA;Que la mamá le cuente una historia de la plaza de su pueblo.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:75          N° Pág.47 AYUDO A ORDENAR LA ROPA;El niño ayuda a ordenar la ropa de los demás.  
+JUGANDO APRENDO;N° CJA: 198         N° Pág.238 JUEGO  A LA COMIDITA;Dramatiza situaciones conocidas de su vida diaria jugando a la comidita OTROS LOGROS. Colabora con iniciativa en tareas sencillas: guarda juguetes, botar la basura, poner platos en la mesa, etc. Relaciona objetos según su función: peine para peinarse, taza para tomar, etc.
+;N° CJA:203          N° Pág.257 ROMPECABEZAS  8;Encaja varias piezas en un tablero, adecuando sus manos y dedos OTROS LOGROS. Reconoce objetos cotidianos y significativos en ilustraciones (19-24 m)
+CUENTAME CUENTO;N° CJA:264          N° Pág.315 LIBRO 9: JUAN PREGUNTA ¿CÓMO ES?; El niño escuche las explicaciones y el ¿Por qué? De las cosas.
+28 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 76           N° Pág.47 ¿ESTO ES TUYO?;El niño  identifica su ropa.
+JUGANDO APRENDO;N° CJA:205          N° Pág. 185 HAGO UN COLLAR DE COLORES;Ensarta cuentas en con orificios pequeños.
+;N° CJA: 196         N° Pág.191 MIS PRIMEROS DIBUJOS;Garabatea libremente con mayor control de su movimiento OTROS LOGROS. Dice el nombre a sus dibujos, pinturas y modelados y los explica
+CUENTAME UN CUENTO;N° CJA:264          N° Pág.315 JUAN PREGUNTA ¿CÓMO ES?;El niño escucha las explicaciones y el ¿Por qué? de las cosas.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:76          N° Pág.47 ¿ESTO ES TUYO?;El niño  identifica su ropa. 
+ JUGANDO APRENDO;N° CJA:206          N° Pág.211 ¿QUÉ HAY  DENTRO DE LA BOLSA?;Sigue indicaciones de la mama  mientras juega.
+;N° CJA:197          N° Pág.192 DIBUJO CON MAMA;Garabatea libremente con mayor control de su movimiento. OTROS LOGROS. Dice el nombre a sus dibujos, pinturas y modelados y los explica.
+CUENTAME CUENTO;N° CJA:248          N° Pág.338 ESCENA 4: LA FIESTA PATRONAL;El niño escucha y relaciona el relato de la fiesta patronal. 
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:77          N° Pág.47 AYUDO A COCINAR;El niño colabora con mamá alcanzando y haciendo algunas tareas sencillas. 
+JUGANDO APRENDO;N° CJA: 200         N° Pág.206 MIS CARROS VAN Y VAN;El niño diferencia el carro grande y el carro pequeño.
+CUENTAME UN CUENTO;N° CJA: 208         N° Pág.266 LOTERÍA 3: 6 OBJETOS FAMILIARES;Encaja varias piezas en un tablero, según la lámina. OTROS LOGROS. Relaciona objetos según su función: peine para peinarse, taza para tomar, etc. Agrupa objetos iguales (19-24 m)
+;N° CJA: 246         N° Pág.335 ESCENA 2: LA CHACRA;El niño escucha y relaciona el relato de la chacra de lo que realiza papá y mamá.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 77         N° Pág.47 AYUDO A COCINAR;El niño colabora con mamá alcanzando y haciendo algunas tareas sencillas
+JUGANDO APRENDO;N° CJA: 207         N° Pág.239 PREPARAMOS  LA MESA PARA COMER;Relaciona la función de los objetos mientras se prepara la mesa para comer.
+;N° CJA:203          N° Pág.257 ROMPECABEZAS 8;Encaja varias piezas en un tablero, adecuando sus manos y dedos. OTROS LOGROS. Reconoce objetos cotidianos y significativos en ilustraciones (19-24 m)
+CUENTAME CUENTO;N° CJA:264         N° Pág.312 LIBRO 8: A MARÍA LE GUSTA JUGAR; El niño asocia las escenas con su vida cotidiana.
+29 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 78         N° Pág.48 A GUARDAR A GUARDAR;Que el niño guarde los objetos que se le pide.
+JUGANDO APRENDO ;N° CJA: 196         N° Pág.191 MIS PRIMEROS DIBUJOS;Garabatea libremente con mayor control de su movimiento OTROS LOGROS. Dice el nombre a sus dibujos, pinturas y modelados y los explica.
+;N° CJA:209          N° Pág.199 LOS PASAJEROS DE COLORES SE PASEAN;Transforma los objetos con creatividad durante el juego. OTROS LOGROS Encaja varias piezas en un tablero, adecuando sus manos y dedos
+CUENTAME UN CUENTO;N° CJA: 265         N° Pág.318 LIBRO 10 MARÍA PREGUNTA ¿DÓNDE  ESTÁ?;El niño escucha atentamente el cuento.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:78          N° Pág.48 A GUARDAR;Que el niño guarde los objetos que se le pide.
+JUGANDO APRENDO;N° CJA:201          N° Pág.245 LA CASITA DE TAPAS;Realiza movimientos de mayor precisión con sus manos para armar una casita  con tapas. OTROS LOGROS. Reconoce objetos cotidianos y significativos en ilustraciones (19-24 m)
+;N° CJA: 203         N° Pág.257 ROMPECABEZAS 8;Encaja varias piezas en un tablero, adecuando sus manos y dedos. OTROS LOGROS Reconoce objetos cotidianos y significativos en ilustraciones (19-24 m)
+CUENTAME CUENTO;N° CJA:262          N° Pág.309 LIBRO 7: MI DÍA;El niño reconoce y asocia las rutinas del día.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:79         N° Pág. 51 ACOMPAÑA A MAMA EN LA CHACRA;El niño escucha con atención lo que le cuenta mamá.
+JUGANDO APRENDO;N° CJA: 210         N° Pág.212 SACO UNO, SACO TODOS;Diferencia entre lleno y vacío – mucho – y poco. OTROS LOGROS. En sus conversaciones se puede distinguir 10 palabras como mínimo (19-24 m)
+;N° CJA:208          N° Pág.266 LOTERIA 3: 6 OBJETOS FAMILIARES;Encaja objetos según la lámina OTROS LOGROS. Relaciona objetos según su función: peine para peinarse, taza para tomar, etc. Agrupa objetos iguales (19-24 m)
+CUENTAME UN CUENTO;N° CJA:274          N° Pág. 336 - 337 ESCENA 3: LA PLAZA PRINCIPAL / LA PESCA;El niño escucha y relaciona el relato de la plaza principal. 
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 79         N° Pág. 51 ACOMPAÑA A MAMA EN LA CHACRA.;El niño escuche con atención lo que le cuenta mamá.
+JUGANDO APRENDO;N° CJA: 180         N° Pág.182 JUEGO CON LOS BLOQUES  DE DIFERENTES FORMAS;Transforma los objetos con creatividad durante el juego OTROS LOGROS. En sus conversaciones se puede distinguir 10 palabras como mínimo (19-24 m). Se expresa por medio de frases de dos o tres palabras(19-24 m)
+;N° CJA: 211         N° Pág.267 LOTERIA 4;Encaja objetos según la lámina OTROS LOGROS. Agrupa objetos iguales (19-24 m)
+CUENTAME CUENTO;N° CJA: 211         N° Pág.267 ESCENA 4: LA FIESTA  PATRONAL;El niño escucha y relaciona el relato de la fiesta patronal.
+30 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:80           N° Pág.51 ¡QUE LINDA LA NATURALEZA!;Mama conversa con su hijo sobre la naturaleza. 
+ JUGANDO APRENDO ;N° CJA:212          N° Pág.228 JUEGO A BAÑAR A LA MUÑECA;Dramatiza situaciones conocidas de su vida diaria mientras baña a la muñeca OTROS LOGROS. Juega representando actividades de la vida cotidiana (da de comer a la muñeca, baña a la muñeca, imita el carro) utilizando diversos objetos para completar sus juegos de imitación (19-24 m)
+;N° CJA:196          N° Pág.191 MIS PRIMEROS DIBUJOS;Garabatea libremente con mayor control de su movimiento. OTROS LOGROS Dice el nombre a sus dibujos, pinturas y modelados y los explica
+CUENTAME UN CUENTO;N° CJA:265          N° Pág.318 LIBRO 10 MARÍA PREGUNTA ¿DÓNDE  ESTA;El niño escucha el cuento atentamente.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:80          N° Pág.52 QUE LINDA LA NATURALEZA;Mama conversa con su hijo sobre la naturaleza.
+JUGANDO APRENDO;N° CJA:213          N° Pág.236 IMITO A MAMA;Imita las acciones que hace mama. OTROS LOGROS. Comprende indicaciones sencillas realizando la acción (13-18 m)
+;N° CJA:214          N° Pág.258 ROMPECABEZAS;Encaja varias piezas en un tablero, adecuando sus manos y dedos OTROS LOGROS. Describe escenas sencillas que observa en una lámina
+CUENTAME CUENTO;N° CJA: 249         N° Pág.339 SECUENCIA 1: CAMBIO DE ROPA;Mamá describe al niño  los pasos de cambiarse de ropa.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 81         N° Pág.52  “EL LÍDER”;El niño cumple órdenes.
+JUGANDO APRENDO;N° CJA:197          N° Pág.192 DIBUJO CON MAMA;Garabatea libremente con mayor control de su movimiento OTROS LOGROS Dice el nombre a sus dibujos, pinturas y modelados y los explica.
+;N° CJA:215          N° Pág.268 LOTERÍA 5;Encaja varias piezas en un tablero, adecuando sus manos y dedos OTROS LOGROS. Agrupa objetos iguales (19-24 m)
+CUENTAME UN CUENTO;N° CJA: 250         N° Pág.340 SECUENCIA 2 EL CEPILLADO DE LOS DIENTES;El niño observa los pasos de cepillado de dientes
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:81          N° Pág.52 EL LÍDER”;El niño cumple órdenes.
+JUGANDO APRENDO;N° CJA: 216         N° Pág.207  MI CARRO SE PASEA;Transforma los objetos con creatividad durante el juego OTROS LOGROS. Comprende indicaciones sencillas realizando la acción (13-18 m)
+;N° CJA: 217         N° Pág.259 ROMPECABEZAS 10;Encaja varias piezas en un tablero, adecuando sus manos y dedos OTROS LOGROS. Se expresa por medio de frases de dos o tres palabras
+CUENTAME CUENTO;N° CJA: 252         N° Pág.342 SECUENCIA 4 SEMBRAMOS PARA COMER;El niño observa y escucha  los pasos de sembrando. 
+31 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:82          N° Pág.52 ¿POR DÓNDE NOS FUIMOS?;Mamá conversa con su niño(a) acerca del camino recorrido.
+JUGANDO APRENDO   ;N° CJA:218          N° Pág.169 LOS ANIMALES ESTÁN  CERCA Y LEJOS  DE SU CASA;Corre en diferentes direcciones sin caerse ni chocarse. OTROS LOGROS. Transforma los objetos con creatividad durante el juego: Utiliza una manta como capa, etc
+;N° CJA: 180         N° Pág.182 JUEGO CON LOS BLOQUES DE DIFERENTES  FORMAS;Transforma los objetos con creatividad durante el juego OTROS LOGROS. En sus conversaciones se puede distinguir 10 palabras como mínimo (19-24 m) Se expresa por medio de frases de dos o tres palabras(19-24 m)
+CUENTAME UN CUENTO;N° CJA:266          N° Pág.321 LIBRO 11:  MARÍA Y JUAN JUEGAN CON LOS COLORES;El niño(a) conversa con mamá y describe imágenes.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:82          N° Pág.52 ¿POR DÓNDE  NOS FUIMOS?;Mamá conversa con su niño(a) acerca del camino recorrido.
+JUGANDO APRENDO;N° CJA:196          N° Pág.191 MIS PRIMEROS DIBUJOS;Garabatea libremente con mayor control de su movimiento OTROS LOGROS. Dice el nombre a sus dibujos, pinturas y modelados y los explica.
+;N° CJA: 219         N° Pág.200 EL COLECTIVO HACE LO QUE LE PEDIMOS;El niño hace correr o parar al carrito cuando mamá le indica. OTROS LOGROS Comprende indicaciones sencillas realizando la acción
+;N° CJA:220          N° Pág.208 MIS CARROS  VAN POR EL CAMINO;Transforma los objetos con creatividad durante el juego OTROS LOGROS Realiza movimientos de mayor precisión con sus dedos. P.e. abotona, desabotona, abrocha, desabrocha, sube y baja cierres, rasga con los dedos, abolilla, insera objetos en ranuras Construye diversas formas: con bloques, piezas de construcción
+CUENTAME CUENTO;N° CJA:  247        N° Pág.336  ESCENA 3:  LA PLAZA PRINCIPAL ;La niña(o) observa imágenes y conversa con mamá.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:83          N° Pág.53 MANO  SOBRE LA MANO;La mamá juega con su niño a hacer una torre de manos. 
+JUGANDO APRENDO;N° CJA: 221       N° Pág.186 HAGO UN COLLAR CON TODAS LAS TAPAS;Ensarta cuentas en con orificios pequeños OTROS LOGROS. Apila objetos uno encima de otros con más de tres elementos (13-18 m)
+;N° CJA: 215         N° Pág.268 LOTERÍA 5;Encaja varias piezas en un tablero, adecuando sus manos y dedos OTROS LOGROS. Agrupa objetos iguales (19-24 m)
+CUENTAME UN CUENTO;N° CJA:264          N° Pág.315 LIBRO 9 JUAN PREGUNTA ¿CÓMO ES?;El niño describe imágenes  del cuento.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 83         N° Pág.53 MANO SOBRE  LA MANO;La mamá juega con su niño a hacer una torre de manos.
+JUGANDO APRENDO;N° CJA: 222          N° Pág.221 MUEVO LA ALMOHADA;Mantiene por breves momentos el equilibrio parado en un pie OTROS LOGROS. Comprende indicaciones sencillas realizando la acción (13-18 m).
+;N° CJA: 217         N° Pág.259 ROMPECABEZAS 10;Encaja varias piezas en un tablero, adecuando sus manos y dedos. OTROS LOGROS. Se expresa por medio de frases de dos o tres palabras
+CUENTAME CUENTO;N° CJA:248          N° Pág.338 ESCENA 5: LA FIESTA PATRONAL;El niño observa imágenes y conversa con mamá. 
+32 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 84         N° Pág. 53 SEMILLAS DE COLORES;El niño clasifica las semillas. 
+JUGANDO APRENDO;N° CJA: 196         N° Pág.191 MIS PRIMEROS  DIBUJOS;Garabatea libremente con mayor control de su movimiento OTROS LOGROS. Dice el nombre a sus dibujos, pinturas y modelados y los explica
+;N° CJA: 223         N° Pág.260 ROMPECABEZAS 11;Encaja varias piezas en un tablero, adecuando sus manos y dedos OTROS LOGROS. Se expresa por medio de frases de dos o tres palabras
+CUENTAME UN CUENTO;N° CJA: 255         N° Pág. 352 SECUENCIA 7: VAMOS A PASTOREAR;El niño mira y describe la secuencia de  imágenes
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:84        N° Pág. 53 SEMILLAS DE COLORES;El niño clasifica las semillas.
+JUGANDO APRENDO;N° CJA:218          N° Pág.169 LOS ANIMALES ESTÁN CERCA Y LEJOS DE SU CASA;Corre en diferentes direcciones sin caerse ni chocarse. OTROS LOGROS Transforma los objetos con creatividad durante el juego: Utiliza una manta como capa, etc.
+;N° CJA:224          N° Pág.269 LOTERÍA 6;Utiliza cuantificadores como mucho-poco, uno-ninguno. OTROS LOGROS. Agrupa objetos iguales (19-24 m)
+CUENTAME CUENTO;N° CJA:250          N° Pág.343 SECUENCIA 5:  COMPRAMOS PESCADO CON PAPÁ;El niño conversa con mamá y Describe  la secuencia. 
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:85          N° Pág.57 JUGAMOS CON LA PELOTA;El niño y papá juegan con la pelota.
+JUGANDO APRENDO;N° CJA:225          N° Pág.215 ADIVINA QUE  ES;Reconoce un objeto a partir del olor, sabor, textura, sonido aún sin verlo OTROS LOGROS. Busca objetos conocidos aunque no los tenga a la vista (19-24m)
+;N° CJA:197          N° Pág.192 DIBUJA CON MAMÁ;Garabatea libremente con mayor control de su movimiento. OTROS LOGROS Nombra objetos familiares que observa en ilustraciones
+CUENTAME UN CUENTO;N° CJA: 266         N° Pág.351 SECUENCIA 6: LAVAMOS LA ROPA;El niño escucha con atención lo que le cuenta mamá.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:85          N° Pág.57 JUGAMOS CON LA PELOTA;El niño y papá juegan con la pelota
+JUGANDO APRENDO;N° CJA:201          N° Pág.245 LA CASITA DE TAPAS;Coloca las tapas siguiendo la lámina de la casita. OTROS LOGROS Reconoce objetos cotidianos y significativos en ilustraciones (19-24 m)
+;N° CJA:224          N° Pág.269 LOTERÍA 6:  MUCHOS POCOS;Utiliza cuantificadores como mucho-poco, uno-ninguno OTROS LOGROS. Agrupa objetos iguales (19-24 m)
+CUENTAME CUENTO;N° CJA:251          N° Pág.342 SECUENCIA 3: TEJEMOS UNA CHOMPA;Mamá describe lámina  contando la historia de la chompa. 
+33 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:86          N° Pág.57 COMO LOS CONEJITOS;El niño(a) salta imitando a los conejitos.
+JUGANDO APRENDO;N° CJA:226          N° Pág.187 HAGO DISTINTOS COLLARES;Ensarta cuentas en con orificios pequeños OTROS LOGROS. Comprende indicaciones sencillas realizando la acción (13-18 m)
+;N° CJA:227          N° Pág.270 LOTERÍA 7;Encaja varias piezas en un tablero, adecuando sus manos y dedos OTROS LOGROS Agrupa objetos iguales (19-24 m)
+;N° CJA:196          N° Pág.191 MIS PRIMEROS DIBUJOS;Garabatea libremente con mayor control de su movimiento. OTROS LOGROS. Expresa de manera comprensible sus vivencias
+CUENTAME UN CUENTO;N° CJA: 255         N° Pág. 352 SECUENCIA 7: VAMOS A PASTOREAR;El niño mira y describe la secuencia de  imágenes
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 86         N° Pág.57 COMO LOS CONEJITOS;El niño(a) salta imitando a los conejitos.
+JUGANDO APRENDO;N° CJA: 228         N° Pág.209 EL CARRO  VA LEJOS POR EL CAMINO;Transforma los objetos con creatividad durante el juego OTROS LOGROS. Construye diversas formas: con bloques, piezas de construcción
+;N° CJA:180          N° Pág. 182 JUEGO CON LOS  BLOQUES DE DIFERENTES FORMAS;El Transforma los objetos con creatividad durante el juego OTROS LOGROS. En sus conversaciones se puede distinguir 10 palabras como mínimo (19-24 m) Se expresa por medio de frases de dos o tres palabras(19-24 m)
+CUENTAME CUENTO;N° CJA:250          N° Pág.340 SECUENCIA 2 EL CEPILLADO DE LOS DIENTES;Mamá conversa con el niño(a) acerca del aseo.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 87         N° Pág.57 LAS CHAPADAS;El niño se divierte jugando a las chapadas.(ver si le término chapadas se adecúa a la realidad de la zona
+JUGANDO APRENDO;N° CJA:229          N° Pág.201 ¿CUÁNTOS PASAJEROS HAY EN EL COLECTIVO?;Transforma los objetos con creatividad durante el juego OTROS LOGROS. Dramatiza situaciones conocidas, que contienen pequeños argumentos
+;N° CJA: 223         N° Pág.223 ROMPECABEZAS 11;Encaja varias piezas en un tablero, adecuando sus manos y dedos OTROS LOGROS En sus conversaciones se puede distinguir 10 palabras como mínimo (19-24 m) Se expresa por medio de frases de dos o tres palabras(19-24 m)
+CUENTAME UN CUENTO;N° CJA:266          N° Pág.321 LIBRO 11: MARÍA Y JUAN JUEGAN CON COLORES;El niño(a) conversa con mamá y describe imágenes.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 87         N° Pág.57 LAS CHAPADAS;El niño se divierte jugando a las chapadas. .(ver si le término chapadas se adecúa a la realidad de la zona
+JUGANDO APRENDO;N° CJA:230          N° Pág.240 COCINAMOS;Dramatiza situaciones conocidas de su vida diría mientras juegan a la cocinita. OTROS LOGROS Juega representando actividades cotidianas de la vida diaria utilizando objetos diversos para completar sus juegos de imitación (19-24 m) Imita acciones rutinarias que realiza el adulto como: barrer, planchar, cocinar, etc. (13-18 m)
+;N° CJA:227          N° Pág.270 LOTERÍA  7;Encaja varias piezas en un tablero, adecuando sus manos y dedos OTROS LOGROS Agrupa objetos iguales (19-24 m)
+CUENTAME CUENTO;N° CJA: 251         N° Pág.342 SECUENCIA 3: TEJEMOS UNA CHOMPA ;Mamá describe lámina  contando la historia de la chompa.
+34 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA: 88         N° Pág.59 TOCO, TOCO  LO QUE NOMBRO;El niño(a) toca lo que le nombra mama..
+JUGANDO APRENDO ;N° CJA:196          N° Pág.191 MIS PRIMEROS DIBUJOS;Garabatea libremente con mayor control de su movimiento OTROS LOGROS Dice el nombre a sus dibujos, pinturas y modelados y los explica
+;N° CJA:231          N° Pág.214 ¿QUÉ SERÁ?;Reconoce un objeto a partir del olor, sabor, textura, sonido aún sin verlo Busca objetos conocidos aunque no los tenga a la vista (19-24m)
+CUENTAME UN CUENTO;N° CJA:265          N° Pág.318 LIBRO 10 MARÍA PREGUNTA ¿DÓNDE ESTÁ?;El niño(a) Conversa con su mamá
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:88          N° Pág.59 TOCA, TOCA LO QUE NOMBRO;El niño(a) toca El niño(a) toca lo que le nombra mamá.
+JUGANDO APRENDO;N° CJA:232          N° Pág.229 ¿CÓMO SE SIENTE ÉL BEBE?;Expresa de manera comprensible sus vivencias diarias. OTROS LOGROS Dramatiza situaciones conocidas, que contienen pequeños argumentos
+;N° CJA:197          N° Pág.192 DIBUJO CON MAMA;Garabatea libremente con mayor control de su movimiento OTROS LOGROS Nombra objetos familiares que observa en ilustraciones
+CUENTAME UN CUENTO;N° CJA:266          N° Pág.321 LIBRO 11: MARÍA Y JUAN JUEGAN CON COLORES;El niño(a) conversa con mamá y describe imágenes.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:89          N° Pág.59 VEO, VEO ¿QUÉ VEZ?;El niño adivina  objetos  a partir de sus características. 
+JUGANDO APRENDO;N° CJA:233          N° Pág.246 EL GUSANO DE TAPITAS;Realiza movimientos de mayor precisión con sus dedos.  OTROS LOGROS. Comprende indicaciones sencillas realizando la acción (13-18 m) un poco forzada Comprende indicaciones sencillas realizando la acción (13-18 m) 
+CUENTAME UN CUENTO;N° CJA:252          N° Pág.342 SECUENCIA 4:  SEMBRAMOS PARA COMER;El niño mira la lámina y relaciona con el trabajo de papá.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:89          N° Pág.59 VEO, VEO    ¿QUÉ   VEZ?;El niño adivina  objetos  a partir de sus características. 
+ JUGANDO APRENDO;N° CJA:234          N° Pág.261 ROMPECABEZAS12 LA NIÑA;Expresa de manera comprensible sus vivencias diarias OTROS LOGROS. Comprende indicaciones sencillas realizando la acción (13-18 m) un poco forzada
+;N° CJA:227          N° Pág.270 LOTERÍA 7 LAS ACCIONES DEL PERRO;El niño observa las acciones del perro y empareja con las cartillas.
+CUENTAME CUENTO;N° CJA: 253         N° Pág.343 SECUENCIA 5 COMPRAMOS PESCADO CON PAPÁ;El niño conversa con mamá y Describe  la secuencia. 
+35 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:90          N° Pág.37 ENSALADA DE FRUTAS;El niño adivina lo que huele  
+JUGANDO APRENDO;N° CJA: 235         N° Pág.170 LOS  ANIMALES  EN EL CAMPO;Encaja varias piezas en un tablero, adecuando sus manos y dedos OTROS LOGROS Agrupa objetos iguales (19-24 m)
+CUENTAME UN CUENTO;N° CJA:254          N° Pág.351 SECUENCIA 6: LAVAMOS LA ROPA;El niño escucha con atención lo que le cuenta mamá.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA;N° CJA: 90         N° Pág.37 ENSALADA DE  FRUTAS;El niño conoce las frutas que utiliza en la ensalada.
+JUGANDO APRENDO;N° CJA:236          N° Pág.271 LOTERÍA 8;Repite juego de palabras, rimas, canciones sencillas OTROS LOGROS Imita sonidos onomatopéyicos (de animales y objetos que conoce)(13-18 m) Se expresa por medio de frases de dos o tres palabras(19-24 m)
+CUENTAME CUENTO;N° CJA: 252         N° Pág.342 SECUENCIA 4: SEMBRAMOS PARA COMER;Mamá conversa con el niño(a) acerca  de los alimentos que siembra y cosecha.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:91          N° Pág.37 AYER HOY;Mamá conversa con el niño(a) acerca de lo que comió hoy y ayer.
+JUGANDO APRENDO;N° CJA: 237         N° Pág.241 LE DOY DE COMER A LA MUÑECA;Dramatiza situaciones conocidas, que contienen pequeños argumentos OTROS LOGROS Se expresa por medio de frases de dos o tres palabras (19-24 m)
+;N° CJA:234          N° Pág.261 ROMPECABEZAS 12;Expresa de manera comprensible sus vivencias o comprende indicaciones sencillas 
+CUENTAME UN CUENTO;N° CJA:263      N° Pág.312 LIBRO 8: A MARÍA LE GUSTA JUGAR;El niño observa las imágenes y conversa con mamá.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:91          N° Pág.37 AYER , HOY;Mamá conversa con el niño(a)   acerca de lo que comió hoy y ayer.
+JUGANDO APRENDO;N° CJA:196          N° Pág.191 MIS PRIMEROS DIBUJOS;Garabatea libremente con mayor control de su movimiento OTROS LOGROS Dice el nombre a sus dibujos, pinturas y modelados y los explica
+;N° CJA:236          N° Pág.271 LOTERÍA 8;Nombra objetos familiares que observa en ilustraciones OTROS LOGROS Reconoce objetos cotidianos y significativos en ilustraciones (19-24 m)
+CUENTAME CUENTO;N° CJA: 262         N° Pág309. LIBRO 7: MI DÍA; El niño conversa con mamá  acerca del cuento
+36 MESES;;
+SEMANA 1;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:92          N° Pág.38 AYUDO  A SERVIR LA MESA;El niño imita a mamá  a servir la mesa.
+JUGANDO APRENDO   ;N° CJA: 235         N° Pág.170 LOS ANIMALES EN EL CAMPO;Imita el sonido de los animales OTROS LOGROS Imita sonidos onomatopéyicos (de animales y objetos que conoce)(13-18 m) Se expresa por medio de frases de dos o tres palabras(19-24 m) En sus conversaciones se puede distinguir 10 palabras como mínimo (19-24 m)
+;N° CJA: 236         N° Pág.271 LOTERÍA  8;Nombra objetos familiares que observa en ilustraciones OTROS LOGROS Reconoce objetos cotidianos y significativos en ilustraciones (19-24 m)
+CUENTAME UN CUENTO;N° CJA: 264         N° Pág.315 LIBRO 9: JUAN PREGUNTA ¿CÓMO ES?;El niño conversa con mamá y disfruta del cuento.
+SEMANA 2;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:92          N° Pág.38 AYUDO A SERVIR LA MESA;El niño imita a mamá  a servir la mesa.
+JUGANDO APRENDO;N° CJA: 238         N° Pág.230 JUEGO A LA MAMÁ  Y  EL PAPÁ;Dramatiza situaciones conocidas, que contienen pequeños argumentos OTROS LOGROS Juega representando actividades de la vida cotidiana (da de comer a la muñeca, maneja el carro) utilizando objetos diversos para completar sus juegos de imitación (19-24 m) Imita acciones rutinarias que realiza el adulto (13-18 m)
+;N° CJA: 239         N° Pág.272 LOTERÍA  9: CANTIDAD;Utiliza cuantificadores como mucho-poco, uno-ninguno OTROS LOGROS Agrupa objetos iguales (19-24 m)
+CUENTAME CUENTO;N° CJA:265          N° Pág.316 LIBRO 10 MARÍA PREGUNTA ¿DÓNDE ESTÁ?;El niño conversa con mamá y disfruta del cuento.
+SEMANA 3;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:93          N° Pág.38 UN ALMUERZO PARA MIS INVITADOS;El niño imita a mamá cuando sirve  el almuerzo.
+JUGANDO APRENDO;N° CJA:233          N° Pág.246 EL GUSANITO  DE TAPITAS;Realiza movimientos de mayor precisión con sus dedos.  OTROS LOGROS Comprende indicaciones sencillas realizando la acción (13-18 m) un poco forzada Agrupa objetos iguales (19-24 m)
+;N° CJA: 234         N° Pág.261 ROMPECABEZAS 12;Encaja varias piezas en un tablero, adecuando sus manos y dedos OTROS LOGROS Comprende indicaciones sencillas realizando la acción (13-18 m) un poco forzada 
+;N° CJA: 240         N° Pág.215 ADIVINO Y EMPAREJO;Reconoce un objeto a partir del olor, sabor, textura, sonido, aún sin verlo OTROS LOGROS Busca objetos conocidos aunque no los tenga a la vista (19-24 
+CUENTAME UN CUENTO;N° CJA:  266        N° Pág.321 LIBRO 11: MARÍA YJUAN JUEGAN CON COLORES;El niño conversa con mamá y disfruta del cuento.
+SEMANA 4;Nº GUIA JUGANDO APRENDO;LOGRO  PRIORIZADO DE LA ACTIVIDAD
+VIDA EN FAMILIA CCA N° ……………..;N° CJA:93          N° Pág.38 UN ALMUERZO PARA MIS INVITADOS;El niño imita a mamá cuando sirve  el almuerzo.
+JUGANDO APRENDO;N° CJA: 197         N° Pág.192 DIBUJO CON MAMA;Garabatea libremente con mayor control de su movimiento OTROS LOGROS Nombra objetos familiares que observa en ilustraciones
+;N° CJA:196          N° Pág.191 MIS PRIMEROS DIBUJOS;Garabatea libremente con mayor control de su movimiento OTROS LOGROS Dice el nombre a sus dibujos, pinturas y modelados y los explica
+CUENTAME CUENTO;N° CJA:255          N° Pág.352 SECUENCIA 7: VAMOS A PASTOREAR;El niño conversa con mamá y disfruta del cuento.

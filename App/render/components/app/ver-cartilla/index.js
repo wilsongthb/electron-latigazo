@@ -51,7 +51,7 @@ module.exports = {
         this.cartilla.familia = this.detalles[csvClaves.facilitador.codigoFamilia]
         this.cartilla.edad = this.detalles.edad.str
         this.cartilla.semana = this.detalles.edad.semanas
-        this.fichas = require(dirRoot + '/render/data/fichas.json')
+        this.fichas = require(__dirRoot + '../config/fichas.json')
     },
     computed: {
         fichasBuscar () {

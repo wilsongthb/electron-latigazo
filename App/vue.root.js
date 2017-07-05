@@ -12,16 +12,21 @@ var mysql = require('mysql')
 // RECURSOS GLOBALES PARA LA APLICACION
 // ==========================================
 
+// esencial
+const __dirRoot = __dirname + '/'
+var {ver, plantilla, fileToString} = require(__dirRoot + './render/utils/esencial.js')
+
+// CONSTANTES
+var csvClaves = require(__dirRoot + './../config/csv_claves.json')
+
 // VARIABLES
-var config = require('./render/config/app.json')
-var csvClaves = require('./render/config/csv_claves.json')
-var dirRoot = __dirname
+var config = require(__dirRoot + './../config/config.json')
 var DB = mysql.createConnection(config.db.connection)
+
 // FUNCIONES
-var valorClaves = require('./render/data/valor_claves.js') // util para mostrar la clave de un dato del csv
-var calcularEdad = require('./render/edad.js')
-var fechaFormat = require('./render/edad_format.js')
-var {ver, plantilla, fileToString} = require('./render/esencial.js')
+var valorClaves = require(__dirRoot + './render/utils/valor_claves.js') // util para mostrar la clave de un dato del csv
+var calcularEdad = require(__dirRoot + './render/utils/edad.js')
+var fechaFormat = require(__dirRoot + './render/utils/edad_format.js')
 
 // ==========================================
 // RECURSOS GLOBALES PARA LA APLICACION

@@ -7,7 +7,7 @@ var ver = function(){
 }
 
 var plantilla = function(ruta){
-    return fs.readFileSync(path.join(dirRoot, ruta), { encoding: 'utf-8'})
+    return fs.readFileSync(path.join(__dirRoot, ruta), { encoding: 'utf-8'})
 }
 var fileToString = plantilla
 

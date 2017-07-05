@@ -53,7 +53,7 @@ module.exports = {
             path: 'tests/entrada.csv', // path del archivo csv
 
             // actualizaciones
-            verReadme: fs.readFileSync(path.join(dirRoot, 'readme.md'), { encoding: 'utf-8'}), // string del contenido del archivo readme.md
+            verReadme: fs.readFileSync(path.join(__dirRoot, 'readme.md'), { encoding: 'utf-8'}), // string del contenido del archivo readme.md
         }
     },
     methods: {
@@ -64,7 +64,7 @@ module.exports = {
             // ver('recibido', cartilla)
             // ver('argumentos:', arguments)
             // ver(arguments)
-            this.cartillas.push(JSON.parse(cartilla))
+            this.cartillas.push(JSON.parse(cartilla)) // en javascript al pasar un objeto como argumento a una funcion, este pasa como referencia, con esta tecnica, eso no sucede y se crea un nuevo objeto individual del objeto que se recibio como parametro
             // ver(this.cartillas)
             // this.cartillas.push(cartilla)
             // this.cartillas[this.cartillas.length] = cartilla
@@ -89,15 +89,20 @@ module.exports = {
             const csv = require('fast-csv')
 
             this.data = []
+            // var dataTemp = []
+            
             var stream = fs.createReadStream(this.path, { encoding: 'UTF-8'});            
             var csvStream = csv
                 .parse()
                 .on("data", function(data){
                     // console.log(data)
                     this.data.push(data)
+                    // dataTemp.push(data)
                 }.bind(this))
                 .on("end", function(){
                     // console.log("done")
+                    // this.data = []
+                    // this.data = dataTemp
                 });
 
             stream.pipe(csvStream);

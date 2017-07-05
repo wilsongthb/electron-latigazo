@@ -5,10 +5,10 @@ module.exports = {
     template: fs.readFileSync(path.join(__dirname, 'index.html'), { encoding: 'utf-8'}),
     data () {
         return {
-            fichas: require(dirRoot + '/render/data/fichas.json')
+            fichas: require(__dirRoot + './../config/fichas.json')
         }
     },
     components: {
-        'ficha': require(path.join(dirRoot, 'render/components/app/ver-cartilla/ficha'))
+        'ficha': require(path.join(__dirRoot, 'render/components/app/ver-cartilla/ficha'))
     }
 }

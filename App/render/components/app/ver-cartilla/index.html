@@ -44,7 +44,7 @@
                             <template v-if="!c.descripcion && tempListDescripcion.logros.length">
                                 <select v-model="c.descripcion" class="form-control">
                                     <option v-for="logro in tempListDescripcion.logros" :value="logro">{{logro}} </option>
-                                </select>    
+                                </select>
                             </template>
                             <template v-else>
                                 <textarea class="form-control" v-model="c.descripcion"></textarea>

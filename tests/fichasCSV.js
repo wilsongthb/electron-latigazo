@@ -1,6 +1,6 @@
 const csv = require('fast-csv');
 const fs = require('fs');
-var stream = fs.createReadStream(__dirname + "/../../mi-config/fichasCSV.csv");
+var stream = fs.createReadStream(__dirname + "/fichasCSV.csv");
 
 var dataOut = [];
 
@@ -18,7 +18,12 @@ var csvStream = csv
             }else{
                 // console.log(semana)
                 // formateando resultado
-                data[0] = (data[0].length === 0) ? filaAnterior[0] : data[0];
+                if(data[0].length === 0){
+                    // console.log("mes", Math.floor((semana-1)/4)+1, " semana", semana)
+                    data[0] = filaAnterior[0]
+                    // console.log(data[0], data[1])
+                }
+                // data[0] = (data[0].length === 0) ? filaAnterior[0] : data[0];
 
                 let fila = {
                     mes: Math.floor((semana-1)/4)+1,
@@ -26,7 +31,9 @@ var csvStream = csv
                     titulo: data[0],
                     // identificadores: data[1].split("  "),
                     identificadores: data[1],
-                    logros: data[2]
+                    // logros: data[2].split("OTROS LOGROS")
+                    logros: [data[2]]
+                    // logros: data[2].split(".")
                 }
 
                 // guardando
@@ -42,7 +49,7 @@ var csvStream = csv
     })
     .on("end", function(){
          console.log("done");
-         fs.writeFileSync('out.json', JSON.stringify(dataOut));
+         fs.writeFileSync('fichas.json', JSON.stringify(dataOut));
     });
 
 stream.pipe(csvStream);

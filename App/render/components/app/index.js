@@ -50,7 +50,7 @@ module.exports = {
 
             // ver csv
             verClaves: false, // mostrar o ocultar claves
-            path: 'tests/entrada.csv', // path del archivo csv
+            path: '../tests/entrada.csv', // path del archivo csv
 
             // actualizaciones
             verReadme: fs.readFileSync(path.join(__dirRoot, 'readme.md'), { encoding: 'utf-8'}), // string del contenido del archivo readme.md

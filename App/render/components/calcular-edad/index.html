@@ -1,0 +1,38 @@
+<div>
+    <div class="container well">
+        <h3>CALCULAR EDAD</h3>
+        <p>Selecciona el archivo, filtra y selecciona campos que te son utiles</p>
+
+        <input type="checkbox" v-model="verCsv"> Ver el CSV
+        <csv v-show="verCsv" @EnviarDatosA="guardarEnDatos"></csv>
+    </div>
+    
+    <div class="container well">
+        <div class="row">
+            
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="form-group">
+                    <label for="">Indice de fecha de nacimiento</label>
+                    <input type="number" v-model="config.claves.edad">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <input type="text" class="form-control" v-model="buscar">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>EDAD</tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+    
+    <pre>{{ listaFiltrada }} </pre>
+    <pre>{{ $data }} </pre>
+</div>

@@ -1,0 +1,27 @@
+<div>
+    <h3>Lector CSV</h3>
+    <code>Requiere FAST-CSV</code>
+
+    <div class="container-fluid">
+        <button @click="abrirArchivo">
+            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+            Abrir Archivo
+        </button>
+        <input type="text" v-model="pathArchivo">
+        <button @click="leer">
+            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Leer
+        </button>
+        <!--muestra el contenido del CSV-->
+<pre><table border="1">
+    <tr>
+        <th></th>
+        <th v-for="(row, index) in datos[0]" class="text-center">{{index}} </th>
+    </tr>
+    <tr v-for="(row, index) in datos">
+        <th class="text-center">{{index}} </th>
+        <td v-for="(col, index1) in row">{{col}} </td>
+    </tr>
+</table></pre>
+
+    </div>
+</div>

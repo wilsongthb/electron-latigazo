@@ -80,7 +80,7 @@
                 </div>
                 <div class="panel-body">
                     <!--<pre>{{fichasSugeridas}} </pre>-->
-                    <ficha v-for="(fich, index) in fichasSugeridas" :key="index" :ficha="fich"></ficha>
+                    <ficha v-for="(fich, index, key) in fichasSugeridas" :key="index" :id="index" :ficha="fich"></ficha>
                 </div>
             </div>
         </div>

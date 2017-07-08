@@ -1,0 +1,80 @@
+<div>
+    <div v-if="view === 1">
+        <!--menu principal-->
+        <div class="row text-center">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                
+                <div class="jumbotron">
+                    <div class="container">
+                        <div style="
+                            font-family: 'Avenir', Helvetica, Arial, sans-serif;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                            text-align: center;
+                            color: #2c3e50;
+                            margin-top: 10px;
+                            margin-bottom: 20px;
+                        ">
+                            <img src="render/assets/LATIGAZO.png" alt="Imagen de latigazo" width="200">
+                            <h1 class="media-heading">LATIGAZO - CUNAMAS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="jumbotron well">
+                    <div class="container">
+                        <h3>CUNAMAS - NIÑOS</h3>
+                        <p>Modulo para generar cronograma de visitas segun una entrada de texto csv</p>
+                        <p>
+                            <a class="btn btn-primary btn-lg btn-raised" @click="view = 2">Ingresar</a>
+                        </p>
+                    </div>
+                </div>        
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="jumbotron well">
+                    <div class="container">
+                        <h3>CALCULAR EDADES</h3>
+                        <p>calculadora que recibe como entrada un texto csv con fechas de nacimiento para calcular la edad</p>
+                        <p>
+                            <a class="btn btn-primary btn-lg btn-raised" @click="view = 3">Ingresar</a>
+                        </p>
+                    </div>
+                </div>        
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="jumbotron well">
+                    <div class="container">
+                        <h3>REGISTRO</h3>
+                        <p>Base de datos para guardar tus registros en xlsx y csv, entre otros</p>
+                        <p title="proximamente">
+                            <a class="btn btn-primary btn-lg btn-raised disabled">Ingresar</a>
+                        </p>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="jumbotron well">
+                    <div class="container">
+                        <h3>MADRES GESTANTES</h3>
+                        <p>Modulo de madres getantes</p>
+                        <p title="proximamente">
+                            <a class="btn btn-primary btn-lg btn-raised disabled">Ingresar</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <!--contenido-->
+        <ninios v-if="view === 2"></ninios>
+        <calcular-edad v-if="view === 3"></calcular-edad>
+    </div>
+</div>

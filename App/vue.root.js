@@ -38,6 +38,6 @@ var fechaFormat = require(__dirRoot + './render/utils/edad_format.js')
 new Vue({
     el: '#root',
     components: {
-        'app': require('./render/components/app')
+        'menu-principal': require('./render/components/menu-principal')
     }
 })

@@ -1,5 +1,5 @@
 {
-    "verNavAbajo": true,
+    "verNavAbajo": false,
     "consola": true,
     "name": "cunamas",
     "db": {
@@ -11,6 +11,7 @@
             "database": "latigazo"
         }
     },
+    "dirFichas": "../config/fichas.json",
     "csv": {
         "fechaSplit": "/"
     }

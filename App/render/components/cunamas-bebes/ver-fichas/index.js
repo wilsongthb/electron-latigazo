@@ -1,5 +1,5 @@
-var path = require('path')
-var fs = require('fs')
+// var path = require('path')
+// var fs = require('fs')
 
 module.exports = {
     template: fs.readFileSync(path.join(__dirname, 'index.html'), { encoding: 'utf-8'}),
@@ -13,12 +13,18 @@ module.exports = {
             newLogro: ""
         }
     },
+    props: {
+        config: {
+            type: Object,
+            required: true
+        }
+    },
     created () {
         this.leer()
     },
     methods: {
         leer () {
-            this.fichas = require(__dirRoot + config.dirFichas)
+            this.fichas = require(path.join(__dirRoot, this.config.dirFichas))
         },
         editar () {
             this.verEditar = true
@@ -29,7 +35,7 @@ module.exports = {
         },
         guardar () {
             // this.fichas[this.idFicha] = this.ficha
-            fs.writeFileSync(__dirRoot + config.dirFichas, JSON.stringify(this.fichas))
+            fs.writeFileSync(path.join(__dirRoot, this.config.dirFichas), JSON.stringify(this.fichas))
             this.cerrar()
         },
         cerrar () {
@@ -38,6 +44,6 @@ module.exports = {
         }
     },
     components: {
-        'ficha': require(path.join(__dirRoot, 'render/components/app/ver-cartilla/ficha'))
+        'ficha': require(path.join(__dirRoot, 'render/components/cunamas-bebes/ficha'))
     }
 }

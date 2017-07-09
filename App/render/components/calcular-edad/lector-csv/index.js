@@ -15,7 +15,7 @@ module.exports = {
     },
     data () {
         return {
-            pathArchivo: '',
+            pathArchivo: `D:\\code\\cunamas\\resources\\REPORTE Y PADRON OFICIAL MAYO 2017 POR PROVINCIA.csv`,
             datos: []
         }
     },
@@ -63,5 +63,7 @@ module.exports = {
             this.leer()
             // this.leer()
         })
+
+        this.leer()
     }
 }

@@ -13,20 +13,21 @@ var mysql = require('mysql')
 // ==========================================
 
 // esencial
-const __dirRoot = __dirname + '/'
-var {ver, plantilla, fileToString} = require(__dirRoot + './render/utils/esencial.js')
+const __dirRoot = __dirname
+const __dirConfig = path.join(__dirname, '../config')
+var {ver, plantilla, fileToString} = require(path.join(__dirRoot, '/render/utils/esencial.js'))
 
 // CONSTANTES
-var csvClaves = require(__dirRoot + './../config/csv_claves.json')
+// var csvClaves = require(path.join(__dirConfig, 'csv_claves.json'))
 
 // VARIABLES
-var config = require(__dirRoot + './../config/config.json')
-var DB = mysql.createConnection(config.db.connection)
+// var config = require(path.join(__dirConfig, 'config.json'))
+// var DB = mysql.createConnection(config.db.connection)
 
 // FUNCIONES
-var valorClaves = require(__dirRoot + './render/utils/valor_claves.js') // util para mostrar la clave de un dato del csv
-var calcularEdad = require(__dirRoot + './render/utils/edad.js')
-var fechaFormat = require(__dirRoot + './render/utils/edad_format.js')
+var valorDeClaves = require(path.join(__dirRoot, 'render/utils/valor_claves.js')) // util para mostrar la clave de un dato del csv
+var calcularEdad = require(path.join(__dirRoot, 'render/utils/edad.js'))
+var formatearFecha = require(path.join(__dirRoot, 'render/utils/edad_format.js'))
 
 // ==========================================
 // RECURSOS GLOBALES PARA LA APLICACION
@@ -38,6 +39,6 @@ var fechaFormat = require(__dirRoot + './render/utils/edad_format.js')
 new Vue({
     el: '#root',
     components: {
-        'menu-principal': require('./render/components/menu-principal')
+        'menu-principal': require(path.join(__dirRoot, 'render/components/menu-principal'))
     }
 })

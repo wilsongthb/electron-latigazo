@@ -1,5 +1,7 @@
 {
     "claves": {
-        "edad": "1"
+        "fecha_nacimiento": "31",
+        "nombre_facilitador": "17",
+        "nombre_beneficiario": "29"
     }
 }

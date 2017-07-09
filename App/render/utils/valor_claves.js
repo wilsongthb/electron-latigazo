@@ -1,4 +1,4 @@
-valorClaves = function(){
+valorClaves = function(csvClaves){
     var lista = []
     for(var i in csvClaves){
         for(var j in csvClaves[i]){

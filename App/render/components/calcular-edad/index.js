@@ -21,9 +21,9 @@ module.exports = {
     },
     computed: {
         listaFiltrada () {
-            var res = this.data
-
-            
+            for(var r in this.datos){
+                this.datos[r].edad = calcularEdad(fechaFormat(this.datos[r][config.claves]))
+            }
         }
     }
 }

@@ -41,7 +41,7 @@
                         <h3>CALCULAR EDADES</h3>
                         <p>calculadora que recibe como entrada un texto csv con fechas de nacimiento para calcular la edad</p>
                         <p>
-                            <a class="btn btn-primary btn-lg btn-raised" @click="view = 3">Ingresar</a>
+                            <a class="btn btn-primary btn-lg btn-raised disabled" @click="view = 3">Ingresar</a>
                         </p>
                     </div>
                 </div>        
@@ -74,7 +74,7 @@
     </div>
     <div>
         <!--contenido-->
-        <ninios v-if="view === 2"></ninios>
+        <cunamas-bebes v-if="view === 2"></cunamas-bebes>
         <calcular-edad v-if="view === 3"></calcular-edad>
     </div>
 </div>

@@ -1,8 +1,7 @@
-var path = require('path')
-var fs = require('fs')
+// var path = require('path')
+// var fs = require('fs')
 
 const ipc = require('electron').ipcRenderer
-
 
 // informacion inicial del usuario
 const sessionInit = {
@@ -29,8 +28,9 @@ module.exports = {
     },
     data: function(){
         return {
-            // app
-            verNavbarAbajo: config.verNavAbajo, // mostrar o ocultar navbar de abajo
+            // valores de configuracion
+            config: require(path.join(__dirConfig, 'config.json')),
+
             vista: '0', // numero de la vista
 
             // ver detalles

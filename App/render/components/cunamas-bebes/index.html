@@ -47,11 +47,11 @@
         </div><!-- /.navbar-collapse -->
     </nav>
     <!--navbar de abajo-->
-    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" v-show="verNavbarAbajo">
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" v-show="config.verNavbarAbajo">
         <!--<a class="navbar-brand" href="#">Title</a>-->
         <ul class="nav navbar-nav">
             <li title="Ocultar">
-                <a href="#" @click="verNavbarAbajo = false">
+                <a href="#" @click="config.verNavbarAbajo = false">
                     <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                 </a>
             </li>
@@ -69,18 +69,10 @@
         </ul>
     </nav>
     <div class="navbar-fixed-bottom">
-        <button v-show="!verNavbarAbajo" @click="verNavbarAbajo = true" title="Ver Barra de Navegacion de Abajo" class="btn btn-default">
+        <button v-show="!config.verNavbarAbajo" @click="config.verNavbarAbajo = true" title="Ver Barra de Navegacion de Abajo" class="btn btn-default">
             <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
         </button>
     </div>
-    <!--<div class="menu-flotante-izq">
-        <div class="btn-group-vertical">
-            <a href="#" class="btn btn-raised" title="Imprimir Pagina" @click="imprimir">
-                <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
-            </a>
-        </div>
-    </div>-->
-    <!--endlinks menu-->
 
     <!--Inicio-->
     <div v-show="vista === '0'">
@@ -107,7 +99,7 @@
     <cronograma v-show="vista === '4'" :cartillas="cartillas"></cronograma>
 
     <!--fichas-->
-    <ver-fichas v-show="vista === '9'"></ver-fichas>
+    <ver-fichas v-show="vista === '9'" :config="config"></ver-fichas>
 
     <!--vista-detalles-->
     <template v-if="detalles">

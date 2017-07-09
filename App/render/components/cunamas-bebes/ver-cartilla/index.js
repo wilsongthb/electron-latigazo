@@ -28,9 +28,9 @@ var initTemp = {
 }
 
 module.exports = {
-    template: fileToString('/render/components/app/ver-cartilla/index.html'),
+    template: fs.readFileSync(path.join(__dirname, 'index.html'), { encoding: 'utf-8'}),
     components: {
-        'ficha': require('./ficha')
+        'ficha': require('../ficha')
     },
     data () {
         return {

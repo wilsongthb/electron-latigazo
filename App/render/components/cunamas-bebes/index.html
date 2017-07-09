@@ -47,8 +47,7 @@
         </div><!-- /.navbar-collapse -->
     </nav>
     <!--navbar de abajo-->
-    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" v-show="config.verNavbarAbajo">
-        <!--<a class="navbar-brand" href="#">Title</a>-->
+    <!--<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" v-show="config.verNavbarAbajo">
         <ul class="nav navbar-nav">
             <li title="Ocultar">
                 <a href="#" @click="config.verNavbarAbajo = false">
@@ -72,16 +71,16 @@
         <button v-show="!config.verNavbarAbajo" @click="config.verNavbarAbajo = true" title="Ver Barra de Navegacion de Abajo" class="btn btn-default">
             <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
         </button>
-    </div>
+    </div>-->
 
     <!--Inicio-->
     <div v-show="vista === '0'">
-        <inicio :session.sync="session"></inicio>
+        <!--<inicio :session.sync="session"></inicio>-->
     </div>
 
     <!--ver-csv-->
     <div v-show="vista === '1'" class="container-fluid">
-        <button @click="seleccionarArchivo">
+        <!--<button @click="seleccionarArchivo">
         <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
             Seleccionar Archivo</button>
         <input type="text" v-model="path">
@@ -89,42 +88,42 @@
             <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Leer
         </button>
         <input type="checkbox" v-model="verClaves">Ver Claves
-        <ver-csv :data="data" :ver-claves="verClaves"></ver-csv>
+        <ver-csv :data="data" :ver-claves="verClaves"></ver-csv>-->
     </div>
 
     <!--Cartillas-->
     <template v-if="detallesCartilla">
-        <ver-cartilla v-if="vista === '2'" :detalles="detallesCartilla" @enviar="agregarCartilla"></ver-cartilla>
+        <!--<ver-cartilla v-if="vista === '2'" :detalles="detallesCartilla" @enviar="agregarCartilla"></ver-cartilla>-->
     </template>
-    <cronograma v-show="vista === '4'" :cartillas="cartillas"></cronograma>
+    <!--<cronograma v-show="vista === '4'" :cartillas="cartillas"></cronograma>-->
 
     <!--fichas-->
-    <ver-fichas v-show="vista === '9'" :config="config"></ver-fichas>
+    <!--<ver-fichas v-show="vista === '9'" :config="config"></ver-fichas>-->
 
     <!--vista-detalles-->
     <template v-if="detalles">
-        <ver-detalles v-show="vista === '3'" :detalles="detalles" @generar-cartilla="generarCartilla"></ver-detalles>
+        <!--<ver-detalles v-show="vista === '3'" :detalles="detalles" @generar-cartilla="generarCartilla"></ver-detalles>-->
     </template>
 
     <!--vista de listado-->
-    <ver-lista v-show="vista === '5'" :data="data" @ver-detalles="verDetalles" @generar-cartilla="generarCartilla"></ver-lista>
+    <!--<ver-lista v-show="vista === '5'" :data="data" @ver-detalles="verDetalles" @generar-cartilla="generarCartilla"></ver-lista>-->
 
     <!--vista de ayuda-->
-    <ayuda v-if="vista === '6'"></ayuda>
+    <!--<ayuda v-if="vista === '6'"></ayuda>-->
 
     <!--Sincronizar con la BD-->
     <div v-show="vista === '7'">
-        <div v-if="session.id">
+        <!--<div v-if="session.id">
             <sync-db :data="data" :session="session"></sync-db>
         </div>
         <div v-else class="container">
             <code>Requiere que te loguees en <a href="#" @click="vista = '0'">Inicio</a></code>
-        </div>
+        </div>-->
     </div>
 
     <!--github-->
     <div v-show="vista === '8'" class="container">
-        <div class="row">
+        <!--<div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <pre>{{verReadme}}</pre>
             </div>
@@ -135,7 +134,7 @@
                 <p>Revisa las actualizaciones y ultimos cambios en la pagina de github <a href="https://github.com/wilsongthb/electron-latigazo">aqui</a></p>
                 <webview src="https://github.com/wilsongthb/electron-latigazo" style="height:1200px"></webview>
             </div>
-        </div>
+        </div>-->
     </div>
 
     <!--pie de pagina-->

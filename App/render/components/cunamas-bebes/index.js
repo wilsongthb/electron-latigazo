@@ -16,15 +16,15 @@ const sessionInit = {
 module.exports = {
     template: fs.readFileSync(path.join(__dirname, 'index.html'), { encoding: 'utf-8'}),
     components: {
-        'cronograma': require('./cronograma'),
-        'ver-cartilla': require('./ver-cartilla'),
-        'ver-fichas': require('./ver-fichas'),
-        'inicio': require('./inicio'),
-        'ver-csv': require('./ver-csv'),
-        'ver-lista': require('./ver-lista'),
-        'ver-detalles': require('./ver-detalles'),
-        'sync-db': require('./sync-db'),
-        'ayuda': require('./ayuda')
+        // 'cronograma': require('./cronograma'),
+        // 'ver-cartilla': require('./ver-cartilla'),
+        // 'ver-fichas': require('./ver-fichas'),
+        // 'inicio': require('./inicio'),
+        // 'ver-csv': require('./ver-csv'),
+        // 'ver-lista': require('./ver-lista'),
+        // 'ver-detalles': require('./ver-detalles'),
+        // 'sync-db': require('./sync-db'),
+        // 'ayuda': require('./ayuda')
     },
     data: function(){
         return {

@@ -10,7 +10,7 @@ module.exports = {
     },
     data () {
         return {
-            listaClaves: valorClaves()
+            listaClaves: valorDeClaves(require(path.join(__dirConfig, 'csv_claves.json')))
         }
     }
 }

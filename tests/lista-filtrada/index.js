@@ -1,10 +1,29 @@
-var path = require('path')
-var fs = require('fs')
+// var path = require('path')
+// var fs = require('fs')
 
 module.exports = {
     template: fs.readFileSync(path.join(__dirname, 'index.html'), { encoding: 'utf-8'}),
     props: {
-        data: Array
+        data: {
+            type: Array,
+            require: true
+        },
+        listaClaves: {
+            type: Array,
+            require: true
+        },
+        keyData: {
+            require: true,
+            type: Object
+        },
+        csvClaves: {
+            require: true,
+            type: Object
+        },
+        config: {
+            require: true,
+            type: Object
+        }
     },
     data () {
         return {
@@ -13,9 +32,7 @@ module.exports = {
             filtro: {
                 clave: '0',
                 valor: '',
-            },
-            keyData: csvClaves,
-            listaClaves: valorClaves()
+            }
         }
     },
     created () {
@@ -28,7 +45,7 @@ module.exports = {
 
             // agrega edad para ayudar en la ordenacion
             for(var r in res){
-                res[r]['edad'] = this.edadFormat(res[r][csvClaves.beneficiario.fechaNacimiento])
+                res[r]['edad'] = this.edadFormat(res[r][this.csvClaves.beneficiario.fechaNacimiento])
                 res[r]['indice'] = r
             }
             for(var i in this.filtros){
@@ -61,7 +78,7 @@ module.exports = {
             this.$emit('ver-detalles', fila)
         },
         edadFormat (fechaNoFormat) {
-            var fecha = fechaNoFormat.split(config.csv.fechaSplit)
+            var fecha = fechaNoFormat.split(this.config.csv.fechaSplit)
             var newFecha = `${fecha[2]}-${fecha[1]}-${fecha[0]}`
             return calcularEdad(newFecha)
         },
@@ -76,11 +93,11 @@ module.exports = {
         },
         clavesOptions () {
             var listaClaves = []
-            for(var i in csvClaves){
-                for(var j in csvClaves[i]){
+            for(var i in this.csvClaves){
+                for(var j in this.csvClaves[i]){
                     listaClaves.push({
                         clave: `${i}.${j}`,
-                        valor: csvClaves[i][j]
+                        valor: this.csvClaves[i][j]
                     })
                 }
             }

@@ -1,0 +1,88 @@
+<div class="container-fluid">
+    <!--<h3 class="text-center">LISTA DE REGISTROS</h3>-->
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Filtros</h3>
+                </div>
+                <div class="panel-body">
+                    <select v-model="filtro.clave" class="form-control">
+                        <option v-for="(c, index) in claves" :value="index">{{index}} - {{c}} </option>
+                    </select>
+                    <input type="text" v-model="filtro.valor" class="form-control">
+                    <button @click="agregarFiltro" class="btn btn-success btn-raised">Agregar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Buscar</h3>
+                </div>
+                <div class="panel-body">
+                    
+                    <table class="table table-condensed table-hover small">
+                        <thead>
+                            <tr>
+                                <th>Columna</th>
+                                <th>Valor</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(f, index) in filtros">
+                                <td>
+                                    {{f.clave}} - {{claves[f.clave]}}
+                                </td>
+                                <td>
+                                    <input type="text" v-model="f.valor">
+                                </td>
+                                <td>
+                                    <button @click="filtros.splice(index, 1)" class="btn-danger" title="Eliminar">
+                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <table class="table table-condensed table-hover table-bordered small">
+        <thead>
+            <tr>
+                <th>Edad</th>
+                <th>Meses</th>
+                <th></th>
+                <th v-for="(valor, clave) in clavesMostrar" class="text-center">{{valor}} - {{clave}} </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="row in listaOrdenada" class="success" :class="{'warning': (row.edad.meses>30), 'danger': (row.edad.meses>36)}">
+                <!--<template v-if="row.edad">-->
+                    <td>{{row.edad.str}} </td>
+                    <td>{{row.edad.meses}} </td>
+                    <td>
+                        <a href="#">
+                            <button class="btn-success" title="Generar Cartilla" @click="generarCartilla(row)">
+                                <span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span>
+                            </button>
+                        </a>
+                        <!--<a href="#">
+                            <button class="btn-warning" title="Mas detalles" @click="verDetalles(row)">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </button>
+                        </a>-->
+                    </td>
+                <!--</template>-->
+                <td v-for="(valor, clave) in clavesMostrar" class="text-center">{{row[valor]}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

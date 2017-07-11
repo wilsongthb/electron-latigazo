@@ -1,5 +1,5 @@
 {
-    "verNavAbajo": false,
+    "verNavbarAbajo": true,
     "consola": true,
     "name": "cunamas",
     "db": {
@@ -14,5 +14,6 @@
     "dirFichas": "../config/fichas.json",
     "csv": {
         "fechaSplit": "/"
-    }
+    },
+    "fechaSplit": "/"
 }

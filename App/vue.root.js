@@ -18,6 +18,8 @@ const __dirConfig = path.join(__dirname, '../config')
 // var {ver, plantilla, fileToString} = require(path.join(__dirRoot, '/render/utils/esencial.js'))
 
 // CONSTANTES
+const basicConfig = require(path.join(__dirRoot, 'render/default-config/basic.json'))
+const ver = require(path.join(__dirRoot, 'render/utils/esencial.js')).ver
 // var csvClaves = require(path.join(__dirConfig, 'csv_claves.json'))
 
 // VARIABLES
@@ -26,8 +28,8 @@ const __dirConfig = path.join(__dirname, '../config')
 
 // FUNCIONES
 // var valorDeClaves = require(path.join(__dirRoot, 'render/utils/valor_claves.js')) // util para mostrar la clave de un dato del csv
-// var calcularEdad = require(path.join(__dirRoot, 'render/utils/edad.js'))
-// var formatearFecha = require(path.join(__dirRoot, 'render/utils/edad_format.js'))
+var calcularEdad = require(path.join(__dirRoot, 'render/utils/edad.js'))
+var formatearFecha = require(path.join(__dirRoot, 'render/utils/edad_format.js'))
 
 // ==========================================
 // RECURSOS GLOBALES PARA LA APLICACION

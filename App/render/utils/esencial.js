@@ -1,18 +1,11 @@
 var ver = function(){
-    if(config.consola){
+    if(basicConfig.ver){
         for(i in arguments){
             console.log(arguments[i])
         }
     }
 }
 
-var plantilla = function(ruta){
-    return fs.readFileSync(path.join(__dirRoot, ruta), { encoding: 'utf-8'})
-}
-var fileToString = plantilla
-
 module.exports = {
-    ver,
-    plantilla,
-    fileToString
+    ver
 }

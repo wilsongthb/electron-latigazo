@@ -1,0 +1,22 @@
+<div>
+    <button @click="seleccionarArchivo">
+        <span class="glyphicon glyphicon-file" aria-hidden="true"></span> Seleccionar Archivo
+    </button><input type="text" v-model="pathFile"><input type="checkbox" v-model="verClavesCsv">Ver Claves CSV
+<!--mostrar datos-->
+<pre><table border="1">
+    <template v-if="clavesCsv">
+        <tr v-show="verClavesCsv">
+            <th></th>
+            <th v-for="(row, index) in datos[0]" class="text-center">{{clavesCsv[index]}} </th>
+        </tr>
+    </template>
+    <tr>
+        <th></th>
+        <th v-for="(row, index) in datos[0]" class="text-center">{{index}} </th>
+    </tr>
+    <tr v-for="(row, index) in datos">
+        <th class="text-center">{{index}} </th>
+        <td v-for="(col, index1) in row">{{col}} </td>
+    </tr>
+</table></pre>
+</div>

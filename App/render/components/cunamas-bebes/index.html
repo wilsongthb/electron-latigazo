@@ -16,15 +16,21 @@
                 <li :class="{ 'active': (vista === '1') }">
                     <a href="#" @click="vista = '1'">CSV</a>
                 </li>
-                <li :class="{ 'active': (vista === '5') }">
-                    <a href="#" @click="vista = '5'">Lista de Registros</a>
+                <li :class="{ 'active': (vista === '2') }">
+                    <a href="#" @click="vista = '2'">Lista de Registros</a>
+                </li>
+                <!--<li :class="{ 'active': (vista === '5') }">
+                    <a href="#" @click="vista = '5'">Lista Filtrada</a>
+                </li>-->
+                <li :class="{ 'active': (vista === '3') }">
+                    <a href="#" @click="vista = '3'">Cartilla</a>
                 </li>
                 <li :class="{ 'active': (vista === '9') }">
                     <a href="#" @click="vista = '9'">Fichas</a>
                 </li>
-                <li :class="{ 'active': (vista === '4') }">
+                <!--<li :class="{ 'active': (vista === '4') }">
                     <a href="#" @click="vista = '4'">Cronograma</a>
-                </li>
+                </li>-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li :class="{ 'active': (vista === '6') }">
@@ -46,8 +52,8 @@
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
-    <!--navbar de abajo-->
-    <!--<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" v-show="config.verNavbarAbajo">
+    <!--navbar de abajo-->    
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" v-show="config.verNavbarAbajo">
         <ul class="nav navbar-nav">
             <li title="Ocultar">
                 <a href="#" @click="config.verNavbarAbajo = false">
@@ -59,28 +65,173 @@
                     <span class="glyphicon glyphicon-print" aria-hidden="true"></span> Imprimir
                 </a>
             </li>
-            <li :class="{ 'active': (vista === '3') }">
-                <a href="#" @click="vista = '3'">Detalles</a>
+            <li>
+                <a data-toggle="modal" href='#modal-editarclavescsv'>Editar Claves</a>
             </li>
-            <li :class="{ 'active': (vista === '2') }">
+            <li>
+                <a data-toggle="modal" href='#modal-editarclavesmostrar'>Editar Claves Mostrar</a>
+            </li>
+            <!--<li :class="{ 'active': (vista === '2') }">
                 <a href="#" @click="vista = '2'">Cartilla</a>
-            </li>
+            </li>-->
         </ul>
     </nav>
     <div class="navbar-fixed-bottom">
         <button v-show="!config.verNavbarAbajo" @click="config.verNavbarAbajo = true" title="Ver Barra de Navegacion de Abajo" class="btn btn-default">
             <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
         </button>
-    </div>-->
-
-    <!--Inicio-->
-    <div v-show="vista === '0'">
-        <!--<inicio :session.sync="session"></inicio>-->
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Inicio-->
+    <inicio v-show="vista === '0'" 
+        :session.sync="session"
+    ></inicio>
     <!--ver-csv-->
-    <div v-show="vista === '1'" class="container-fluid">
-        <!--<button @click="seleccionarArchivo">
+    <csv v-show="vista === '1'" 
+        @guardarDatos="guardarEnDatos" 
+        :clavesCsv="arrayClavesCsv" 
+        :pathCsvFile="pathCsvFile"
+    ></csv>
+    <!--listado-personalizada-->
+    <lista-de-registros v-show="vista === '2'"
+        :datos="datos"
+        :claves="arrayClavesCsv"
+        :clavesMostrar="objectClavesMostrar"
+        :config="config"
+        @generar-cartilla="generarCartilla"
+    ></lista-de-registros>
+    <!--cartilla, se usa v-if para que se genere el componente varias veces, esto por razones de funcionalidad-->
+    <cartilla v-if="detallesCartilla && vista === '3'" 
+        :detalles="detallesCartilla" 
+        :claves="objectClavesMostrar" 
+        :fichas="fichas"
+    ></cartilla>
+    <!--fichas-->
+    <ver-fichas v-show="vista === '9'" 
+        :config="config"
+    ></ver-fichas>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--lista-erronea-->
+    <!--<lista-filtrada v-show="vista === '5'" 
+        @ver-detalles="verDetalles" 
+        @generar-cartilla="generarCartilla"
+        :data="datos" 
+        :listaClaves="arrayClavesCsv"
+        :csvClaves="clavesCsv"
+        :keyData="clavesCsv"
+        :config="config"
+    ></lista-filtrada>-->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--modal de editar claves-->
+    <div class="modal fade" id="modal-editarclavescsv">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Editar Claves CSV</h4>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="alert alert-success">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Informacion:</strong> 
+                        <ul>
+                            <li>Filtros disponibles</li>
+                            <li>Estas claves son de ayuda para poder filtrar el listado de registros</li>
+                            <li>Puede editarlo ayudandose del archivo csv de entrada</li>
+                        </ul>
+                    </div>
+                    
+                    <json-editor :pathFile="pathClavesCsv" idEditor="131231"></json-editor>                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal de editar claves mostrar-->
+    <div class="modal fade" id="modal-editarclavesmostrar">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Editar Claves Mostrar</h4>                    
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Muy importante! Campos requeridos para generar cartillas:</strong> 
+                        <ul>
+                            <li>codigo_familia</li>
+                            <li>fecha_nacimiento</li>
+                        </ul>
+                        <p>De faltar estas claves, la aplicación fallara</p>
+                    </div>
+                    <json-editor :pathFile="pathClavesMostrar" idEditor="3434"></json-editor>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--editar el csv_claves-->
+    
+    <!--<div v-show="vista === '1'" class="container-fluid">
+        <button @click="seleccionarArchivo">
         <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
             Seleccionar Archivo</button>
         <input type="text" v-model="path">
@@ -88,22 +239,22 @@
             <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Leer
         </button>
         <input type="checkbox" v-model="verClaves">Ver Claves
-        <ver-csv :data="data" :ver-claves="verClaves"></ver-csv>-->
-    </div>
+        <ver-csv :data="data" :ver-claves="verClaves"></ver-csv>
+    </div>-->
 
     <!--Cartillas-->
-    <template v-if="detallesCartilla">
-        <!--<ver-cartilla v-if="vista === '2'" :detalles="detallesCartilla" @enviar="agregarCartilla"></ver-cartilla>-->
-    </template>
+    <!--<template v-if="detallesCartilla">
+        <ver-cartilla v-if="vista === '2'" :detalles="detallesCartilla" @enviar="agregarCartilla"></ver-cartilla>
+    </template>-->
     <!--<cronograma v-show="vista === '4'" :cartillas="cartillas"></cronograma>-->
 
     <!--fichas-->
     <!--<ver-fichas v-show="vista === '9'" :config="config"></ver-fichas>-->
 
     <!--vista-detalles-->
-    <template v-if="detalles">
-        <!--<ver-detalles v-show="vista === '3'" :detalles="detalles" @generar-cartilla="generarCartilla"></ver-detalles>-->
-    </template>
+    <!--<template v-if="detalles">
+        <ver-detalles v-show="vista === '3'" :detalles="detalles" @generar-cartilla="generarCartilla"></ver-detalles>
+    </template>-->
 
     <!--vista de listado-->
     <!--<ver-lista v-show="vista === '5'" :data="data" @ver-detalles="verDetalles" @generar-cartilla="generarCartilla"></ver-lista>-->
@@ -112,17 +263,17 @@
     <!--<ayuda v-if="vista === '6'"></ayuda>-->
 
     <!--Sincronizar con la BD-->
-    <div v-show="vista === '7'">
+    <!--<div v-show="vista === '7'">-->
         <!--<div v-if="session.id">
             <sync-db :data="data" :session="session"></sync-db>
         </div>
         <div v-else class="container">
             <code>Requiere que te loguees en <a href="#" @click="vista = '0'">Inicio</a></code>
         </div>-->
-    </div>
+    <!--</div>-->
 
     <!--github-->
-    <div v-show="vista === '8'" class="container">
+    <!--<div v-show="vista === '8'" class="container">-->
         <!--<div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <pre>{{verReadme}}</pre>
@@ -135,7 +286,7 @@
                 <webview src="https://github.com/wilsongthb/electron-latigazo" style="height:1200px"></webview>
             </div>
         </div>-->
-    </div>
+    <!--</div>-->
 
     <!--pie de pagina-->
     <div class="container" style="

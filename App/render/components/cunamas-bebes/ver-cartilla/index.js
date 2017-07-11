@@ -38,17 +38,19 @@ module.exports = {
             fichas: [],
             buscar: new String(""),
             enviado: false,
-            csvClaves,
             tempListDescripcion: initTemp
         }
     },
     props: {
+        csvClaves: {
+            required: true
+        },
         detalles: {
             required: true
         }
     },
     created () {
-        this.cartilla.familia = this.detalles[csvClaves.facilitador.codigoFamilia]
+        this.cartilla.familia = this.detalles[this.csvClaves.facilitador.codigoFamilia]
         this.cartilla.edad = this.detalles.edad.str
         this.cartilla.semana = this.detalles.edad.semanas
         this.fichas = require(__dirRoot + config.dirFichas)

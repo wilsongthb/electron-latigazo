@@ -12,7 +12,7 @@
             <div class="panel-body">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <select v-model="filtro.clave" class="form-control">
-                        <option v-for="c in clavesOptions()" :value="c.valor">{{c.valor}} - {{c.clave.toUpperCase()}} </option>
+                        <option v-for="c in clavesOptions()" :value="c.valor">{{c.valor}} - {{c.clave}} </option>
                     </select>
                     <input type="text" v-model="filtro.valor" placeholder="Buscar" class="form-control">
                     <button @click="agregarFiltro" class="btn btn-success btn-raised">Agregar</button>
@@ -28,7 +28,7 @@
                         </thead>
                         <tbody>
                             <tr v-for="(f, index) in filtros">
-                                <td>{{listaClaves[f.key].toUpperCase()}}</td>
+                                <td>{{listaClaves[f.key]}}</td>
                                 <td><input type="text" v-model="f.value"></td>
                                 <td>
                                     <button @click="filtros.splice(index, 1)" class="btn-danger" title="Eliminar">

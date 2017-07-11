@@ -28,3 +28,6 @@ Aplicacion de hacer cosas XD
 * Agregada opcion de claves visibles
 * Modificadas las fichas, revisar la vista fichas
 
+# Funciones futuras
+* Posiblemente ofresza un convertidor xlsx a csv
+* Posiblemente incluya un xlsx view basico

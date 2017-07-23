@@ -1,4 +1,15 @@
 <div class="container-fluid">
+
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            
+            <button type="button" @click="generarPDF" class="btn btn-info">Generar cronograma en PDF</button>
+            <input type="text" class="form-control" v-model="nombre_pdf">
+
+        </div>
+    </div>
+    
     
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -22,7 +33,7 @@
     </div>
     
     <div class="row">
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" v-for="(cartilla, index) in cartillas">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2" v-for="(cartilla, index) in cartillas">
             <button type="button" class="close" aria-hidden="true" title="Eliminar" @click="cartillas.splice(index, 1)">&times;</button>
             <table class="table table-hover small well" border="1">
                 <tr>
@@ -57,14 +68,14 @@
                             <strong>{{c.titulo}} </strong>
                         </td>
                         <td class="td-cronograma text-right">
-                            <strong>CARTILLA Nº</strong>
+                            <strong>{{c.identificadores}} </strong>
                             <!--<input type="number" v-model="c.numero"  @keyup.enter="definirFicha(c)" class="form-control" disabled>-->
-                            {{c.numero}}
+                            <!--{{c.numero}}-->
                         </td>
                     </tr>
                     <tr>
                         <td class="td-cronograma" colspan="2">
-                            <p>{{c.descripcion}}</p>
+                            <p>{{c.logros}}</p>
                         </td>
                     </tr>
                 </template>

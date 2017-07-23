@@ -26,24 +26,28 @@ module.exports = {
         'lista-de-registros': require('./lista-de-registros'), // 2
         'cartilla': require('./cartilla'),
         'ver-fichas': require('./ver-fichas'),
+        'cronograma': require('./cronograma'),
+        'ayuda': require('./ayuda'),
 
 
         // 'lista-filtrada': require('./lista-filtrada'), // 5
-        // 'cronograma': require('./cronograma'),
+        
         // 'ver-cartilla': require('./ver-cartilla'),
         
         // 'ver-csv': require('./ver-csv'),
         // 'ver-lista': require('./ver-lista'),
         // 'ver-detalles': require('./ver-detalles'),
         // 'sync-db': require('./sync-db'),
-        // 'ayuda': require('./ayuda')
+        
     },
     data: function(){
         return {
-            vista: '2', // numero de la vista
+            vista: '0', // numero de la vista
             session: sessionInit, // valores iniciales de session
             datos: [], // array que contiene los datos del archivo csv
             detallesCartilla: false,// ver cartilla
+            verReadme: fs.readFileSync(path.join(__dirRoot, '../readme.md'), { encoding: 'utf-8'}), // string del contenido del archivo readme.md
+            cartillas: [],
 
             // valores de configuracion
             config: require(path.join(__dirConfig, 'config.json')),
@@ -68,7 +72,7 @@ module.exports = {
             
             
             // //cartillas
-            // cartillas: [],
+            
             
             // // ver lista
             // data: [], // array que contiene los datos del archivo csv
@@ -80,8 +84,7 @@ module.exports = {
             // verClaves: false, // mostrar o ocultar claves
             // path: '../tests/entrada.csv', // path del archivo csv
 
-            // // actualizaciones
-            // verReadme: fs.readFileSync(path.join(__dirRoot, 'readme.md'), { encoding: 'utf-8'}), // string del contenido del archivo readme.md
+            
         }
     },
     methods: {
@@ -105,15 +108,16 @@ module.exports = {
         imprimir () {
             ipc.send('print-to-pdf')
         },
-        // agregarCartilla (cartilla) {
-        //     // ver('recibido', cartilla)
-        //     // ver('argumentos:', arguments)
-        //     // ver(arguments)
-        //     this.cartillas.push(JSON.parse(cartilla)) // en javascript al pasar un objeto como argumento a una funcion, este pasa como referencia, con esta tecnica, eso no sucede y se crea un nuevo objeto individual del objeto que se recibio como parametro
-        //     // ver(this.cartillas)
-        //     // this.cartillas.push(cartilla)
-        //     // this.cartillas[this.cartillas.length] = cartilla
-        // },
+        agregarCartilla (cartilla) {
+            // ver('recibido', cartilla)
+            // ver('argumentos:', arguments)
+            // ver(arguments)
+            ver('hola', cartilla)
+            this.cartillas.push(cartilla) // en javascript al pasar un objeto como argumento a una funcion, este pasa como referencia, con esta tecnica, eso no sucede y se crea un nuevo objeto individual del objeto que se recibio como parametro
+            // ver(this.cartillas)
+            // this.cartillas.push(cartilla)
+            // this.cartillas[this.cartillas.length] = cartilla
+        },
         generarCartilla (fila) {
             // console.log('listen')
             // ver(fila.edad)

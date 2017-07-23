@@ -15,5 +15,6 @@
     "csv": {
         "fechaSplit": "/"
     },
-    "fechaSplit": "/"
+    "fechaSplit": "/",
+    "default_page": "0"
 }

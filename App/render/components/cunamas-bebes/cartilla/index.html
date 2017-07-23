@@ -1,4 +1,4 @@
-<div class="container-fluid well">
+<div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <h3>CARTILLA</h3>
@@ -8,13 +8,13 @@
         
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
             <!--Editar / crear -->
-            <table class="table">
+            <table class="table table-hover">
                 <tr>
                     <td>
                         <strong>FECHA:</strong> <input type="date" v-model="cartilla.fecha" class="form-control">
                     </td>
                     <td>
-                        <strong>HORA:</strong> <input type="number" v-model="cartilla.hora" class="form-control">
+                        <strong>HORA:</strong> <input type="text" v-model="cartilla.hora" class="form-control">
                     </td>
                 </tr>
                 <tr>
@@ -30,6 +30,11 @@
                 <template v-for="(c, index) in cartilla.objetivos">
                     <tr>
                         <td>
+                            <button title="Eliminar" click="cartilla.objetivos.splice(index, 1)" type="button" class="close" aria-hidden="true">&times;</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
                             <strong><input type="text" class="form-control" v-model="c.titulo"></strong>
                         </td>
                         <td>
@@ -37,29 +42,17 @@
                             <strong><input type="text" v-model="c.identificadores" class="form-control"></strong>
                         </td>
                     </tr>
-                    <tr v-for="l in c.logros">
+                    <tr>
                         <td colspan="2">
-                            <textarea class="form-control">{{l}} </textarea>
+                            <textarea class="form-control" rows="4" v-model="c.logros"></textarea>
                         </td>
                     </tr>
-                    <!--<tr>
-                        <td colspan="2">
-                            <template v-if="!c.descripcion && tempListDescripcion.logros.length">
-                                <select v-model="c.descripcion" class="form-control">
-                                    <option v-for="logro in tempListDescripcion.logros" :value="logro">{{logro}} </option>
-                                </select>
-                            </template>
-                            <template v-else>
-                                <textarea class="form-control" v-model="c.descripcion"></textarea>
-                            </template>
-                        </td>
-                    </tr>-->
                 </template>
             </table>
-            <!--<div class="alert alert-info" v-show="enviado">
+            <div class="alert alert-info" v-show="enviado">
                 <strong>Info</strong> Enviado a Cronograma
             </div>
-            <button class="btn btn-primary btn-raised" @click="enviarACronograma">Agregar a cronograma</button>-->
+            <button class="btn btn-primary btn-raised" @click="enviarA">Agregar a cronograma</button>
         </div>
         
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
@@ -94,9 +87,16 @@
             </template>
             
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 well" v-for="(f, index, key) in buscarFichas">
-                    <ficha :ficha="f" :id="f.id"></ficha>
-                    <button class="btn btn-raised" @click="seleccionarFicha(f.id)">Agregar ficha</button>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" v-for="(f, index, key) in buscarFichas">
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <ficha :ficha="f" :id="f.id"></ficha>
+                            <button class="btn btn-raised" @click="seleccionarFicha(f.id)">Agregar ficha</button>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
             

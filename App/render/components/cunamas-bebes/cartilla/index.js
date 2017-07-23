@@ -39,10 +39,10 @@ module.exports = {
                 mes: 1,
                 semana: 1,
                 semanas: 1
-            }
+            },
             // fichas: [],
             // buscar: "",
-            // enviado: false,
+            enviado: false,
             // tempListDescripcion: initTemp
         }
     },
@@ -87,6 +87,11 @@ module.exports = {
                     this.fichas[id]
                 ))
             )
+        },
+        enviarA () {
+            this.enviado = true
+            ver(JSON.parse(JSON.stringify(this.cartilla)))
+            this.$emit('enviarA', JSON.parse(JSON.stringify(this.cartilla)))
         }
     },
     computed: {

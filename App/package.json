@@ -3,21 +3,6 @@
   "version": "1.0.0",
   "description": "Aplicacion de hacer cosas XD, app latigador",
   "main": "main.js",
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "bootstrap-material-design": "^0.5.10",
-    "fast-csv": "^2.4.0",
-    "html-pdf": "^2.1.0",
-    "jquery": "^3.2.1",
-    "json-view": "^0.4.0",
-    "mysql": "^2.13.0",
-    "vue": "^2.3.3",
-    "xlsx": "^0.10.7"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wilsongthb/latigazo-cunamas.git"

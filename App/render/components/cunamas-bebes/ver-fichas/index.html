@@ -1,4 +1,36 @@
 <div class="container">
+
+    
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            
+            <a class="btn btn-primary btn-raised" data-toggle="modal" href='#modal-id'>Ver Fichas en JSON</a>
+            <div class="modal fade" id="modal-id">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Fichas en JSON</h4>
+                        </div>
+                        <div class="modal-body">
+                            
+                            <div class="alert alert-info">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <strong>Nota: </strong> Puede eliminar y agregar fichas en este apartado, pero no es una operacion que recomendamos, el objetivo es que vea la estructura del archivo desde la aplicacion
+                            </div>
+                            <json-editor :pathFile="pathFile" idEditor="rgne53"></json-editor>
+                        </div>
+                        <!--<div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
     
     <div class="row">
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2" v-for="(fich, index) in fichas">
@@ -40,12 +72,13 @@
                                 <input type="text" class="form-control" v-model="ficha.identificadores">
                             </div>
                             <div class="form-group">
-                                <label for="">Agregar Logro</label>
-                                <input type="text" class="form-control" v-model="newLogro" @keyup.enter="ficha.logros.push(newLogro)" placeholder="Escribe logro, [enter] para guardar en logros">
+                                <!--<label for="">Agregar Logro</label>
+                                <input type="text" class="form-control" v-model="newLogro" @keyup.enter="ficha.logros.push(newLogro)" placeholder="Escribe logro, [enter] para guardar en logros">-->
                                 <label for="">Logros</label>
-                                <ul>
+                                <!--<ul>
                                     <li v-for="(lo, index) in ficha.logros">{{lo}} <button class="danger" title="Eliminar" @click="ficha.logros.splice(index, 1)">X</button></li>
-                                </ul>
+                                </ul>-->
+                                <textarea rows="4" v-model="ficha.logros" class="form-control"></textarea>
                             </div>
                         </div>
                         

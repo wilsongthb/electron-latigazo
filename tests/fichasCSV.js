@@ -32,7 +32,8 @@ var csvStream = csv
                     // identificadores: data[1].split("  "),
                     identificadores: data[1],
                     // logros: data[2].split("OTROS LOGROS")
-                    logros: [data[2]]
+                    // logros: [data[2]]
+                    logros: data[2]
                     // logros: data[2].split(".")
                 }
 

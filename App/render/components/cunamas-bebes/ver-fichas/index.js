@@ -10,10 +10,14 @@ module.exports = {
 
             verEditar: false,
             ficha: {},
-            newLogro: ""
+            // newLogro: ""
         }
     },
     props: {
+        pathFile: {
+            type: String,
+            required: true
+        },
         config: {
             type: Object,
             required: true
@@ -24,7 +28,7 @@ module.exports = {
     },
     methods: {
         leer () {
-            this.fichas = require(path.join(__dirRoot, this.config.dirFichas))
+            this.fichas = require(this.pathFile)
         },
         editar () {
             this.verEditar = true
@@ -35,7 +39,7 @@ module.exports = {
         },
         guardar () {
             // this.fichas[this.idFicha] = this.ficha
-            fs.writeFileSync(path.join(__dirRoot, this.config.dirFichas), JSON.stringify(this.fichas))
+            fs.writeFileSync(this.pathFile, JSON.stringify(this.fichas))
             this.cerrar()
         },
         cerrar () {
@@ -44,6 +48,7 @@ module.exports = {
         }
     },
     components: {
-        'ficha': require(path.join(__dirRoot, 'render/components/cunamas-bebes/ficha'))
+        'ficha': require(path.join(__dirRoot, 'render/components/cunamas-bebes/ficha')),
+        'json-editor': require('../../json-editor')
     }
 }
